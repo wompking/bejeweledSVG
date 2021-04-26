@@ -1408,10 +1408,13 @@
 							} else {
 								grid[`${x}-${y}`] = {tile:tileSpawn[Math.floor(Math.random() * (tileSpawn.length-0.99))], overlay:"none"};
 								tilesBroken += 1;
-								updated.push(`${x}-${y}`)
+								updated.push(`${x}-${y}`);
 							}
 						} else {
-							grid[`${x}-${y}`].new = false
+							if (get.overlay !=="none"){
+								grid[`${x}-${y}`].hardness = 2;
+							}
+							grid[`${x}-${y}`].new = false;
 						}
 					}
 				}
