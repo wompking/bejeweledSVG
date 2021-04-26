@@ -28,7 +28,7 @@
 			</stop>
 		</linearGradient>
 
-		<g id="gem_red">
+		<symbol id="tile_red" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="15,20 20,15 20,-15 15,-20 -15,-20 -20,-15 -20,15 -15,20" stroke="rgb(206, 12, 23)" fill="rgb(242, 33, 45)" stroke-width="2px"/>
 			<polygon points="15,20 20,15 20,-15 15,-20 -15,-20 -20,-15 -20,15 -15,20" stroke="rgb(206, 12, 23)" fill="rgb(242, 33, 45)" stroke-width="4px" transform="scale(0.5,0.5)"/>
 			<line x1="5" y1="10" x2="10" y2="20" stroke="rgb(206, 12, 23)" stroke-width="2px"/>
@@ -39,8 +39,8 @@
 			<line x1="10" y1="-5" x2="20" y2="-10" stroke="rgb(206, 12, 23)" stroke-width="2px"/>
 			<line x1="-5" y1="-10" x2="-10" y2="-20" stroke="rgb(206, 12, 23)" stroke-width="2px"/>
 			<line x1="-10" y1="-5" x2="-20" y2="-10" stroke="rgb(206, 12, 23)" stroke-width="2px"/>
-		</g>
-		<g id="gem_orange">
+		</symbol>
+		<symbol id="tile_orange" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="0,20 17,10 17,-10 0,-20 -17,-10 -17,10" stroke="rgb(193, 87, 11)" fill="rgb(242, 120, 33)" stroke-width="2px"/>
 			<polygon points="0,20 17,10 17,-10 0,-20 -17,-10 -17,10" stroke="rgb(193, 87, 11)" fill="rgb(242, 120, 33)" stroke-width="4px" transform="scale(0.5,0.5)"/>
 			<line x1="0" y1="20" x2="0" y2="10" stroke="rgb(193, 87, 11)" stroke-width="2px"/>
@@ -49,39 +49,39 @@
 			<line x1="0" y1="-20" x2="0" y2="-10" stroke="rgb(193, 87, 11)" stroke-width="2px"/>
 			<line x1="-17" y1="-10" x2="-8.5" y2="-5" stroke="rgb(193, 87, 11)" stroke-width="2px"/>
 			<line x1="-17" y1="10" x2="-8.5" y2="5" stroke="rgb(193, 87, 11)" stroke-width="2px"/>
-		</g>
-		<g id="gem_yellow">
+		</symbol>
+		<symbol id="tile_yellow" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="0,20 20,0 0,-20 -20,0" stroke="rgb(193, 190, 11)" fill="rgb(231, 228, 13)" stroke-width="2px"/>
 			<polygon points="0,20 20,0 0,-20 -20,0" stroke="rgb(193, 190, 11)" fill="rgb(231, 228, 13)" stroke-width="4px" transform="scale(0.5,0.5)"/>
 			<line x1="0" y1="20" x2="0" y2="10" stroke="rgb(193, 190, 11)" stroke-width="2px"/>
 			<line x1="20" y1="0" x2="10" y2="0" stroke="rgb(193, 190, 11)" stroke-width="2px"/>
 			<line x1="0" y1="-20" x2="0" y2="-10" stroke="rgb(193, 190, 11)" stroke-width="2px"/>
 			<line x1="-20" y1="0" x2="-10" y2="0" stroke="rgb(193, 190, 11)" stroke-width="2px"/>
-		</g>
-		<g id="gem_green">
+		</symbol>
+		<symbol id="tile_green" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="10,20 20,10 20,-10 10,-20 -10,-20 -20,-10 -20,10 -10,20" stroke="rgb(71, 169, 10)" fill="rgb(97, 231, 13)" stroke-width="2px"/>
 			<line x1="0" y1="20" x2="0" y2="10" stroke="rgb(71, 169, 10)" stroke-width="2px"/>
 			<line x1="20" y1="0" x2="10" y2="0" stroke="rgb(71, 169, 10)" stroke-width="2px"/>
 			<line x1="0" y1="-20" x2="0" y2="-10" stroke="rgb(71, 169, 10)" stroke-width="2px"/>
 			<line x1="-20" y1="0" x2="-10" y2="0" stroke="rgb(71, 169, 10)" stroke-width="2px"/>
 			<polygon points="0,25 25,0 0,-25 -25,0" stroke="rgb(71, 169, 10)" fill="rgb(97, 231, 13)" stroke-width="4px" transform="scale(0.5,0.5)"/>
-		</g>
-		<g id="gem_blue">
+		</symbol>
+		<symbol id="tile_blue" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="20,-13 13,-20 -13,-20 -20,-13, 0,20" stroke="rgb(10, 132, 169)" fill="rgb(13, 173, 222)" stroke-width="2px"/>
 			<line x1="20" y1="-13" x2="-20" y2="-13" stroke="rgb(10, 132, 169)" stroke-width="2px"/>
 			<line x1="0" y1="-20" x2="0" y2="20" stroke="rgb(10, 132, 169)" stroke-width="2px"/>
-		</g>
-		<g id="gem_purple">
+		</symbol>
+		<symbol id="tile_purple" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="0,-20 -20,17 20,17" stroke="rgb(132, 9, 154)" fill="rgb(190, 13, 222)" stroke-width="2px"/>
 			<line x1="0" y1="-20" x2="0" y2="0" stroke="rgb(132, 9, 154)" stroke-width="2px"/>
 			<line x1="-20" y1="17" x2="0" y2="4" stroke="rgb(132, 9, 154)" stroke-width="2px"/>
 			<line x1="20" y1="17" x2="0" y2="4" stroke="rgb(132, 9, 154)" stroke-width="2px"/>
 			<polygon points="0,-20 -20,17 20,17" stroke="rgb(132, 9, 154)" fill="rgb(190, 13, 222)" stroke-width="5px" transform="scale(0.4,0.4) translate(0,6)"/>
-		</g>
-		<g id="gem_white">
+		</symbol>
+		<symbol id="tile_white" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<circle cx="0" cy="0" r="20" fill="rgb(228, 235, 236)" stroke="rgb(133, 149, 153)" stroke-width="2px"/>
-		</g>
-		<g id="gem_hyper">
+		</symbol>
+		<symbol id="tile_hyper" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<polygon points="0,20 17,10 17,-10 0,-20 -17,-10 -17,10" fill="url(#hyper_gradient)" transform="scale(1.1,1.1)"/>
 			<polygon points="0,20 17,10 17,-10 0,0" fill="rgb(50, 39, 73)"/>
 			<polygon points="17,-10 0,-20 -17,-10 0,0" fill="rgb(36, 29, 53)"/>
@@ -91,8 +91,8 @@
 			<line x1="0" y1="20" x2="0" y2="0" stroke="black" stroke-width="2px"/>
 			<line x1="17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
 			<line x1="-17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
-		</g>
-		<g id="gem_dark">
+		</symbol>
+		<symbol id="tile_dark" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 			<circle cx="0" cy="0" r="20" fill="black" stroke="none" stroke-width="2px"/>
 			<circle cx="0" cy="0" r="18" fill="none" stroke="rgb(0, 0, 255)" stroke-width="2px" stroke-opacity="0.5"/>
 			<line x1="0" y1="20" x2="0" y2="-20" stroke="rgb(0, 0, 255)" stroke-width="6px" stroke-opacity="0.5"/>
@@ -102,7 +102,26 @@
 			<line x1="0" y1="20" x2="0" y2="-20" stroke="rgb(255,255,255)" stroke-width="2px"/>
 			<line x1="20" y1="0" x2="-20" y2="0" stroke="rgb(255,255,255)" stroke-width="2px"/>
 			<circle cx="0" cy="0" r="20" fill="none" stroke="rgb(100, 100, 100)" stroke-width="2px"/>
-		</g>
+		</symbol>
+		<symbol id="tile_dirt_1" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
+			<rect fill="rgb(45, 27, 6)" stroke="none" x="-25" y="-25" width="50" height="50"/>
+			<rect fill="rgb(98, 76, 50)" stroke="none" x="-25" y="-25" width="25" height="25"/>
+			<rect fill="rgb(98, 76, 50)" stroke="none" x="0" y="0" width="25" height="25"/>
+		</symbol>
+		<symbol id="tile_dirt_2" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
+			<use xlink:href="#tile_dirt_1"/>
+			<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="-12.5" y="-12.5" width="25" height="25"/>
+		</symbol>
+		<symbol id="tile_dirt_3" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
+			<use xlink:href="#tile_dirt_1"/>
+			<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="-15" y="-15" width="30" height="30"/>
+			<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="-20" y="-20" width="15" height="12"/>
+			<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="0" y="0" width="10" height="20"/>
+		</symbol>
+		<symbol id="tile_dirt_4" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
+			<use xlink:href="#tile_dirt_1"/>
+			<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="-20" y="-20" width="40" height="40"/>
+		</symbol>
 		<g id="overlay_fire">
 			<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.5"/>
 		</g>
@@ -181,6 +200,46 @@
 			<use xlink:href="#animation_starbreak_0"/>
 			<use xlink:href="#animation_firebreak_0"/>
 		</g>
+		<g id="animation_firestarbreak_0">
+			<use xlink:href="#animation_starbreak_0"/>
+			<use xlink:href="#animation_firebreak_0"/>
+		</g>
+		<g id="animation_become_fire_3">
+			<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.25"/>
+		</g>
+		<g id="animation_become_fire_2">
+			<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.5"/>
+		</g>
+		<g id="animation_become_fire_1">
+			<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.75"/>
+		</g>
+		<g id="animation_become_fire_0">
+			<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="1"/>
+		</g>
+		<g id="animation_become_star_3">
+			<polygon points="0,23 0,-23 0,0 23,0 -23,0 0,0" stroke="url(#star_gradient)" stroke-width="8px" fill="none" stroke-opacity="0.25"/>
+		</g>
+		<g id="animation_become_star_2">
+			<polygon points="0,23 0,-23 0,0 23,0 -23,0 0,0" stroke="url(#star_gradient)" stroke-width="8px" fill="none" stroke-opacity="0.5"/>
+		</g>
+		<g id="animation_become_star_1">
+			<polygon points="0,23 0,-23 0,0 23,0 -23,0 0,0" stroke="url(#star_gradient)" stroke-width="8px" fill="none" stroke-opacity="0.75"/>
+		</g>
+		<g id="animation_become_star_0">
+			<polygon points="0,23 0,-23 0,0 23,0 -23,0 0,0" stroke="url(#star_gradient)" stroke-width="8px" fill="none" stroke-opacity="1"/>
+		</g>
+		<g id="animation_become_hyper_3">
+			<use xlink:href="#tile_hyper" fill-opacity="0.25" stroke-opacity="0.25"/>
+		</g>
+		<g id="animation_become_hyper_2">
+			<use xlink:href="#tile_hyper" fill-opacity="0.5" stroke-opacity="0.5"/>
+		</g>
+		<g id="animation_become_hyper_1">
+			<use xlink:href="#tile_hyper" fill-opacity="0.75" stroke-opacity="0.75"/>
+		</g>
+		<g id="animation_become_hyper_0">
+			<use xlink:href="#tile_hyper" fill-opacity="1" stroke-opacity="1"/>
+		</g>
 	</defs>
 	<g id="main" transform="translate(20,20)">
 		<rect fill="rgb(6, 30, 45)" stroke="none" x="-25" y="-25" width="950" height="650"/>
@@ -212,297 +271,297 @@
 			<line x1="0" y1="550" x2="600" y2="550" stroke="white" />
 			<line x1="0" y1="600" x2="600" y2="600" stroke="white" />
 		</g>
-		<g id="gemgrid" transform="translate(25,25)">
-			<use xlink:href="#gem_none" transform="translate(0,0)" id="gembase-0-0"/>
-			<use xlink:href="#gem_none" transform="translate(0,50)" id="gembase-0-1"/>
-			<use xlink:href="#gem_none" transform="translate(0,100)" id="gembase-0-2"/>
-			<use xlink:href="#gem_none" transform="translate(0,150)" id="gembase-0-3"/>
-			<use xlink:href="#gem_none" transform="translate(0,200)" id="gembase-0-4"/>
-			<use xlink:href="#gem_none" transform="translate(0,250)" id="gembase-0-5"/>
-			<use xlink:href="#gem_none" transform="translate(0,300)" id="gembase-0-6"/>
-			<use xlink:href="#gem_none" transform="translate(0,350)" id="gembase-0-7"/>
-			<use xlink:href="#gem_none" transform="translate(0,400)" id="gembase-0-8"/>
-			<use xlink:href="#gem_none" transform="translate(0,450)" id="gembase-0-9"/>
-			<use xlink:href="#gem_none" transform="translate(0,500)" id="gembase-0-10"/>
-			<use xlink:href="#gem_none" transform="translate(0,550)" id="gembase-0-11"/>
-			<use xlink:href="#gem_none" transform="translate(50,0)" id="gembase-1-0"/>
-			<use xlink:href="#gem_none" transform="translate(50,50)" id="gembase-1-1"/>
-			<use xlink:href="#gem_none" transform="translate(50,100)" id="gembase-1-2"/>
-			<use xlink:href="#gem_none" transform="translate(50,150)" id="gembase-1-3"/>
-			<use xlink:href="#gem_none" transform="translate(50,200)" id="gembase-1-4"/>
-			<use xlink:href="#gem_none" transform="translate(50,250)" id="gembase-1-5"/>
-			<use xlink:href="#gem_none" transform="translate(50,300)" id="gembase-1-6"/>
-			<use xlink:href="#gem_none" transform="translate(50,350)" id="gembase-1-7"/>
-			<use xlink:href="#gem_none" transform="translate(50,400)" id="gembase-1-8"/>
-			<use xlink:href="#gem_none" transform="translate(50,450)" id="gembase-1-9"/>
-			<use xlink:href="#gem_none" transform="translate(50,500)" id="gembase-1-10"/>
-			<use xlink:href="#gem_none" transform="translate(50,550)" id="gembase-1-11"/>
-			<use xlink:href="#gem_none" transform="translate(100,0)" id="gembase-2-0"/>
-			<use xlink:href="#gem_none" transform="translate(100,50)" id="gembase-2-1"/>
-			<use xlink:href="#gem_none" transform="translate(100,100)" id="gembase-2-2"/>
-			<use xlink:href="#gem_none" transform="translate(100,150)" id="gembase-2-3"/>
-			<use xlink:href="#gem_none" transform="translate(100,200)" id="gembase-2-4"/>
-			<use xlink:href="#gem_none" transform="translate(100,250)" id="gembase-2-5"/>
-			<use xlink:href="#gem_none" transform="translate(100,300)" id="gembase-2-6"/>
-			<use xlink:href="#gem_none" transform="translate(100,350)" id="gembase-2-7"/>
-			<use xlink:href="#gem_none" transform="translate(100,400)" id="gembase-2-8"/>
-			<use xlink:href="#gem_none" transform="translate(100,450)" id="gembase-2-9"/>
-			<use xlink:href="#gem_none" transform="translate(100,500)" id="gembase-2-10"/>
-			<use xlink:href="#gem_none" transform="translate(100,550)" id="gembase-2-11"/>
-			<use xlink:href="#gem_none" transform="translate(150,0)" id="gembase-3-0"/>
-			<use xlink:href="#gem_none" transform="translate(150,50)" id="gembase-3-1"/>
-			<use xlink:href="#gem_none" transform="translate(150,100)" id="gembase-3-2"/>
-			<use xlink:href="#gem_none" transform="translate(150,150)" id="gembase-3-3"/>
-			<use xlink:href="#gem_none" transform="translate(150,200)" id="gembase-3-4"/>
-			<use xlink:href="#gem_none" transform="translate(150,250)" id="gembase-3-5"/>
-			<use xlink:href="#gem_none" transform="translate(150,300)" id="gembase-3-6"/>
-			<use xlink:href="#gem_none" transform="translate(150,350)" id="gembase-3-7"/>
-			<use xlink:href="#gem_none" transform="translate(150,400)" id="gembase-3-8"/>
-			<use xlink:href="#gem_none" transform="translate(150,450)" id="gembase-3-9"/>
-			<use xlink:href="#gem_none" transform="translate(150,500)" id="gembase-3-10"/>
-			<use xlink:href="#gem_none" transform="translate(150,550)" id="gembase-3-11"/>
-			<use xlink:href="#gem_none" transform="translate(200,0)" id="gembase-4-0"/>
-			<use xlink:href="#gem_none" transform="translate(200,50)" id="gembase-4-1"/>
-			<use xlink:href="#gem_none" transform="translate(200,100)" id="gembase-4-2"/>
-			<use xlink:href="#gem_none" transform="translate(200,150)" id="gembase-4-3"/>
-			<use xlink:href="#gem_none" transform="translate(200,200)" id="gembase-4-4"/>
-			<use xlink:href="#gem_none" transform="translate(200,250)" id="gembase-4-5"/>
-			<use xlink:href="#gem_none" transform="translate(200,300)" id="gembase-4-6"/>
-			<use xlink:href="#gem_none" transform="translate(200,350)" id="gembase-4-7"/>
-			<use xlink:href="#gem_none" transform="translate(200,400)" id="gembase-4-8"/>
-			<use xlink:href="#gem_none" transform="translate(200,450)" id="gembase-4-9"/>
-			<use xlink:href="#gem_none" transform="translate(200,500)" id="gembase-4-10"/>
-			<use xlink:href="#gem_none" transform="translate(200,550)" id="gembase-4-11"/>
-			<use xlink:href="#gem_none" transform="translate(250,0)" id="gembase-5-0"/>
-			<use xlink:href="#gem_none" transform="translate(250,50)" id="gembase-5-1"/>
-			<use xlink:href="#gem_none" transform="translate(250,100)" id="gembase-5-2"/>
-			<use xlink:href="#gem_none" transform="translate(250,150)" id="gembase-5-3"/>
-			<use xlink:href="#gem_none" transform="translate(250,200)" id="gembase-5-4"/>
-			<use xlink:href="#gem_none" transform="translate(250,250)" id="gembase-5-5"/>
-			<use xlink:href="#gem_none" transform="translate(250,300)" id="gembase-5-6"/>
-			<use xlink:href="#gem_none" transform="translate(250,350)" id="gembase-5-7"/>
-			<use xlink:href="#gem_none" transform="translate(250,400)" id="gembase-5-8"/>
-			<use xlink:href="#gem_none" transform="translate(250,450)" id="gembase-5-9"/>
-			<use xlink:href="#gem_none" transform="translate(250,500)" id="gembase-5-10"/>
-			<use xlink:href="#gem_none" transform="translate(250,550)" id="gembase-5-11"/>
-			<use xlink:href="#gem_none" transform="translate(300,0)" id="gembase-6-0"/>
-			<use xlink:href="#gem_none" transform="translate(300,50)" id="gembase-6-1"/>
-			<use xlink:href="#gem_none" transform="translate(300,100)" id="gembase-6-2"/>
-			<use xlink:href="#gem_none" transform="translate(300,150)" id="gembase-6-3"/>
-			<use xlink:href="#gem_none" transform="translate(300,200)" id="gembase-6-4"/>
-			<use xlink:href="#gem_none" transform="translate(300,250)" id="gembase-6-5"/>
-			<use xlink:href="#gem_none" transform="translate(300,300)" id="gembase-6-6"/>
-			<use xlink:href="#gem_none" transform="translate(300,350)" id="gembase-6-7"/>
-			<use xlink:href="#gem_none" transform="translate(300,400)" id="gembase-6-8"/>
-			<use xlink:href="#gem_none" transform="translate(300,450)" id="gembase-6-9"/>
-			<use xlink:href="#gem_none" transform="translate(300,500)" id="gembase-6-10"/>
-			<use xlink:href="#gem_none" transform="translate(300,550)" id="gembase-6-11"/>
-			<use xlink:href="#gem_none" transform="translate(350,0)" id="gembase-7-0"/>
-			<use xlink:href="#gem_none" transform="translate(350,50)" id="gembase-7-1"/>
-			<use xlink:href="#gem_none" transform="translate(350,100)" id="gembase-7-2"/>
-			<use xlink:href="#gem_none" transform="translate(350,150)" id="gembase-7-3"/>
-			<use xlink:href="#gem_none" transform="translate(350,200)" id="gembase-7-4"/>
-			<use xlink:href="#gem_none" transform="translate(350,250)" id="gembase-7-5"/>
-			<use xlink:href="#gem_none" transform="translate(350,300)" id="gembase-7-6"/>
-			<use xlink:href="#gem_none" transform="translate(350,350)" id="gembase-7-7"/>
-			<use xlink:href="#gem_none" transform="translate(350,400)" id="gembase-7-8"/>
-			<use xlink:href="#gem_none" transform="translate(350,450)" id="gembase-7-9"/>
-			<use xlink:href="#gem_none" transform="translate(350,500)" id="gembase-7-10"/>
-			<use xlink:href="#gem_none" transform="translate(350,550)" id="gembase-7-11"/>
-			<use xlink:href="#gem_none" transform="translate(400,0)" id="gembase-8-0"/>
-			<use xlink:href="#gem_none" transform="translate(400,50)" id="gembase-8-1"/>
-			<use xlink:href="#gem_none" transform="translate(400,100)" id="gembase-8-2"/>
-			<use xlink:href="#gem_none" transform="translate(400,150)" id="gembase-8-3"/>
-			<use xlink:href="#gem_none" transform="translate(400,200)" id="gembase-8-4"/>
-			<use xlink:href="#gem_none" transform="translate(400,250)" id="gembase-8-5"/>
-			<use xlink:href="#gem_none" transform="translate(400,300)" id="gembase-8-6"/>
-			<use xlink:href="#gem_none" transform="translate(400,350)" id="gembase-8-7"/>
-			<use xlink:href="#gem_none" transform="translate(400,400)" id="gembase-8-8"/>
-			<use xlink:href="#gem_none" transform="translate(400,450)" id="gembase-8-9"/>
-			<use xlink:href="#gem_none" transform="translate(400,500)" id="gembase-8-10"/>
-			<use xlink:href="#gem_none" transform="translate(400,550)" id="gembase-8-11"/>
-			<use xlink:href="#gem_none" transform="translate(450,0)" id="gembase-9-0"/>
-			<use xlink:href="#gem_none" transform="translate(450,50)" id="gembase-9-1"/>
-			<use xlink:href="#gem_none" transform="translate(450,100)" id="gembase-9-2"/>
-			<use xlink:href="#gem_none" transform="translate(450,150)" id="gembase-9-3"/>
-			<use xlink:href="#gem_none" transform="translate(450,200)" id="gembase-9-4"/>
-			<use xlink:href="#gem_none" transform="translate(450,250)" id="gembase-9-5"/>
-			<use xlink:href="#gem_none" transform="translate(450,300)" id="gembase-9-6"/>
-			<use xlink:href="#gem_none" transform="translate(450,350)" id="gembase-9-7"/>
-			<use xlink:href="#gem_none" transform="translate(450,400)" id="gembase-9-8"/>
-			<use xlink:href="#gem_none" transform="translate(450,450)" id="gembase-9-9"/>
-			<use xlink:href="#gem_none" transform="translate(450,500)" id="gembase-9-10"/>
-			<use xlink:href="#gem_none" transform="translate(450,550)" id="gembase-9-11"/>
-			<use xlink:href="#gem_none" transform="translate(500,0)" id="gembase-10-0"/>
-			<use xlink:href="#gem_none" transform="translate(500,50)" id="gembase-10-1"/>
-			<use xlink:href="#gem_none" transform="translate(500,100)" id="gembase-10-2"/>
-			<use xlink:href="#gem_none" transform="translate(500,150)" id="gembase-10-3"/>
-			<use xlink:href="#gem_none" transform="translate(500,200)" id="gembase-10-4"/>
-			<use xlink:href="#gem_none" transform="translate(500,250)" id="gembase-10-5"/>
-			<use xlink:href="#gem_none" transform="translate(500,300)" id="gembase-10-6"/>
-			<use xlink:href="#gem_none" transform="translate(500,350)" id="gembase-10-7"/>
-			<use xlink:href="#gem_none" transform="translate(500,400)" id="gembase-10-8"/>
-			<use xlink:href="#gem_none" transform="translate(500,450)" id="gembase-10-9"/>
-			<use xlink:href="#gem_none" transform="translate(500,500)" id="gembase-10-10"/>
-			<use xlink:href="#gem_none" transform="translate(500,550)" id="gembase-10-11"/>
-			<use xlink:href="#gem_none" transform="translate(550,0)" id="gembase-11-0"/>
-			<use xlink:href="#gem_none" transform="translate(550,50)" id="gembase-11-1"/>
-			<use xlink:href="#gem_none" transform="translate(550,100)" id="gembase-11-2"/>
-			<use xlink:href="#gem_none" transform="translate(550,150)" id="gembase-11-3"/>
-			<use xlink:href="#gem_none" transform="translate(550,200)" id="gembase-11-4"/>
-			<use xlink:href="#gem_none" transform="translate(550,250)" id="gembase-11-5"/>
-			<use xlink:href="#gem_none" transform="translate(550,300)" id="gembase-11-6"/>
-			<use xlink:href="#gem_none" transform="translate(550,350)" id="gembase-11-7"/>
-			<use xlink:href="#gem_none" transform="translate(550,400)" id="gembase-11-8"/>
-			<use xlink:href="#gem_none" transform="translate(550,450)" id="gembase-11-9"/>
-			<use xlink:href="#gem_none" transform="translate(550,500)" id="gembase-11-10"/>
-			<use xlink:href="#gem_none" transform="translate(550,550)" id="gembase-11-11"/>
+		<g id="tilegrid" transform="translate(25,25)">
+			<use xlink:href="#tile_none" x="0" y="0" id="tilebase-0-0"/>
+			<use xlink:href="#tile_none" x="0" y="50" id="tilebase-0-1"/>
+			<use xlink:href="#tile_none" x="0" y="100" id="tilebase-0-2"/>
+			<use xlink:href="#tile_none" x="0" y="150" id="tilebase-0-3"/>
+			<use xlink:href="#tile_none" x="0" y="200" id="tilebase-0-4"/>
+			<use xlink:href="#tile_none" x="0" y="250" id="tilebase-0-5"/>
+			<use xlink:href="#tile_none" x="0" y="300" id="tilebase-0-6"/>
+			<use xlink:href="#tile_none" x="0" y="350" id="tilebase-0-7"/>
+			<use xlink:href="#tile_none" x="0" y="400" id="tilebase-0-8"/>
+			<use xlink:href="#tile_none" x="0" y="450" id="tilebase-0-9"/>
+			<use xlink:href="#tile_none" x="0" y="500" id="tilebase-0-10"/>
+			<use xlink:href="#tile_none" x="0" y="550" id="tilebase-0-11"/>
+			<use xlink:href="#tile_none" x="50" y="0" id="tilebase-1-0"/>
+			<use xlink:href="#tile_none" x="50" y="50" id="tilebase-1-1"/>
+			<use xlink:href="#tile_none" x="50" y="100" id="tilebase-1-2"/>
+			<use xlink:href="#tile_none" x="50" y="150" id="tilebase-1-3"/>
+			<use xlink:href="#tile_none" x="50" y="200" id="tilebase-1-4"/>
+			<use xlink:href="#tile_none" x="50" y="250" id="tilebase-1-5"/>
+			<use xlink:href="#tile_none" x="50" y="300" id="tilebase-1-6"/>
+			<use xlink:href="#tile_none" x="50" y="350" id="tilebase-1-7"/>
+			<use xlink:href="#tile_none" x="50" y="400" id="tilebase-1-8"/>
+			<use xlink:href="#tile_none" x="50" y="450" id="tilebase-1-9"/>
+			<use xlink:href="#tile_none" x="50" y="500" id="tilebase-1-10"/>
+			<use xlink:href="#tile_none" x="50" y="550" id="tilebase-1-11"/>
+			<use xlink:href="#tile_none" x="100" y="0" id="tilebase-2-0"/>
+			<use xlink:href="#tile_none" x="100" y="50" id="tilebase-2-1"/>
+			<use xlink:href="#tile_none" x="100" y="100" id="tilebase-2-2"/>
+			<use xlink:href="#tile_none" x="100" y="150" id="tilebase-2-3"/>
+			<use xlink:href="#tile_none" x="100" y="200" id="tilebase-2-4"/>
+			<use xlink:href="#tile_none" x="100" y="250" id="tilebase-2-5"/>
+			<use xlink:href="#tile_none" x="100" y="300" id="tilebase-2-6"/>
+			<use xlink:href="#tile_none" x="100" y="350" id="tilebase-2-7"/>
+			<use xlink:href="#tile_none" x="100" y="400" id="tilebase-2-8"/>
+			<use xlink:href="#tile_none" x="100" y="450" id="tilebase-2-9"/>
+			<use xlink:href="#tile_none" x="100" y="500" id="tilebase-2-10"/>
+			<use xlink:href="#tile_none" x="100" y="550" id="tilebase-2-11"/>
+			<use xlink:href="#tile_none" x="150" y="0" id="tilebase-3-0"/>
+			<use xlink:href="#tile_none" x="150" y="50" id="tilebase-3-1"/>
+			<use xlink:href="#tile_none" x="150" y="100" id="tilebase-3-2"/>
+			<use xlink:href="#tile_none" x="150" y="150" id="tilebase-3-3"/>
+			<use xlink:href="#tile_none" x="150" y="200" id="tilebase-3-4"/>
+			<use xlink:href="#tile_none" x="150" y="250" id="tilebase-3-5"/>
+			<use xlink:href="#tile_none" x="150" y="300" id="tilebase-3-6"/>
+			<use xlink:href="#tile_none" x="150" y="350" id="tilebase-3-7"/>
+			<use xlink:href="#tile_none" x="150" y="400" id="tilebase-3-8"/>
+			<use xlink:href="#tile_none" x="150" y="450" id="tilebase-3-9"/>
+			<use xlink:href="#tile_none" x="150" y="500" id="tilebase-3-10"/>
+			<use xlink:href="#tile_none" x="150" y="550" id="tilebase-3-11"/>
+			<use xlink:href="#tile_none" x="200" y="0" id="tilebase-4-0"/>
+			<use xlink:href="#tile_none" x="200" y="50" id="tilebase-4-1"/>
+			<use xlink:href="#tile_none" x="200" y="100" id="tilebase-4-2"/>
+			<use xlink:href="#tile_none" x="200" y="150" id="tilebase-4-3"/>
+			<use xlink:href="#tile_none" x="200" y="200" id="tilebase-4-4"/>
+			<use xlink:href="#tile_none" x="200" y="250" id="tilebase-4-5"/>
+			<use xlink:href="#tile_none" x="200" y="300" id="tilebase-4-6"/>
+			<use xlink:href="#tile_none" x="200" y="350" id="tilebase-4-7"/>
+			<use xlink:href="#tile_none" x="200" y="400" id="tilebase-4-8"/>
+			<use xlink:href="#tile_none" x="200" y="450" id="tilebase-4-9"/>
+			<use xlink:href="#tile_none" x="200" y="500" id="tilebase-4-10"/>
+			<use xlink:href="#tile_none" x="200" y="550" id="tilebase-4-11"/>
+			<use xlink:href="#tile_none" x="250" y="0" id="tilebase-5-0"/>
+			<use xlink:href="#tile_none" x="250" y="50" id="tilebase-5-1"/>
+			<use xlink:href="#tile_none" x="250" y="100" id="tilebase-5-2"/>
+			<use xlink:href="#tile_none" x="250" y="150" id="tilebase-5-3"/>
+			<use xlink:href="#tile_none" x="250" y="200" id="tilebase-5-4"/>
+			<use xlink:href="#tile_none" x="250" y="250" id="tilebase-5-5"/>
+			<use xlink:href="#tile_none" x="250" y="300" id="tilebase-5-6"/>
+			<use xlink:href="#tile_none" x="250" y="350" id="tilebase-5-7"/>
+			<use xlink:href="#tile_none" x="250" y="400" id="tilebase-5-8"/>
+			<use xlink:href="#tile_none" x="250" y="450" id="tilebase-5-9"/>
+			<use xlink:href="#tile_none" x="250" y="500" id="tilebase-5-10"/>
+			<use xlink:href="#tile_none" x="250" y="550" id="tilebase-5-11"/>
+			<use xlink:href="#tile_none" x="300" y="0" id="tilebase-6-0"/>
+			<use xlink:href="#tile_none" x="300" y="50" id="tilebase-6-1"/>
+			<use xlink:href="#tile_none" x="300" y="100" id="tilebase-6-2"/>
+			<use xlink:href="#tile_none" x="300" y="150" id="tilebase-6-3"/>
+			<use xlink:href="#tile_none" x="300" y="200" id="tilebase-6-4"/>
+			<use xlink:href="#tile_none" x="300" y="250" id="tilebase-6-5"/>
+			<use xlink:href="#tile_none" x="300" y="300" id="tilebase-6-6"/>
+			<use xlink:href="#tile_none" x="300" y="350" id="tilebase-6-7"/>
+			<use xlink:href="#tile_none" x="300" y="400" id="tilebase-6-8"/>
+			<use xlink:href="#tile_none" x="300" y="450" id="tilebase-6-9"/>
+			<use xlink:href="#tile_none" x="300" y="500" id="tilebase-6-10"/>
+			<use xlink:href="#tile_none" x="300" y="550" id="tilebase-6-11"/>
+			<use xlink:href="#tile_none" x="350" y="0" id="tilebase-7-0"/>
+			<use xlink:href="#tile_none" x="350" y="50" id="tilebase-7-1"/>
+			<use xlink:href="#tile_none" x="350" y="100" id="tilebase-7-2"/>
+			<use xlink:href="#tile_none" x="350" y="150" id="tilebase-7-3"/>
+			<use xlink:href="#tile_none" x="350" y="200" id="tilebase-7-4"/>
+			<use xlink:href="#tile_none" x="350" y="250" id="tilebase-7-5"/>
+			<use xlink:href="#tile_none" x="350" y="300" id="tilebase-7-6"/>
+			<use xlink:href="#tile_none" x="350" y="350" id="tilebase-7-7"/>
+			<use xlink:href="#tile_none" x="350" y="400" id="tilebase-7-8"/>
+			<use xlink:href="#tile_none" x="350" y="450" id="tilebase-7-9"/>
+			<use xlink:href="#tile_none" x="350" y="500" id="tilebase-7-10"/>
+			<use xlink:href="#tile_none" x="350" y="550" id="tilebase-7-11"/>
+			<use xlink:href="#tile_none" x="400" y="0" id="tilebase-8-0"/>
+			<use xlink:href="#tile_none" x="400" y="50" id="tilebase-8-1"/>
+			<use xlink:href="#tile_none" x="400" y="100" id="tilebase-8-2"/>
+			<use xlink:href="#tile_none" x="400" y="150" id="tilebase-8-3"/>
+			<use xlink:href="#tile_none" x="400" y="200" id="tilebase-8-4"/>
+			<use xlink:href="#tile_none" x="400" y="250" id="tilebase-8-5"/>
+			<use xlink:href="#tile_none" x="400" y="300" id="tilebase-8-6"/>
+			<use xlink:href="#tile_none" x="400" y="350" id="tilebase-8-7"/>
+			<use xlink:href="#tile_none" x="400" y="400" id="tilebase-8-8"/>
+			<use xlink:href="#tile_none" x="400" y="450" id="tilebase-8-9"/>
+			<use xlink:href="#tile_none" x="400" y="500" id="tilebase-8-10"/>
+			<use xlink:href="#tile_none" x="400" y="550" id="tilebase-8-11"/>
+			<use xlink:href="#tile_none" x="450" y="0" id="tilebase-9-0"/>
+			<use xlink:href="#tile_none" x="450" y="50" id="tilebase-9-1"/>
+			<use xlink:href="#tile_none" x="450" y="100" id="tilebase-9-2"/>
+			<use xlink:href="#tile_none" x="450" y="150" id="tilebase-9-3"/>
+			<use xlink:href="#tile_none" x="450" y="200" id="tilebase-9-4"/>
+			<use xlink:href="#tile_none" x="450" y="250" id="tilebase-9-5"/>
+			<use xlink:href="#tile_none" x="450" y="300" id="tilebase-9-6"/>
+			<use xlink:href="#tile_none" x="450" y="350" id="tilebase-9-7"/>
+			<use xlink:href="#tile_none" x="450" y="400" id="tilebase-9-8"/>
+			<use xlink:href="#tile_none" x="450" y="450" id="tilebase-9-9"/>
+			<use xlink:href="#tile_none" x="450" y="500" id="tilebase-9-10"/>
+			<use xlink:href="#tile_none" x="450" y="550" id="tilebase-9-11"/>
+			<use xlink:href="#tile_none" x="500" y="0" id="tilebase-10-0"/>
+			<use xlink:href="#tile_none" x="500" y="50" id="tilebase-10-1"/>
+			<use xlink:href="#tile_none" x="500" y="100" id="tilebase-10-2"/>
+			<use xlink:href="#tile_none" x="500" y="150" id="tilebase-10-3"/>
+			<use xlink:href="#tile_none" x="500" y="200" id="tilebase-10-4"/>
+			<use xlink:href="#tile_none" x="500" y="250" id="tilebase-10-5"/>
+			<use xlink:href="#tile_none" x="500" y="300" id="tilebase-10-6"/>
+			<use xlink:href="#tile_none" x="500" y="350" id="tilebase-10-7"/>
+			<use xlink:href="#tile_none" x="500" y="400" id="tilebase-10-8"/>
+			<use xlink:href="#tile_none" x="500" y="450" id="tilebase-10-9"/>
+			<use xlink:href="#tile_none" x="500" y="500" id="tilebase-10-10"/>
+			<use xlink:href="#tile_none" x="500" y="550" id="tilebase-10-11"/>
+			<use xlink:href="#tile_none" x="550" y="0" id="tilebase-11-0"/>
+			<use xlink:href="#tile_none" x="550" y="50" id="tilebase-11-1"/>
+			<use xlink:href="#tile_none" x="550" y="100" id="tilebase-11-2"/>
+			<use xlink:href="#tile_none" x="550" y="150" id="tilebase-11-3"/>
+			<use xlink:href="#tile_none" x="550" y="200" id="tilebase-11-4"/>
+			<use xlink:href="#tile_none" x="550" y="250" id="tilebase-11-5"/>
+			<use xlink:href="#tile_none" x="550" y="300" id="tilebase-11-6"/>
+			<use xlink:href="#tile_none" x="550" y="350" id="tilebase-11-7"/>
+			<use xlink:href="#tile_none" x="550" y="400" id="tilebase-11-8"/>
+			<use xlink:href="#tile_none" x="550" y="450" id="tilebase-11-9"/>
+			<use xlink:href="#tile_none" x="550" y="500" id="tilebase-11-10"/>
+			<use xlink:href="#tile_none" x="550" y="550" id="tilebase-11-11"/>
 		</g>
-		<g id="gemoverlay" transform="translate(25,25)">
-			<use xlink:href="#overlay_none" transform="translate(0,0)" id="gemoverlay-0-0"/>
-			<use xlink:href="#overlay_none" transform="translate(0,50)" id="gemoverlay-0-1"/>
-			<use xlink:href="#overlay_none" transform="translate(0,100)" id="gemoverlay-0-2"/>
-			<use xlink:href="#overlay_none" transform="translate(0,150)" id="gemoverlay-0-3"/>
-			<use xlink:href="#overlay_none" transform="translate(0,200)" id="gemoverlay-0-4"/>
-			<use xlink:href="#overlay_none" transform="translate(0,250)" id="gemoverlay-0-5"/>
-			<use xlink:href="#overlay_none" transform="translate(0,300)" id="gemoverlay-0-6"/>
-			<use xlink:href="#overlay_none" transform="translate(0,350)" id="gemoverlay-0-7"/>
-			<use xlink:href="#overlay_none" transform="translate(0,400)" id="gemoverlay-0-8"/>
-			<use xlink:href="#overlay_none" transform="translate(0,450)" id="gemoverlay-0-9"/>
-			<use xlink:href="#overlay_none" transform="translate(0,500)" id="gemoverlay-0-10"/>
-			<use xlink:href="#overlay_none" transform="translate(0,550)" id="gemoverlay-0-11"/>
-			<use xlink:href="#overlay_none" transform="translate(50,0)" id="gemoverlay-1-0"/>
-			<use xlink:href="#overlay_none" transform="translate(50,50)" id="gemoverlay-1-1"/>
-			<use xlink:href="#overlay_none" transform="translate(50,100)" id="gemoverlay-1-2"/>
-			<use xlink:href="#overlay_none" transform="translate(50,150)" id="gemoverlay-1-3"/>
-			<use xlink:href="#overlay_none" transform="translate(50,200)" id="gemoverlay-1-4"/>
-			<use xlink:href="#overlay_none" transform="translate(50,250)" id="gemoverlay-1-5"/>
-			<use xlink:href="#overlay_none" transform="translate(50,300)" id="gemoverlay-1-6"/>
-			<use xlink:href="#overlay_none" transform="translate(50,350)" id="gemoverlay-1-7"/>
-			<use xlink:href="#overlay_none" transform="translate(50,400)" id="gemoverlay-1-8"/>
-			<use xlink:href="#overlay_none" transform="translate(50,450)" id="gemoverlay-1-9"/>
-			<use xlink:href="#overlay_none" transform="translate(50,500)" id="gemoverlay-1-10"/>
-			<use xlink:href="#overlay_none" transform="translate(50,550)" id="gemoverlay-1-11"/>
-			<use xlink:href="#overlay_none" transform="translate(100,0)" id="gemoverlay-2-0"/>
-			<use xlink:href="#overlay_none" transform="translate(100,50)" id="gemoverlay-2-1"/>
-			<use xlink:href="#overlay_none" transform="translate(100,100)" id="gemoverlay-2-2"/>
-			<use xlink:href="#overlay_none" transform="translate(100,150)" id="gemoverlay-2-3"/>
-			<use xlink:href="#overlay_none" transform="translate(100,200)" id="gemoverlay-2-4"/>
-			<use xlink:href="#overlay_none" transform="translate(100,250)" id="gemoverlay-2-5"/>
-			<use xlink:href="#overlay_none" transform="translate(100,300)" id="gemoverlay-2-6"/>
-			<use xlink:href="#overlay_none" transform="translate(100,350)" id="gemoverlay-2-7"/>
-			<use xlink:href="#overlay_none" transform="translate(100,400)" id="gemoverlay-2-8"/>
-			<use xlink:href="#overlay_none" transform="translate(100,450)" id="gemoverlay-2-9"/>
-			<use xlink:href="#overlay_none" transform="translate(100,500)" id="gemoverlay-2-10"/>
-			<use xlink:href="#overlay_none" transform="translate(100,550)" id="gemoverlay-2-11"/>
-			<use xlink:href="#overlay_none" transform="translate(150,0)" id="gemoverlay-3-0"/>
-			<use xlink:href="#overlay_none" transform="translate(150,50)" id="gemoverlay-3-1"/>
-			<use xlink:href="#overlay_none" transform="translate(150,100)" id="gemoverlay-3-2"/>
-			<use xlink:href="#overlay_none" transform="translate(150,150)" id="gemoverlay-3-3"/>
-			<use xlink:href="#overlay_none" transform="translate(150,200)" id="gemoverlay-3-4"/>
-			<use xlink:href="#overlay_none" transform="translate(150,250)" id="gemoverlay-3-5"/>
-			<use xlink:href="#overlay_none" transform="translate(150,300)" id="gemoverlay-3-6"/>
-			<use xlink:href="#overlay_none" transform="translate(150,350)" id="gemoverlay-3-7"/>
-			<use xlink:href="#overlay_none" transform="translate(150,400)" id="gemoverlay-3-8"/>
-			<use xlink:href="#overlay_none" transform="translate(150,450)" id="gemoverlay-3-9"/>
-			<use xlink:href="#overlay_none" transform="translate(150,500)" id="gemoverlay-3-10"/>
-			<use xlink:href="#overlay_none" transform="translate(150,550)" id="gemoverlay-3-11"/>
-			<use xlink:href="#overlay_none" transform="translate(200,0)" id="gemoverlay-4-0"/>
-			<use xlink:href="#overlay_none" transform="translate(200,50)" id="gemoverlay-4-1"/>
-			<use xlink:href="#overlay_none" transform="translate(200,100)" id="gemoverlay-4-2"/>
-			<use xlink:href="#overlay_none" transform="translate(200,150)" id="gemoverlay-4-3"/>
-			<use xlink:href="#overlay_none" transform="translate(200,200)" id="gemoverlay-4-4"/>
-			<use xlink:href="#overlay_none" transform="translate(200,250)" id="gemoverlay-4-5"/>
-			<use xlink:href="#overlay_none" transform="translate(200,300)" id="gemoverlay-4-6"/>
-			<use xlink:href="#overlay_none" transform="translate(200,350)" id="gemoverlay-4-7"/>
-			<use xlink:href="#overlay_none" transform="translate(200,400)" id="gemoverlay-4-8"/>
-			<use xlink:href="#overlay_none" transform="translate(200,450)" id="gemoverlay-4-9"/>
-			<use xlink:href="#overlay_none" transform="translate(200,500)" id="gemoverlay-4-10"/>
-			<use xlink:href="#overlay_none" transform="translate(200,550)" id="gemoverlay-4-11"/>
-			<use xlink:href="#overlay_none" transform="translate(250,0)" id="gemoverlay-5-0"/>
-			<use xlink:href="#overlay_none" transform="translate(250,50)" id="gemoverlay-5-1"/>
-			<use xlink:href="#overlay_none" transform="translate(250,100)" id="gemoverlay-5-2"/>
-			<use xlink:href="#overlay_none" transform="translate(250,150)" id="gemoverlay-5-3"/>
-			<use xlink:href="#overlay_none" transform="translate(250,200)" id="gemoverlay-5-4"/>
-			<use xlink:href="#overlay_none" transform="translate(250,250)" id="gemoverlay-5-5"/>
-			<use xlink:href="#overlay_none" transform="translate(250,300)" id="gemoverlay-5-6"/>
-			<use xlink:href="#overlay_none" transform="translate(250,350)" id="gemoverlay-5-7"/>
-			<use xlink:href="#overlay_none" transform="translate(250,400)" id="gemoverlay-5-8"/>
-			<use xlink:href="#overlay_none" transform="translate(250,450)" id="gemoverlay-5-9"/>
-			<use xlink:href="#overlay_none" transform="translate(250,500)" id="gemoverlay-5-10"/>
-			<use xlink:href="#overlay_none" transform="translate(250,550)" id="gemoverlay-5-11"/>
-			<use xlink:href="#overlay_none" transform="translate(300,0)" id="gemoverlay-6-0"/>
-			<use xlink:href="#overlay_none" transform="translate(300,50)" id="gemoverlay-6-1"/>
-			<use xlink:href="#overlay_none" transform="translate(300,100)" id="gemoverlay-6-2"/>
-			<use xlink:href="#overlay_none" transform="translate(300,150)" id="gemoverlay-6-3"/>
-			<use xlink:href="#overlay_none" transform="translate(300,200)" id="gemoverlay-6-4"/>
-			<use xlink:href="#overlay_none" transform="translate(300,250)" id="gemoverlay-6-5"/>
-			<use xlink:href="#overlay_none" transform="translate(300,300)" id="gemoverlay-6-6"/>
-			<use xlink:href="#overlay_none" transform="translate(300,350)" id="gemoverlay-6-7"/>
-			<use xlink:href="#overlay_none" transform="translate(300,400)" id="gemoverlay-6-8"/>
-			<use xlink:href="#overlay_none" transform="translate(300,450)" id="gemoverlay-6-9"/>
-			<use xlink:href="#overlay_none" transform="translate(300,500)" id="gemoverlay-6-10"/>
-			<use xlink:href="#overlay_none" transform="translate(300,550)" id="gemoverlay-6-11"/>
-			<use xlink:href="#overlay_none" transform="translate(350,0)" id="gemoverlay-7-0"/>
-			<use xlink:href="#overlay_none" transform="translate(350,50)" id="gemoverlay-7-1"/>
-			<use xlink:href="#overlay_none" transform="translate(350,100)" id="gemoverlay-7-2"/>
-			<use xlink:href="#overlay_none" transform="translate(350,150)" id="gemoverlay-7-3"/>
-			<use xlink:href="#overlay_none" transform="translate(350,200)" id="gemoverlay-7-4"/>
-			<use xlink:href="#overlay_none" transform="translate(350,250)" id="gemoverlay-7-5"/>
-			<use xlink:href="#overlay_none" transform="translate(350,300)" id="gemoverlay-7-6"/>
-			<use xlink:href="#overlay_none" transform="translate(350,350)" id="gemoverlay-7-7"/>
-			<use xlink:href="#overlay_none" transform="translate(350,400)" id="gemoverlay-7-8"/>
-			<use xlink:href="#overlay_none" transform="translate(350,450)" id="gemoverlay-7-9"/>
-			<use xlink:href="#overlay_none" transform="translate(350,500)" id="gemoverlay-7-10"/>
-			<use xlink:href="#overlay_none" transform="translate(350,550)" id="gemoverlay-7-11"/>
-			<use xlink:href="#overlay_none" transform="translate(400,0)" id="gemoverlay-8-0"/>
-			<use xlink:href="#overlay_none" transform="translate(400,50)" id="gemoverlay-8-1"/>
-			<use xlink:href="#overlay_none" transform="translate(400,100)" id="gemoverlay-8-2"/>
-			<use xlink:href="#overlay_none" transform="translate(400,150)" id="gemoverlay-8-3"/>
-			<use xlink:href="#overlay_none" transform="translate(400,200)" id="gemoverlay-8-4"/>
-			<use xlink:href="#overlay_none" transform="translate(400,250)" id="gemoverlay-8-5"/>
-			<use xlink:href="#overlay_none" transform="translate(400,300)" id="gemoverlay-8-6"/>
-			<use xlink:href="#overlay_none" transform="translate(400,350)" id="gemoverlay-8-7"/>
-			<use xlink:href="#overlay_none" transform="translate(400,400)" id="gemoverlay-8-8"/>
-			<use xlink:href="#overlay_none" transform="translate(400,450)" id="gemoverlay-8-9"/>
-			<use xlink:href="#overlay_none" transform="translate(400,500)" id="gemoverlay-8-10"/>
-			<use xlink:href="#overlay_none" transform="translate(400,550)" id="gemoverlay-8-11"/>
-			<use xlink:href="#overlay_none" transform="translate(450,0)" id="gemoverlay-9-0"/>
-			<use xlink:href="#overlay_none" transform="translate(450,50)" id="gemoverlay-9-1"/>
-			<use xlink:href="#overlay_none" transform="translate(450,100)" id="gemoverlay-9-2"/>
-			<use xlink:href="#overlay_none" transform="translate(450,150)" id="gemoverlay-9-3"/>
-			<use xlink:href="#overlay_none" transform="translate(450,200)" id="gemoverlay-9-4"/>
-			<use xlink:href="#overlay_none" transform="translate(450,250)" id="gemoverlay-9-5"/>
-			<use xlink:href="#overlay_none" transform="translate(450,300)" id="gemoverlay-9-6"/>
-			<use xlink:href="#overlay_none" transform="translate(450,350)" id="gemoverlay-9-7"/>
-			<use xlink:href="#overlay_none" transform="translate(450,400)" id="gemoverlay-9-8"/>
-			<use xlink:href="#overlay_none" transform="translate(450,450)" id="gemoverlay-9-9"/>
-			<use xlink:href="#overlay_none" transform="translate(450,500)" id="gemoverlay-9-10"/>
-			<use xlink:href="#overlay_none" transform="translate(450,550)" id="gemoverlay-9-11"/>
-			<use xlink:href="#overlay_none" transform="translate(500,0)" id="gemoverlay-10-0"/>
-			<use xlink:href="#overlay_none" transform="translate(500,50)" id="gemoverlay-10-1"/>
-			<use xlink:href="#overlay_none" transform="translate(500,100)" id="gemoverlay-10-2"/>
-			<use xlink:href="#overlay_none" transform="translate(500,150)" id="gemoverlay-10-3"/>
-			<use xlink:href="#overlay_none" transform="translate(500,200)" id="gemoverlay-10-4"/>
-			<use xlink:href="#overlay_none" transform="translate(500,250)" id="gemoverlay-10-5"/>
-			<use xlink:href="#overlay_none" transform="translate(500,300)" id="gemoverlay-10-6"/>
-			<use xlink:href="#overlay_none" transform="translate(500,350)" id="gemoverlay-10-7"/>
-			<use xlink:href="#overlay_none" transform="translate(500,400)" id="gemoverlay-10-8"/>
-			<use xlink:href="#overlay_none" transform="translate(500,450)" id="gemoverlay-10-9"/>
-			<use xlink:href="#overlay_none" transform="translate(500,500)" id="gemoverlay-10-10"/>
-			<use xlink:href="#overlay_none" transform="translate(500,550)" id="gemoverlay-10-11"/>
-			<use xlink:href="#overlay_none" transform="translate(550,0)" id="gemoverlay-11-0"/>
-			<use xlink:href="#overlay_none" transform="translate(550,50)" id="gemoverlay-11-1"/>
-			<use xlink:href="#overlay_none" transform="translate(550,100)" id="gemoverlay-11-2"/>
-			<use xlink:href="#overlay_none" transform="translate(550,150)" id="gemoverlay-11-3"/>
-			<use xlink:href="#overlay_none" transform="translate(550,200)" id="gemoverlay-11-4"/>
-			<use xlink:href="#overlay_none" transform="translate(550,250)" id="gemoverlay-11-5"/>
-			<use xlink:href="#overlay_none" transform="translate(550,300)" id="gemoverlay-11-6"/>
-			<use xlink:href="#overlay_none" transform="translate(550,350)" id="gemoverlay-11-7"/>
-			<use xlink:href="#overlay_none" transform="translate(550,400)" id="gemoverlay-11-8"/>
-			<use xlink:href="#overlay_none" transform="translate(550,450)" id="gemoverlay-11-9"/>
-			<use xlink:href="#overlay_none" transform="translate(550,500)" id="gemoverlay-11-10"/>
-			<use xlink:href="#overlay_none" transform="translate(550,550)" id="gemoverlay-11-11"/>
+		<g id="tileoverlay" transform="translate(25,25)">
+			<use xlink:href="#overlay_none" transform="translate(0,0)" id="tileoverlay-0-0"/>
+			<use xlink:href="#overlay_none" transform="translate(0,50)" id="tileoverlay-0-1"/>
+			<use xlink:href="#overlay_none" transform="translate(0,100)" id="tileoverlay-0-2"/>
+			<use xlink:href="#overlay_none" transform="translate(0,150)" id="tileoverlay-0-3"/>
+			<use xlink:href="#overlay_none" transform="translate(0,200)" id="tileoverlay-0-4"/>
+			<use xlink:href="#overlay_none" transform="translate(0,250)" id="tileoverlay-0-5"/>
+			<use xlink:href="#overlay_none" transform="translate(0,300)" id="tileoverlay-0-6"/>
+			<use xlink:href="#overlay_none" transform="translate(0,350)" id="tileoverlay-0-7"/>
+			<use xlink:href="#overlay_none" transform="translate(0,400)" id="tileoverlay-0-8"/>
+			<use xlink:href="#overlay_none" transform="translate(0,450)" id="tileoverlay-0-9"/>
+			<use xlink:href="#overlay_none" transform="translate(0,500)" id="tileoverlay-0-10"/>
+			<use xlink:href="#overlay_none" transform="translate(0,550)" id="tileoverlay-0-11"/>
+			<use xlink:href="#overlay_none" transform="translate(50,0)" id="tileoverlay-1-0"/>
+			<use xlink:href="#overlay_none" transform="translate(50,50)" id="tileoverlay-1-1"/>
+			<use xlink:href="#overlay_none" transform="translate(50,100)" id="tileoverlay-1-2"/>
+			<use xlink:href="#overlay_none" transform="translate(50,150)" id="tileoverlay-1-3"/>
+			<use xlink:href="#overlay_none" transform="translate(50,200)" id="tileoverlay-1-4"/>
+			<use xlink:href="#overlay_none" transform="translate(50,250)" id="tileoverlay-1-5"/>
+			<use xlink:href="#overlay_none" transform="translate(50,300)" id="tileoverlay-1-6"/>
+			<use xlink:href="#overlay_none" transform="translate(50,350)" id="tileoverlay-1-7"/>
+			<use xlink:href="#overlay_none" transform="translate(50,400)" id="tileoverlay-1-8"/>
+			<use xlink:href="#overlay_none" transform="translate(50,450)" id="tileoverlay-1-9"/>
+			<use xlink:href="#overlay_none" transform="translate(50,500)" id="tileoverlay-1-10"/>
+			<use xlink:href="#overlay_none" transform="translate(50,550)" id="tileoverlay-1-11"/>
+			<use xlink:href="#overlay_none" transform="translate(100,0)" id="tileoverlay-2-0"/>
+			<use xlink:href="#overlay_none" transform="translate(100,50)" id="tileoverlay-2-1"/>
+			<use xlink:href="#overlay_none" transform="translate(100,100)" id="tileoverlay-2-2"/>
+			<use xlink:href="#overlay_none" transform="translate(100,150)" id="tileoverlay-2-3"/>
+			<use xlink:href="#overlay_none" transform="translate(100,200)" id="tileoverlay-2-4"/>
+			<use xlink:href="#overlay_none" transform="translate(100,250)" id="tileoverlay-2-5"/>
+			<use xlink:href="#overlay_none" transform="translate(100,300)" id="tileoverlay-2-6"/>
+			<use xlink:href="#overlay_none" transform="translate(100,350)" id="tileoverlay-2-7"/>
+			<use xlink:href="#overlay_none" transform="translate(100,400)" id="tileoverlay-2-8"/>
+			<use xlink:href="#overlay_none" transform="translate(100,450)" id="tileoverlay-2-9"/>
+			<use xlink:href="#overlay_none" transform="translate(100,500)" id="tileoverlay-2-10"/>
+			<use xlink:href="#overlay_none" transform="translate(100,550)" id="tileoverlay-2-11"/>
+			<use xlink:href="#overlay_none" transform="translate(150,0)" id="tileoverlay-3-0"/>
+			<use xlink:href="#overlay_none" transform="translate(150,50)" id="tileoverlay-3-1"/>
+			<use xlink:href="#overlay_none" transform="translate(150,100)" id="tileoverlay-3-2"/>
+			<use xlink:href="#overlay_none" transform="translate(150,150)" id="tileoverlay-3-3"/>
+			<use xlink:href="#overlay_none" transform="translate(150,200)" id="tileoverlay-3-4"/>
+			<use xlink:href="#overlay_none" transform="translate(150,250)" id="tileoverlay-3-5"/>
+			<use xlink:href="#overlay_none" transform="translate(150,300)" id="tileoverlay-3-6"/>
+			<use xlink:href="#overlay_none" transform="translate(150,350)" id="tileoverlay-3-7"/>
+			<use xlink:href="#overlay_none" transform="translate(150,400)" id="tileoverlay-3-8"/>
+			<use xlink:href="#overlay_none" transform="translate(150,450)" id="tileoverlay-3-9"/>
+			<use xlink:href="#overlay_none" transform="translate(150,500)" id="tileoverlay-3-10"/>
+			<use xlink:href="#overlay_none" transform="translate(150,550)" id="tileoverlay-3-11"/>
+			<use xlink:href="#overlay_none" transform="translate(200,0)" id="tileoverlay-4-0"/>
+			<use xlink:href="#overlay_none" transform="translate(200,50)" id="tileoverlay-4-1"/>
+			<use xlink:href="#overlay_none" transform="translate(200,100)" id="tileoverlay-4-2"/>
+			<use xlink:href="#overlay_none" transform="translate(200,150)" id="tileoverlay-4-3"/>
+			<use xlink:href="#overlay_none" transform="translate(200,200)" id="tileoverlay-4-4"/>
+			<use xlink:href="#overlay_none" transform="translate(200,250)" id="tileoverlay-4-5"/>
+			<use xlink:href="#overlay_none" transform="translate(200,300)" id="tileoverlay-4-6"/>
+			<use xlink:href="#overlay_none" transform="translate(200,350)" id="tileoverlay-4-7"/>
+			<use xlink:href="#overlay_none" transform="translate(200,400)" id="tileoverlay-4-8"/>
+			<use xlink:href="#overlay_none" transform="translate(200,450)" id="tileoverlay-4-9"/>
+			<use xlink:href="#overlay_none" transform="translate(200,500)" id="tileoverlay-4-10"/>
+			<use xlink:href="#overlay_none" transform="translate(200,550)" id="tileoverlay-4-11"/>
+			<use xlink:href="#overlay_none" transform="translate(250,0)" id="tileoverlay-5-0"/>
+			<use xlink:href="#overlay_none" transform="translate(250,50)" id="tileoverlay-5-1"/>
+			<use xlink:href="#overlay_none" transform="translate(250,100)" id="tileoverlay-5-2"/>
+			<use xlink:href="#overlay_none" transform="translate(250,150)" id="tileoverlay-5-3"/>
+			<use xlink:href="#overlay_none" transform="translate(250,200)" id="tileoverlay-5-4"/>
+			<use xlink:href="#overlay_none" transform="translate(250,250)" id="tileoverlay-5-5"/>
+			<use xlink:href="#overlay_none" transform="translate(250,300)" id="tileoverlay-5-6"/>
+			<use xlink:href="#overlay_none" transform="translate(250,350)" id="tileoverlay-5-7"/>
+			<use xlink:href="#overlay_none" transform="translate(250,400)" id="tileoverlay-5-8"/>
+			<use xlink:href="#overlay_none" transform="translate(250,450)" id="tileoverlay-5-9"/>
+			<use xlink:href="#overlay_none" transform="translate(250,500)" id="tileoverlay-5-10"/>
+			<use xlink:href="#overlay_none" transform="translate(250,550)" id="tileoverlay-5-11"/>
+			<use xlink:href="#overlay_none" transform="translate(300,0)" id="tileoverlay-6-0"/>
+			<use xlink:href="#overlay_none" transform="translate(300,50)" id="tileoverlay-6-1"/>
+			<use xlink:href="#overlay_none" transform="translate(300,100)" id="tileoverlay-6-2"/>
+			<use xlink:href="#overlay_none" transform="translate(300,150)" id="tileoverlay-6-3"/>
+			<use xlink:href="#overlay_none" transform="translate(300,200)" id="tileoverlay-6-4"/>
+			<use xlink:href="#overlay_none" transform="translate(300,250)" id="tileoverlay-6-5"/>
+			<use xlink:href="#overlay_none" transform="translate(300,300)" id="tileoverlay-6-6"/>
+			<use xlink:href="#overlay_none" transform="translate(300,350)" id="tileoverlay-6-7"/>
+			<use xlink:href="#overlay_none" transform="translate(300,400)" id="tileoverlay-6-8"/>
+			<use xlink:href="#overlay_none" transform="translate(300,450)" id="tileoverlay-6-9"/>
+			<use xlink:href="#overlay_none" transform="translate(300,500)" id="tileoverlay-6-10"/>
+			<use xlink:href="#overlay_none" transform="translate(300,550)" id="tileoverlay-6-11"/>
+			<use xlink:href="#overlay_none" transform="translate(350,0)" id="tileoverlay-7-0"/>
+			<use xlink:href="#overlay_none" transform="translate(350,50)" id="tileoverlay-7-1"/>
+			<use xlink:href="#overlay_none" transform="translate(350,100)" id="tileoverlay-7-2"/>
+			<use xlink:href="#overlay_none" transform="translate(350,150)" id="tileoverlay-7-3"/>
+			<use xlink:href="#overlay_none" transform="translate(350,200)" id="tileoverlay-7-4"/>
+			<use xlink:href="#overlay_none" transform="translate(350,250)" id="tileoverlay-7-5"/>
+			<use xlink:href="#overlay_none" transform="translate(350,300)" id="tileoverlay-7-6"/>
+			<use xlink:href="#overlay_none" transform="translate(350,350)" id="tileoverlay-7-7"/>
+			<use xlink:href="#overlay_none" transform="translate(350,400)" id="tileoverlay-7-8"/>
+			<use xlink:href="#overlay_none" transform="translate(350,450)" id="tileoverlay-7-9"/>
+			<use xlink:href="#overlay_none" transform="translate(350,500)" id="tileoverlay-7-10"/>
+			<use xlink:href="#overlay_none" transform="translate(350,550)" id="tileoverlay-7-11"/>
+			<use xlink:href="#overlay_none" transform="translate(400,0)" id="tileoverlay-8-0"/>
+			<use xlink:href="#overlay_none" transform="translate(400,50)" id="tileoverlay-8-1"/>
+			<use xlink:href="#overlay_none" transform="translate(400,100)" id="tileoverlay-8-2"/>
+			<use xlink:href="#overlay_none" transform="translate(400,150)" id="tileoverlay-8-3"/>
+			<use xlink:href="#overlay_none" transform="translate(400,200)" id="tileoverlay-8-4"/>
+			<use xlink:href="#overlay_none" transform="translate(400,250)" id="tileoverlay-8-5"/>
+			<use xlink:href="#overlay_none" transform="translate(400,300)" id="tileoverlay-8-6"/>
+			<use xlink:href="#overlay_none" transform="translate(400,350)" id="tileoverlay-8-7"/>
+			<use xlink:href="#overlay_none" transform="translate(400,400)" id="tileoverlay-8-8"/>
+			<use xlink:href="#overlay_none" transform="translate(400,450)" id="tileoverlay-8-9"/>
+			<use xlink:href="#overlay_none" transform="translate(400,500)" id="tileoverlay-8-10"/>
+			<use xlink:href="#overlay_none" transform="translate(400,550)" id="tileoverlay-8-11"/>
+			<use xlink:href="#overlay_none" transform="translate(450,0)" id="tileoverlay-9-0"/>
+			<use xlink:href="#overlay_none" transform="translate(450,50)" id="tileoverlay-9-1"/>
+			<use xlink:href="#overlay_none" transform="translate(450,100)" id="tileoverlay-9-2"/>
+			<use xlink:href="#overlay_none" transform="translate(450,150)" id="tileoverlay-9-3"/>
+			<use xlink:href="#overlay_none" transform="translate(450,200)" id="tileoverlay-9-4"/>
+			<use xlink:href="#overlay_none" transform="translate(450,250)" id="tileoverlay-9-5"/>
+			<use xlink:href="#overlay_none" transform="translate(450,300)" id="tileoverlay-9-6"/>
+			<use xlink:href="#overlay_none" transform="translate(450,350)" id="tileoverlay-9-7"/>
+			<use xlink:href="#overlay_none" transform="translate(450,400)" id="tileoverlay-9-8"/>
+			<use xlink:href="#overlay_none" transform="translate(450,450)" id="tileoverlay-9-9"/>
+			<use xlink:href="#overlay_none" transform="translate(450,500)" id="tileoverlay-9-10"/>
+			<use xlink:href="#overlay_none" transform="translate(450,550)" id="tileoverlay-9-11"/>
+			<use xlink:href="#overlay_none" transform="translate(500,0)" id="tileoverlay-10-0"/>
+			<use xlink:href="#overlay_none" transform="translate(500,50)" id="tileoverlay-10-1"/>
+			<use xlink:href="#overlay_none" transform="translate(500,100)" id="tileoverlay-10-2"/>
+			<use xlink:href="#overlay_none" transform="translate(500,150)" id="tileoverlay-10-3"/>
+			<use xlink:href="#overlay_none" transform="translate(500,200)" id="tileoverlay-10-4"/>
+			<use xlink:href="#overlay_none" transform="translate(500,250)" id="tileoverlay-10-5"/>
+			<use xlink:href="#overlay_none" transform="translate(500,300)" id="tileoverlay-10-6"/>
+			<use xlink:href="#overlay_none" transform="translate(500,350)" id="tileoverlay-10-7"/>
+			<use xlink:href="#overlay_none" transform="translate(500,400)" id="tileoverlay-10-8"/>
+			<use xlink:href="#overlay_none" transform="translate(500,450)" id="tileoverlay-10-9"/>
+			<use xlink:href="#overlay_none" transform="translate(500,500)" id="tileoverlay-10-10"/>
+			<use xlink:href="#overlay_none" transform="translate(500,550)" id="tileoverlay-10-11"/>
+			<use xlink:href="#overlay_none" transform="translate(550,0)" id="tileoverlay-11-0"/>
+			<use xlink:href="#overlay_none" transform="translate(550,50)" id="tileoverlay-11-1"/>
+			<use xlink:href="#overlay_none" transform="translate(550,100)" id="tileoverlay-11-2"/>
+			<use xlink:href="#overlay_none" transform="translate(550,150)" id="tileoverlay-11-3"/>
+			<use xlink:href="#overlay_none" transform="translate(550,200)" id="tileoverlay-11-4"/>
+			<use xlink:href="#overlay_none" transform="translate(550,250)" id="tileoverlay-11-5"/>
+			<use xlink:href="#overlay_none" transform="translate(550,300)" id="tileoverlay-11-6"/>
+			<use xlink:href="#overlay_none" transform="translate(550,350)" id="tileoverlay-11-7"/>
+			<use xlink:href="#overlay_none" transform="translate(550,400)" id="tileoverlay-11-8"/>
+			<use xlink:href="#overlay_none" transform="translate(550,450)" id="tileoverlay-11-9"/>
+			<use xlink:href="#overlay_none" transform="translate(550,500)" id="tileoverlay-11-10"/>
+			<use xlink:href="#overlay_none" transform="translate(550,550)" id="tileoverlay-11-11"/>
 		</g>
 		<g id="animation" transform="translate(25,25)">
 			<use xlink:href="#animation_none" transform="translate(0,0)" id="animation-0-0"/>
@@ -650,10 +709,10 @@
 			<use xlink:href="#animation_none" transform="translate(550,500)" id="animation-11-10"/>
 			<use xlink:href="#animation_none" transform="translate(550,550)" id="animation-11-11"/>
 		</g>
-		<rect fill="rgb(6, 30, 45)" stroke="none" x="-25" y="-25" width="25" height="650"/>
-		<rect fill="rgb(6, 30, 45)" stroke="none" x="600" y="-25" width="350" height="650"/>
+		<rect fill="rgb(6, 30, 45)" stroke="none" x="-25" y="-25" width="25" height="655"/>
+		<rect fill="rgb(6, 30, 45)" stroke="none" x="600" y="-25" width="350" height="655"/>
 		<rect fill="rgb(6, 30, 45)" stroke="none" x="0" y="-25" width="600" height="25"/>
-		<rect fill="rgb(6, 30, 45)" stroke="none" x="0" y="600" width="600" height="25"/>
+		<rect fill="rgb(6, 30, 45)" stroke="none" x="0" y="600" width="600" height="30"/>
 		<g id="click">
 			<rect fill="white" stroke="white" x="0" y="0" width="50" height="50" id="click-0-0" stroke-opacity="0" stroke-width="10px" fill-opacity="0"/>
 			<rect fill="white" stroke="white" x="0" y="50" width="50" height="50" id="click-0-1" stroke-opacity="0" stroke-width="10px" fill-opacity="0"/>
@@ -800,27 +859,52 @@
 			<rect fill="white" stroke="white" x="550" y="500" width="50" height="50" id="click-11-10" stroke-opacity="0" stroke-width="10px" fill-opacity="0"/>
 			<rect fill="white" stroke="white" x="550" y="550" width="50" height="50" id="click-11-11" stroke-opacity="0" stroke-width="10px" fill-opacity="0"/>
 		</g>
-		<g id="text">
-			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="40px" font-style="italic" font-weight="normal" text-decoration="normal" x="650" y="25" text-anchor="start">
-					Gems Broken:
+		<g id="buttons" transform="translate(600,0)">
+			<g id="diamondmine" transform="translate(10,0)">
+				<rect fill="rgb(89,83,239)" stroke="none" x="0" y="0" width="50" height="50"/>
+				<use xlink:href="#tile_blue" transform="translate(25,25)"/>
+				<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="20px" font-style="italic" font-weight="normal" text-decoration="normal" x="25" y="25" text-anchor="middle">
+					WIP
+				</text>
+			</g>
+			<g id="endless" transform="translate(60,0)">
+				<rect fill="rgb(83,239,89)" stroke="none" x="0" y="0" width="50" height="50"/>
+				<circle cx="15" cy="25" r="10" fill="none" stroke="green" stroke-width="5px"/>
+				<circle cx="35" cy="25" r="10" fill="none" stroke="green" stroke-width="5px"/>
+			</g>
+		</g>
+		<g id="text" transform="translate(0,100)">
+			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="40px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="25" text-anchor="middle">
+					Tiles Broken:
 			</text>
-			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="40px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="75" text-anchor="middle" id="gemNumber">
+			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="40px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="75" text-anchor="middle" id="tileNumber">
 					0
+			</text>
+			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="0px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="125" text-anchor="middle" id="depthText">
+					Depth:
+			</text>
+			<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="0px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="175" text-anchor="middle" id="depth">
+					0m
 			</text>
 		</g>
 	</g>
 	 <script>
 	// <![CDATA[
 	window.addEventListener('DOMContentLoaded', () => {
-		previousClicked = null;
-		const gemNames = ["red","orange","yellow","green","blue","purple","white","hyper"]
-		gemsBroken = -144;
-		grid = {};
-		darkMatchList = [];
-		hyperMatchList = [];
-		starMatchList = [];
-		flameMatchList = [];
-		regMatchList = [];
+		let previousClicked = null;
+		const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper"]
+		const matchable = ["red","orange","yellow","green","blue","purple","white"];
+		const groundTiles = ["dirt","darkstone","hyperdirt","treasure"];
+		const dirtLike = ["dirt","hyperdirt","treasure"];
+		let tilesBroken = -144;
+		let grid = {};
+		let darkMatchList = [];
+		let hyperMatchList = [];
+		let starMatchList = [];
+		let flameMatchList = [];
+		let regMatchList = [];
+		let mode = "endless";
+		let depth = 0;
 		const darkmatches = [
 		["0,0","1,0","2,0","3,0","4,0","5,0"],
 		["0,0","0,1","0,2","0,3","0,4","0,5"]];
@@ -854,26 +938,37 @@
 		{x:2,y:2}];
 		const neighborhoodHalf = [].concat(neighborhoodQuarter,neighborhoodQuarter.map(a=>{return {x:-a.y,y:a.x}}));
 		const neighborhood = [].concat([{x:0,y:0}],neighborhoodHalf,neighborhoodHalf.map(a=>{return {x:-a.x,y:-a.y}}));
-		animations = {};
-		for (let x=0;x<12;x++){
-			for (let y=0;y<12;y++){
-				grid[`${x}-${y}`] = {gem:"none",overlay:"none"};
+		let animations = {};
+		function resetBoard(){
+			for (let x=0;x<12;x++){
+				for (let y=0;y<12;y++){
+					if ((y>=7)&&(mode=="mine")){
+						grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
+					} else {
+						grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
+					}
+				}
+			}
+			if (mode=="mine"){
+				tilesBroken = -84;
+				depth = 0;
+			} else {
+				tilesBroken = -144;
 			}
 		}
-		function setGrid(x,y,v){
-			grid[`${x}-${y}`] = v;
-		}
+		resetBoard();
 		function swap(c1, c2){
-			copy1 = Object.assign({},grid[c1])
-			copy2 = Object.assign({},grid[c2])
+			let copy1 = Object.assign({},grid[c1])
+			let copy2 = Object.assign({},grid[c2])
 			grid[c2] = copy1;
 			grid[c1] = copy2;
 		}
+		function getSpecial(tile){return tile && ((tile.overlay && (tile.overlay != "none"))||(tile.tile == "hyper")||(tile.tile == "dark"))};
 		function checkMatch(c){
-			console.log(c);
+			//console.log("checkMatch",c);
 			[x, y] = c.split("-").map(a=>parseInt(a));
-			console.log(x, y);
-			neighborhoodCheck = [
+			//console.log(x, y);
+			const neighborhoodCheck = [
 			{x:0,y:0},
 			{x:1,y:0},
 			{x:1,y:1},
@@ -891,23 +986,24 @@
 			neighborhoodCheck.forEach(a=>{
 				gets[`${a.x},${a.y}`]=grid[`${a.x+x}-${a.y+y}`];
 			});
-			matches = [["0,0","1,0","2,0"],["-1,0","0,0","1,0"],["0,0","-1,0","-2,0"],["0,0","0,1","0,2"],["0,-1","0,0","0,1"],["0,0","0,-1","0,-2"],["0,0","1,0","0,1","1,1"],["0,0","-1,0","0,1","-1,1"],["0,0","1,0","0,-1","1,-1"],["0,0","-1,0","0,-1","-1,-1"]];
-			matchGets = matches.map(a=>((a.map(b=>((gets[b]||{gem:"none",overlay:"none"}).gem))).every((val, i, arr)=>(val === arr[0]))));
+			const matches = [["0,0","1,0","2,0"],["-1,0","0,0","1,0"],["0,0","-1,0","-2,0"],["0,0","0,1","0,2"],["0,-1","0,0","0,1"],["0,0","0,-1","0,-2"],["0,0","1,0","0,1","1,1"],["0,0","-1,0","0,1","-1,1"],["0,0","1,0","0,-1","1,-1"],["0,0","-1,0","0,-1","-1,-1"]];
+			const matchGets = matches.map(a=>((a.map(b=>((gets[b]||{tile:"none",overlay:"none"}).tile))).every((val, i, arr)=>(val === arr[0]))));
 			return matchGets.some(a=>a);
 		}
 		function getMatch(c){
-			[x, y] = c.split("-").map(a=>parseInt(a));
-			gets = {}
+			//console.log("getMatch",c);
+			const [x, y] = c.split("-").map(a=>parseInt(a));
+			const gets = {}
 			neighborhood.forEach(a=>{
 				gets[`${a.x},${a.y}`]=grid[`${a.x+x}-${a.y+y}`];
 			});
-			if (gets["0,0"].gem=="dark"||gets["0,0"].gem=="hyper"||gets["0,0"].gem=="none"){
+			if (!(matchable.includes(gets["0,0"].tile))){
 				return undefined
 			}
-			matchesAll = [{match:darkmatches,type:"dark"},{match:hypermatches,type:"hyper"},{match:starmatches,type:"star"},{match:flamematches,type:"flame"},{match:regmatches,type:"regular"}]
-			returnValue = undefined;
+			const matchesAll = [{match:darkmatches,type:"dark"},{match:hypermatches,type:"hyper"},{match:starmatches,type:"star"},{match:flamematches,type:"flame"},{match:regmatches,type:"regular"}]
+			let returnValue = undefined;
 			matchesAll.forEach(m=>{
-				v = m.match.map((a,i)=>!((a.map(b=>((gets[b]||{gem:"none",overlay:"none"}).gem))).every((val, i, arr)=>(val === arr[0])))||i).filter(c=>!(c===true))[0];
+				v = m.match.map((a,i)=>!((a.map(b=>((gets[b]||{tile:"none",overlay:"none"}).tile))).every((val, i, arr)=>(val === arr[0])))||i).filter(c=>!(c===true))[0];
 				if (v !== undefined){
 					if (returnValue == undefined){
 						returnValue = {type:m.type,dir:v,x:x,y:y};
@@ -917,75 +1013,84 @@
 			return returnValue;
 		}
 		function doSpecial(c1, c2){
+			//console.log("doSpecial",c1,c2);
 			if (c1 == c2){
 				return
 			}
-			g1 = grid[c1];
-			g2 = grid[c2];
-			console.log(g1);
-			console.log(g2);
-			if (((g1.gem == "hyper")||(g1.gem == "dark"))&&((g2.gem == "hyper")||(g2.gem == "dark"))){
+			const g1 = grid[c1];
+			const g2 = grid[c2];
+			//console.log(g1);
+			//console.log(g2);
+			if (((g1.tile == "hyper")||(g1.tile == "dark"))&&((g2.tile == "hyper")||(g2.tile == "dark"))){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
 						animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
 					}
 				}
-			} else if (g1.gem == "dark"){
+			} else if (g1.tile == "dark"){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g2.gem){
+						if (grid[`${x}-${y}`].tile == g2.tile){
 							animations[`${x}-${y}`] = {type:"become",data:"hyper",time:3};
 						}
 					}
 				}
 				animations[c1] = {type:"hyperbreak",time:3};
-			} else if (g2.gem == "dark"){
+			} else if (g2.tile == "dark"){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g1.gem){
+						if (grid[`${x}-${y}`].tile == g1.tile){
 							animations[`${x}-${y}`] = {type:"become",data:"hyper",time:3};
 						}
 					}
 				}
 				animations[c2] = {type:"hyperbreak",time:3};
-			} else if ((g1.gem == "hyper") && (g2.overlay != "none")){
+			} else if ((g1.tile == "hyper") && (g2.overlay != "none")){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g2.gem){
-							animations[`${x}-${y}`] = {type:"become",data:g2.overlay,time:3};
+						if (grid[`${x}-${y}`].tile == g2.tile){
+							if (grid[`${x}-${y}`].overlay == "none"){
+								animations[`${x}-${y}`] = {type:"become",data:g2.overlay,time:3};
+							} else {
+								animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+							}
 						}
 					}
 				}
 				animations[c1] = {type:"hyperbreak",time:3};
-			} else if ((g2.gem == "hyper") && (g1.overlay != "none")){
+			} else if ((g2.tile == "hyper") && (g1.overlay != "none")){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g1.gem){
-							animations[`${x}-${y}`] = {type:"become",data:g1.overlay,time:3};
+						if (grid[`${x}-${y}`].tile == g1.tile){
+							if (grid[`${x}-${y}`].overlay == "none"){
+								animations[`${x}-${y}`] = {type:"become",data:g1.overlay,time:3};
+							} else {
+								animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+							}
 						}
 					}
 				}
 				animations[c2] = {type:"hyperbreak",time:3};
-			} else if (g1.gem == "hyper"){
+			} else if (g1.tile == "hyper"){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g2.gem){
+						if (grid[`${x}-${y}`].tile == g2.tile){
 							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
 						}
 					}
 				}
 				animations[c1] = {type:"hyperbreak",time:3};
-			} else if (g2.gem == "hyper"){
+			} else if (g2.tile == "hyper"){
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if (grid[`${x}-${y}`].gem == g1.gem){
+						if (grid[`${x}-${y}`].tile == g1.tile){
 							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
 						}
 					}
 				}
 				animations[c2] = {type:"hyperbreak",time:3};
 			} else if ((g1.overlay == "star")&&(g2.overlay == "star")){
-				[x, y] = c1.split("-").map(a=>parseInt(a));
+				const [x, y] = c1.split("-").map(a=>parseInt(a));
 				animations[c1] = {type:"starbreak",time:3}
 				animations[`${x+1}-${y+1}`] = {type:"starbreak",time:3}
 				animations[`${x-1}-${y+1}`] = {type:"starbreak",time:3}
@@ -993,14 +1098,17 @@
 				animations[`${x-1}-${y-1}`] = {type:"starbreak",time:3}
 			} else if ((g1.overlay == "fire")&&(g2.overlay == "star")){
 				animations[c1] = {type:"firestarbreak",time:3}
+				grid[c2] = {tile:"none",overlay:"none"}
 			} else if ((g2.overlay == "fire")&&(g1.overlay == "star")){
-				animations[c2] = {type:"firestarbreak",time:3}
+				animations[c1] = {type:"firestarbreak",time:3}
+				grid[c1] = {tile:"none",overlay:"none"}
 			} else if ((g2.overlay == "fire")&&(g1.overlay == "fire")){
 				animations[c1] = {type:"firefirebreak",time:3}
 				animations[c2] = {type:"firefirebreak",time:3}
 			}
 		}
 		function pushMatches(){
+			//console.log("pushMatches");
 			for (let x=0;x<12;x++){
 				for (let y=0;y<12;y++){
 					match = getMatch(`${x}-${y}`)
@@ -1021,64 +1129,91 @@
 			}
 		}
 		function detonate(x,y,detval){
-			getGrid = grid[`${x}-${y}`]
-			if (getGrid && getGrid.overlay){
-				if (!getGrid.new){
-					getGrid.hardness -= 1;
-					getGrid.hardness = Math.max(getGrid.hardness,0)
-					if (getGrid.overlay != "none"){
-						if (getGrid.overlay == "fire"){
-							animations[`${x}-${y}`] = {type:"firebreak",time:3}
-						} else {
-							animations[`${x}-${y}`] = {type:"starbreak",time:3}
-						}
-					} else if (getGrid.gem == "hyper"){
-						for (let x=0;x<12;x++){
-							for (let y=0;y<12;y++){
-								if (grid[`${x}-${y}`].gem == detval){
-									animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+			//console.log("detonate",x,y,detval);
+			if (!groundTiles.includes(detval)){
+				let getGrid = grid[`${x}-${y}`]
+				if (getGrid && getGrid.overlay){
+					if (!getGrid.new){
+						getGrid.hardness -= 1;
+						getGrid.hardness = Math.max(getGrid.hardness,0)
+						if (getGrid.overlay != "none"){
+							if (getGrid.overlay == "fire"){
+								animations[`${x}-${y}`] = {type:"firebreak",time:3}
+							} else {
+								animations[`${x}-${y}`] = {type:"starbreak",time:3}
+							}
+						} else if (getGrid.tile == "hyper"){
+							for (let xv=0;xv<12;xv++){
+								for (let yv=0;yv<12;yv++){
+									if (grid[`${xv}-${yv}`].tile == detval){
+										animations[`${xv}-${yv}`] = {type:"hyperbreak",time:3};
+									}
 								}
 							}
-						}
-						animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
-					} else if (getGrid.gem == "dark"){
-						for (let x=0;x<12;x++){
-							for (let y=0;y<12;y++){
-								if (grid[`${x}-${y}`].gem == detval){
-									animations[`${x}-${y}`] = {type:"become",data:"hyper",time:3};
+							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+						} else if (getGrid.tile == "dark"){
+							for (let xv=0;xv<12;xv++){
+								for (let yv=0;yv<12;yv++){
+									if (grid[`${xv}-${yv}`].tile == detval){
+										animations[`${xv}-${yv}`] = {type:"become",data:"hyper",time:3};
+									}
 								}
 							}
+							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
 						}
-						animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
-					}
-					if (!getGrid.hardness){
-						grid[`${x}-${y}`]={gem:"none",overlay:"none"};
+						if (!getGrid.hardness){
+							grid[`${x}-${y}`]={tile:"none",overlay:"none"};
+						}
+						detonations = [];
+						if (detval == undefined){
+							console.log("undef",x,y)
+							if (grid[`${x+1}-${y}`] && (dirtLike.includes(grid[`${x+1}-${y}`].tile))){
+								detonations.push({x:x+1,y:y});
+							}
+							if (grid[`${x-1}-${y}`] && (dirtLike.includes(grid[`${x-1}-${y}`].tile))){
+								detonations.push({x:x-1,y:y});
+							}
+							if (grid[`${x}-${y+1}`] && (dirtLike.includes(grid[`${x}-${y+1}`].tile))){
+								detonations.push({x:x,y:y+1});
+							}
+							if (grid[`${x}-${y-1}`] && (dirtLike.includes(grid[`${x}-${y-1}`].tile))){
+								detonations.push({x:x,y:y-1});
+							}
+						}
+						detonations.forEach(d=>{
+							detonate(d.x,d.y,getGrid.tile);
+						});
 					}
 				}
 			} 
 		}
 		function doMatches(){
-			matchesAll = [
-			{l:darkMatchList,matches:darkmatches,setv:{gem:"dark",overlay:"none"}},
-			{l:hyperMatchList,matches:hypermatches,setv:{gem:"hyper",overlay:"none"}},
+			//console.log("doMatches");
+			const matchesAll = [
+			{l:darkMatchList,matches:darkmatches,setv:{tile:"dark",overlay:"none"}},
+			{l:hyperMatchList,matches:hypermatches,setv:{tile:"hyper",overlay:"none"}},
 			{l:starMatchList,matches:starmatches,setv:{overlay:"star",hardness:2,new:true}},
 			{l:flameMatchList,matches:flamematches,setv:{overlay:"fire",hardness:2,new:true}},
-			{l:regMatchList,matches:regmatches,setv:{gem:"none",overlay:"none"}}];
+			{l:regMatchList,matches:regmatches,setv:{tile:"none",overlay:"none"}}];
 			matchesAll.forEach(list=>{
 				list.l.forEach(match=>{
-					gets = {};
+					let gets = {};
 					neighborhood.forEach(a=>{
 						gets[`${a.x},${a.y}`]=grid[`${a.x+match.x}-${a.y+match.y}`];
 					});
-					specificMatch = list.matches[match.dir];
-					specificMatchCoords = specificMatch.map(a=>(a.split(",").map(b=>parseInt(b)))).map(a=>{return {x:a[0]+match.x, y:a[1]+match.y};});
-					v = specificMatch.every(a=>(gets[a]!=undefined)&&(gets[a].gem==gets[specificMatch[0]].gem));
+					let specificMatch = list.matches[match.dir];
+					let specificMatchCoords = specificMatch.map(a=>(a.split(",").map(b=>parseInt(b)))).map(a=>{return {x:a[0]+match.x, y:a[1]+match.y};});
+					v = specificMatch.every(a=>(gets[a]!=undefined)&&(gets[a].tile==gets[specificMatch[0]].tile));
 					if (v){
+						let setCoords = specificMatchCoords.filter(m=>(!getSpecial(grid[`${m.x}-${m.y}`])));
+						if (!setCoords.length){
+							setCoords = specificMatchCoords;
+						}
 						specificMatchCoords.forEach(m=>{
 							detonate(m.x,m.y,undefined);
 						});
-						selM = specificMatchCoords[Math.floor(Math.random() * specificMatchCoords.length)]
-						grid[`${selM.x}-${selM.y}`].gem = gets[specificMatch[0]].gem;
+						let selM = setCoords[Math.floor(Math.random() * setCoords.length)]
+						grid[`${selM.x}-${selM.y}`].tile = gets[specificMatch[0]].tile;
 						grid[`${selM.x}-${selM.y}`] = Object.assign(grid[`${selM.x}-${selM.y}`],list.setv);
 					}
 				});
@@ -1090,17 +1225,22 @@
 			regMatchList = [];
 		}
 		function render(){
+			//console.log("render");
 			for (let x=0;x<12;x++){
 				for (let y=0;y<12;y++){
 					get = grid[`${x}-${y}`];
 					if (get){
-						document.getElementById(`gembase-${x}-${y}`).attributes["xlink:href"].value = `#gem_${get.gem}`;
-						document.getElementById(`gemoverlay-${x}-${y}`).attributes["xlink:href"].value = `#overlay_${get.overlay}`;
+						if (get.tile == "dirt"){
+							document.getElementById(`tilebase-${x}-${y}`).attributes["xlink:href"].value = `#tile_${get.tile}_${get.hardness}`;
+						} else {
+							document.getElementById(`tilebase-${x}-${y}`).attributes["xlink:href"].value = `#tile_${get.tile}`;
+						}
+						document.getElementById(`tileoverlay-${x}-${y}`).attributes["xlink:href"].value = `#overlay_${get.overlay}`;
 					} else {
-						document.getElementById(`gembase-${x}-${y}`).attributes["xlink:href"].value = "#gem_none";
-						document.getElementById(`gemoverlay-${x}-${y}`).attributes["xlink:href"].value = "#overlay_none";
+						document.getElementById(`tilebase-${x}-${y}`).attributes["xlink:href"].value = "#tile_none";
+						document.getElementById(`tileoverlay-${x}-${y}`).attributes["xlink:href"].value = "#overlay_none";
 					}
-					getanim = animations[`${x}-${y}`];
+					let getanim = animations[`${x}-${y}`];
 					if (getanim){
 						if (getanim.data){
 							document.getElementById(`animation-${x}-${y}`).attributes["xlink:href"].value = `#animation_${getanim.type}_${getanim.data}_${getanim.time}`;
@@ -1112,29 +1252,32 @@
 					}
 				}
 			}
-			document.getElementById("gemNumber").firstChild.data = Math.max(0,gemsBroken);
+			document.getElementById("tileNumber").firstChild.data = Math.max(0,tilesBroken);
+			document.getElementById("depth").firstChild.data = depth + "m";
 		}
 		function fall(){
-			updated = [];
+			//console.log("fall");
+			let updated = [];
 			for (let x=0;x<12;x++){
 				for (let y=11;y>=0;y--){
-					get = grid[`${x}-${y}`];
-					getAbove = grid[`${x}-${y-1}`];
+					let get = grid[`${x}-${y}`];
+					let getAbove = grid[`${x}-${y-1}`];
 					if (!get){
-						setGrid(x,y,{gem:"none",overlay:"none"});
-						get = {gem:"none",overlay:"none"};
+						grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
+						get = {tile:"none",overlay:"none"};
 					}
-					if (get.gem=="none"){
+					if (get.tile=="none"){
+						grid[`${x}-${y}`].overlay = "none";
 						if (getAbove){
-							setGrid(x,y-1,{gem:"none",overlay:"none"});
-							setGrid(x,y,getAbove);
+							grid[`${x}-${y-1}`] = {tile:"none",overlay:"none"};
+							grid[`${x}-${y}`] = getAbove;
 							updated.push(`${x}-${y}`)
 							updated.push(`${x}-${y-1}`)
 							grid[`${x}-${y}`].new = false;
 							grid[`${x}-${y-1}`].new = false;
 						} else {
-							setGrid(x,y,{gem:gemNames[Math.floor(Math.random() * (gemNames.length-0.99))], overlay:"none"});
-							gemsBroken += 1;
+							grid[`${x}-${y}`] = {tile:tileNames[Math.floor(Math.random() * (tileNames.length-0.99))], overlay:"none"};
+							tilesBroken += 1;
 							updated.push(`${x}-${y}`)
 						}
 					} else {
@@ -1142,8 +1285,13 @@
 					}
 				}
 			}
+			for (let x=0;x<12;x++){
+				for (let y=-1;y>=-3;y--){
+					delete grid[`${x}-${y}`];
+				}
+			}
 			if (previousClicked){
-				slicePrevious = previousClicked.slice(previousClicked.indexOf("-")+1);
+				let slicePrevious = previousClicked.slice(previousClicked.indexOf("-")+1);
 				if (updated.includes(slicePrevious)){
 					document.getElementById(previousClicked).attributes["stroke-opacity"].value = 0;
 					previousClicked = null;
@@ -1152,12 +1300,13 @@
 			return updated.length;
 		}
 		function updateAnimations(){
-			updated = false;
-			detonations = [];
+			//console.log("updateAnimations");
+			let updated = false;
+			let detonations = [];
 			for (let x=0;x<12;x++){
 				for (let y=11;y>=0;y--){
-					get = animations[`${x}-${y}`];
-					getSq = grid[`${x}-${y}`];
+					let get = animations[`${x}-${y}`];
+					let getSq = grid[`${x}-${y}`];
 					if (getSq){
 						if (get){
 							if (get.time == 0){
@@ -1169,66 +1318,66 @@
 									animations[`${x}-${y}`] = undefined;
 									updated = true;
 									if (get.data == "hyper"){
-										grid[`${x}-${y}`] = {gem:"hyper",overlay:"none"};
+										grid[`${x}-${y}`] = {tile:"hyper",overlay:"none"};
 									} else {
 										grid[`${x}-${y}`].overlay = get.data;
 									}
 								} else if (get.type == "firebreak"){
 									animations[`${x}-${y}`] = undefined;
 									updated = true;
-									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-1,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].gem});
-									grid[`${x}-${y}`] = {gem:"none",overlay:"none"};
+									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-1,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].tile});
+									grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 								} else if (get.type == "firefirebreak"){
 									animations[`${x}-${y}`] = undefined;
 									updated = true;
-									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-1,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+2,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-2,y:y,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y+2,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x,y:y-2,g:grid[`${x}-${y}`].gem});
-									grid[`${x}-${y}`] = {gem:"none",overlay:"none"};
+									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-1,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+2,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-2,y:y,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y+2,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x,y:y-2,g:grid[`${x}-${y}`].tile});
+									grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 								} else if (get.type == "starbreak"){
 									animations[`${x}-${y}`] = undefined;
 									updated = true;
 									for (let i=0;i<12;i++){
 										if (i != y){
-											detonations.push({x:x,y:i,g:grid[`${x}-${y}`].gem});
+											detonations.push({x:x,y:i,g:grid[`${x}-${y}`].tile});
 										}
 										if (i != x){
-											detonations.push({x:i,y:y,g:grid[`${x}-${y}`].gem});
+											detonations.push({x:i,y:y,g:grid[`${x}-${y}`].tile});
 										}
 									}
-									grid[`${x}-${y}`] = {gem:"none",overlay:"none"};
+									grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 								} else if (get.type == "firestarbreak"){
 									animations[`${x}-${y}`] = undefined;
 									updated = true;
-									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].gem});
-									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].gem});
+									detonations.push({x:x-1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y-1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x-1,y:y+1,g:grid[`${x}-${y}`].tile});
+									detonations.push({x:x+1,y:y+1,g:grid[`${x}-${y}`].tile});
 									for (let i=0;i<12;i++){
 										if (i != y){
-											detonations.push({x:x,y:i,g:grid[`${x}-${y}`].gem});
+											detonations.push({x:x,y:i,g:grid[`${x}-${y}`].tile});
 										}
 										if (i != x){
-											detonations.push({x:i,y:y,g:grid[`${x}-${y}`].gem});
+											detonations.push({x:i,y:y,g:grid[`${x}-${y}`].tile});
 										}
 									}
-									grid[`${x}-${y}`] = {gem:"none",overlay:"none"};
+									grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 								}
 							} else {
 								animations[`${x}-${y}`].time -= 1;
@@ -1248,25 +1397,23 @@
 		}
 		function clickBox(id){
 			if (previousClicked){
-				slicePrevious = previousClicked.slice(previousClicked.indexOf("-")+1);
-				sliceCurrent = id.slice(id.indexOf("-")+1);
-				if (grid[sliceCurrent].gem != "none"){
-					x1 = parseInt(slicePrevious.split("-")[0]);
-					y1 = parseInt(slicePrevious.split("-")[1]);
-					x2 = parseInt(sliceCurrent.split("-")[0]);
-					y2 = parseInt(sliceCurrent.split("-")[1]);
-					//console.log(x1,y1,x2,y2)
+				let slicePrevious = previousClicked.slice(previousClicked.indexOf("-")+1);
+				let sliceCurrent = id.slice(id.indexOf("-")+1);
+				if (tileNames.includes(grid[sliceCurrent].tile)){
+					let x1 = parseInt(slicePrevious.split("-")[0]);
+					let y1 = parseInt(slicePrevious.split("-")[1]);
+					let x2 = parseInt(sliceCurrent.split("-")[0]);
+					let y2 = parseInt(sliceCurrent.split("-")[1]);
 					if ((Math.abs(x1-x2)<=1)&&(Math.abs(y1-y2)<=1)){
 
-						special1 = (grid[slicePrevious].gem == "dark")||(grid[slicePrevious].gem == "hyper")
-						special2 = (grid[sliceCurrent].gem == "dark")||(grid[sliceCurrent].gem == "hyper")
-						over = (grid[slicePrevious].overlay != "none")&&(grid[sliceCurrent].overlay != "none")
-						//console.log(special1,special2,over)
+						let special1 = (grid[slicePrevious].tile == "dark")||(grid[slicePrevious].tile == "hyper")
+						let special2 = (grid[sliceCurrent].tile == "dark")||(grid[sliceCurrent].tile == "hyper")
+						let over = (grid[slicePrevious].overlay != "none")&&(grid[sliceCurrent].overlay != "none")
 						if (special1||special2||over){
 							doSpecial(sliceCurrent,slicePrevious);
 						} else {
 							swap(slicePrevious,sliceCurrent);
-							match = checkMatch(sliceCurrent) || checkMatch(slicePrevious);
+							let match = checkMatch(sliceCurrent) || checkMatch(slicePrevious);
 							if (!match){
 								swap(slicePrevious,sliceCurrent);
 							}
@@ -1276,8 +1423,8 @@
 					previousClicked = null;
 				}
 			} else {
-				sliceCurrent = id.slice(id.indexOf("-")+1);
-				if (grid[sliceCurrent].gem != "none"){
+				let sliceCurrent = id.slice(id.indexOf("-")+1);
+				if (tileNames.includes(grid[sliceCurrent].tile)){
 					previousClicked = id;
 					document.getElementById(id).attributes["stroke-opacity"].value = 0.5;
 				}
@@ -1288,9 +1435,21 @@
 			for (let y=0;y<12;y++){
 				document.getElementById(`click-${x}-${y}`).addEventListener('click', (e) => {
 					clickBox(e.target.id);
-				})
+				});
 			}
 		}
+		document.getElementById("diamondmine").addEventListener('click', (e) => {
+			document.getElementById("depthText").attributes["font-size"].value = "40px";
+			document.getElementById("depth").attributes["font-size"].value = "40px";
+			mode = "mine";
+			resetBoard();
+		});
+		document.getElementById("endless").addEventListener('click', (e) => {
+			document.getElementById("depthText").attributes["font-size"].value = "0px";
+			document.getElementById("depth").attributes["font-size"].value = "0px";
+			mode = "endless";
+			resetBoard();
+		});
 		function main(){
 			a = updateAnimations();
 			if (!a){
@@ -1301,6 +1460,7 @@
 				}
 			}
 			render();
+			//requestAnimationFrame(main);
 			setTimeout(main, 100);
 		}
 		main();
