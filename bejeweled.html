@@ -95,15 +95,15 @@
 				<line x1="-17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
 			</symbol>
 			<symbol id="tile_dark" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
-				<circle cx="0" cy="0" r="20" fill="black" stroke="none" stroke-width="2px"/>
-				<circle cx="0" cy="0" r="18" fill="none" stroke="rgb(0, 0, 255)" stroke-width="2px" stroke-opacity="0.5"/>
-				<line x1="0" y1="20" x2="0" y2="-20" stroke="rgb(0, 0, 255)" stroke-width="6px" stroke-opacity="0.5"/>
-				<line x1="20" y1="0" x2="-20" y2="0" stroke="rgb(0, 0, 255)" stroke-width="6px" stroke-opacity="0.5"/>
-				<line x1="0" y1="20" x2="0" y2="-20" stroke="rgb(0, 0, 255)" stroke-width="12px" stroke-opacity="0.5"/>
-				<line x1="20" y1="0" x2="-20" y2="0" stroke="rgb(0, 0, 255)" stroke-width="12px" stroke-opacity="0.5"/>
-				<line x1="0" y1="20" x2="0" y2="-20" stroke="rgb(255,255,255)" stroke-width="2px"/>
-				<line x1="20" y1="0" x2="-20" y2="0" stroke="rgb(255,255,255)" stroke-width="2px"/>
-				<circle cx="0" cy="0" r="20" fill="none" stroke="rgb(100, 100, 100)" stroke-width="2px"/>
+				<circle r="22" fill="url(#hyper_gradient)"/>
+				<clipPath id="darkClip">
+					<circle r="22" cx="0"/>
+				</clipPath>
+				<circle r="19" fill="rgb(36, 29, 53)" stroke="rgb(50, 39, 73)" stroke-width="2px"/>
+				<circle r="44" cx="0" cy="40" fill="none" stroke="url(#hyper_gradient)" transform="scale(1,-1)" clip-path="url(#darkClip)"/>
+				<circle r="44" cx="-34.5" cy="20" fill="none" stroke="url(#hyper_gradient)" clip-path="url(#darkClip)"/>
+				<circle r="44" cx="34.5" cy="20" fill="none" stroke="url(#hyper_gradient)" clip-path="url(#darkClip)"/>
+				<use xlink:href="#tile_hyper" transform="scale(0.5,0.5)"/>
 			</symbol>
 			<symbol id="tile_dirt_1" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 				<rect fill="rgb(45, 27, 6)" stroke="none" x="-25" y="-25" width="50" height="50"/>
@@ -894,7 +894,7 @@
 		// <![CDATA[
 		window.addEventListener('DOMContentLoaded', () => {
 			let previousClicked = null;
-			const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper"]
+			const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper"];
 			const matchable = ["red","orange","yellow","green","blue","purple","white"];
 			const groundTiles = ["dirt","darkstone","hyperdirt","treasure"];
 			const dirtLike = ["dirt","hyperdirt","treasure"];
