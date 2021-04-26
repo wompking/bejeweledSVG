@@ -84,7 +84,6 @@
 				<circle cx="0" cy="0" r="20" fill="rgb(228, 235, 236)" stroke="rgb(133, 149, 153)" stroke-width="2px"/>
 			</symbol>
 			<symbol id="tile_hyper" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
-				<polygon points="0,20 17,10 17,-10 0,-20 -17,-10 -17,10" fill="url(#hyper_gradient)" transform="scale(1.1,1.1)"/>
 				<polygon points="0,20 17,10 17,-10 0,0" fill="rgb(50, 39, 73)"/>
 				<polygon points="17,-10 0,-20 -17,-10 0,0" fill="rgb(36, 29, 53)"/>
 				<polygon points="-17,-10 -17,10 0,20 0,0" fill="rgb(30, 23, 43)"/>
@@ -123,6 +122,17 @@
 			<symbol id="tile_dirt_4" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
 				<use xlink:href="#tile_dirt_1"/>
 				<rect fill="rgb(189, 189, 165)" stroke="rgb(76, 77, 53)" stroke-width="2px" x="-20" y="-20" width="40" height="40"/>
+			</symbol>
+			<symbol id="tile_hyperdirt" x="-25" y="-25" width="50" height="50" viewBox="-25 -25 50 50">
+				<use xlink:href="#tile_dirt_1"/>
+				<polygon points="0,20 17,10 17,-10 0,0" fill="rgb(50, 39, 73)"/>
+				<polygon points="17,-10 0,-20 -17,-10 0,0" fill="rgb(36, 29, 53)"/>
+				<polygon points="-17,-10 -17,10 0,20 0,0" fill="rgb(30, 23, 43)"/>
+				<polygon points="0,20 8.5,15 8.5,-5 -8.5,-15 -17,-10 -17,0 0,10 17,0 17,-10 8.5,-15 -8.5,-5 -8.5,15 0,20 17,10 17,-10 0,-20 -17,-10 -17,10" stroke="rgb(100,100,100)" stroke-width="4px" fill="none"/>
+				<polygon points="0,20 17,10 17,-10 0,-20 -17,-10 -17,10" stroke="black" stroke-width="2px" fill="none"/>
+				<line x1="0" y1="20" x2="0" y2="0" stroke="black" stroke-width="2px"/>
+				<line x1="17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
+				<line x1="-17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
 			</symbol>
 			<g id="overlay_fire">
 				<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.5"/>
@@ -946,7 +956,12 @@
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
 						if ((y>=7)&&(mode=="mine")){
-							grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
+							let rand = Math.floor(Math.random()*140);
+							if (rand == 0){
+								grid[`${x}-${y}`] = {tile:"hyperdirt",overlay:"none"};
+							} else {
+								grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
+							}
 						} else {
 							grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 						}
@@ -1133,42 +1148,46 @@
 			}
 			function detonate(x,y,detval){
 				//console.log("detonate",x,y,detval);
-				if (!groundTiles.includes(detval)){
-					let getGrid = grid[`${x}-${y}`]
-					if (getGrid && getGrid.overlay){
-						if (!getGrid.new){
-							getGrid.hardness -= 1;
-							getGrid.hardness = Math.max(getGrid.hardness,0)
-							if (getGrid.overlay != "none"){
-								if (getGrid.overlay == "fire"){
-									animations[`${x}-${y}`] = {type:"firebreak",time:3}
-								} else {
-									animations[`${x}-${y}`] = {type:"starbreak",time:3}
-								}
-							} else if (getGrid.tile == "hyper"){
-								for (let xv=0;xv<12;xv++){
-									for (let yv=0;yv<12;yv++){
-										if (grid[`${xv}-${yv}`].tile == detval){
-											animations[`${xv}-${yv}`] = {type:"hyperbreak",time:3};
-										}
-									}
-								}
-								animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
-							} else if (getGrid.tile == "dark"){
-								for (let xv=0;xv<12;xv++){
-									for (let yv=0;yv<12;yv++){
-										if (grid[`${xv}-${yv}`].tile == detval){
-											animations[`${xv}-${yv}`] = {type:"become",data:"hyper",time:3};
-										}
-									}
-								}
-								animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+				let getGrid = grid[`${x}-${y}`]
+				if (getGrid && getGrid.overlay){
+					if (!getGrid.new){
+						getGrid.hardness -= 1;
+						getGrid.hardness = Math.max(getGrid.hardness,0)
+						if (getGrid.overlay != "none"){
+							if (getGrid.overlay == "fire"){
+								animations[`${x}-${y}`] = {type:"firebreak",time:3}
+							} else {
+								animations[`${x}-${y}`] = {type:"starbreak",time:3}
 							}
-							if (!getGrid.hardness){
+						} else if (detval !== "hypercube" && ((getGrid.tile == "hyper")||(getGrid.tile == "hyperdirt" && detval !== undefined))){
+							for (let xv=0;xv<12;xv++){
+								for (let yv=0;yv<12;yv++){
+									if (grid[`${xv}-${yv}`].tile == detval){
+										animations[`${xv}-${yv}`] = {type:"hyperbreak",time:3};
+									}
+								}
+							}
+							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+						} else if (getGrid.tile == "dark"){
+							for (let xv=0;xv<12;xv++){
+								for (let yv=0;yv<12;yv++){
+									if (grid[`${xv}-${yv}`].tile == detval){
+										animations[`${xv}-${yv}`] = {type:"become",data:"hyper",time:3};
+									}
+								}
+							}
+							animations[`${x}-${y}`] = {type:"hyperbreak",time:3};
+						}
+						if (!getGrid.hardness){
+							if (getGrid.tile == "hyperdirt"){
+								grid[`${x}-${y}`]={tile:"hyper",overlay:"none"};
+							} else {
 								grid[`${x}-${y}`]={tile:"none",overlay:"none"};
 							}
+						}
+						if (!groundTiles.includes(getGrid.tile)){
 							detonations = [];
-							if (detval == undefined){
+							if (detval == undefined || detval == "hypercube"){
 								console.log("undef",x,y)
 								if (grid[`${x+1}-${y}`] && (dirtLike.includes(grid[`${x+1}-${y}`].tile))){
 									detonations.push({x:x+1,y:y});
@@ -1184,11 +1203,11 @@
 								}
 							}
 							detonations.forEach(d=>{
-								detonate(d.x,d.y,getGrid.tile);
+								detonate(d.x,d.y,undefined);
 							});
 						}
 					}
-				} 
+				}
 			}
 			function doMatches(){
 				//console.log("doMatches");
@@ -1316,7 +1335,7 @@
 									if (get.type == "hyperbreak"){
 										animations[`${x}-${y}`] = undefined;
 										updated = true;
-										detonations.push({x:x,y:y,g:undefined});
+										detonations.push({x:x,y:y,g:"hypercube"});
 									} else if (get.type == "become"){
 										animations[`${x}-${y}`] = undefined;
 										updated = true;
