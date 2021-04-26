@@ -894,7 +894,8 @@
 		// <![CDATA[
 		window.addEventListener('DOMContentLoaded', () => {
 			let previousClicked = null;
-			const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper"];
+			const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper","dark"];
+			const tileSpawn = ["red","orange","yellow","green","blue","purple","white","hyper"];
 			const matchable = ["red","orange","yellow","green","blue","purple","white"];
 			const groundTiles = ["dirt","darkstone","hyperdirt","treasure"];
 			const dirtLike = ["dirt","hyperdirt","treasure"];
@@ -1278,7 +1279,7 @@
 								grid[`${x}-${y}`].new = false;
 								grid[`${x}-${y-1}`].new = false;
 							} else {
-								grid[`${x}-${y}`] = {tile:tileNames[Math.floor(Math.random() * (tileNames.length-0.99))], overlay:"none"};
+								grid[`${x}-${y}`] = {tile:tileSpawn[Math.floor(Math.random() * (tileSpawn.length-0.99))], overlay:"none"};
 								tilesBroken += 1;
 								updated.push(`${x}-${y}`)
 							}
