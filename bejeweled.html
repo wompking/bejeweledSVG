@@ -127,6 +127,13 @@
 					<rect fill="rgb(98, 76, 50)" stroke="none" x="0" y="0" width="25" height="25"/>
 				</g>
 			</symbol>
+			<symbol id="tile_grass" x="-25" y="-25" width="50" height="50">
+				<g transform="translate(25,25)">
+					<use xlink:href="#tile_dirt_1"/>
+					<rect fill="rgb(110, 150, 0)" stroke="none" x="-25" y="-25" width="25" height="5"/>
+					<rect fill="rgb(150, 210, 0)" stroke="none" x="0" y="-25" width="25" height="5"/>
+				</g>
+			</symbol>
 			<symbol id="tile_dirt_2" x="-25" y="-25" width="50" height="50">
 				<g transform="translate(25,25)">
 					<use xlink:href="#tile_dirt_1"/>
@@ -288,471 +295,498 @@
 		</defs>
 		<g id="main" transform="translate(20,20)">
 			<rect fill="rgb(6, 30, 45)" stroke="none" x="-25" y="-25" width="950" height="650"/>
-			<g id="gridlines">
-				<line x1="0" y1="0" x2="0" y2="600" stroke="white" />
-				<line x1="50" y1="0" x2="50" y2="600" stroke="white" />
-				<line x1="100" y1="0" x2="100" y2="600" stroke="white" />
-				<line x1="150" y1="0" x2="150" y2="600" stroke="white" />
-				<line x1="200" y1="0" x2="200" y2="600" stroke="white" />
-				<line x1="250" y1="0" x2="250" y2="600" stroke="white" />
-				<line x1="300" y1="0" x2="300" y2="600" stroke="white" />
-				<line x1="350" y1="0" x2="350" y2="600" stroke="white" />
-				<line x1="400" y1="0" x2="400" y2="600" stroke="white" />
-				<line x1="450" y1="0" x2="450" y2="600" stroke="white" />
-				<line x1="500" y1="0" x2="500" y2="600" stroke="white" />
-				<line x1="550" y1="0" x2="550" y2="600" stroke="white" />
-				<line x1="600" y1="0" x2="600" y2="600" stroke="white" />
-				<line x1="0" y1="0" x2="600" y2="0" stroke="white" />
-				<line x1="0" y1="50" x2="600" y2="50" stroke="white" />
-				<line x1="0" y1="100" x2="600" y2="100" stroke="white" />
-				<line x1="0" y1="150" x2="600" y2="150" stroke="white" />
-				<line x1="0" y1="200" x2="600" y2="200" stroke="white" />
-				<line x1="0" y1="250" x2="600" y2="250" stroke="white" />
-				<line x1="0" y1="300" x2="600" y2="300" stroke="white" />
-				<line x1="0" y1="350" x2="600" y2="350" stroke="white" />
-				<line x1="0" y1="400" x2="600" y2="400" stroke="white" />
-				<line x1="0" y1="450" x2="600" y2="450" stroke="white" />
-				<line x1="0" y1="500" x2="600" y2="500" stroke="white" />
-				<line x1="0" y1="550" x2="600" y2="550" stroke="white" />
-				<line x1="0" y1="600" x2="600" y2="600" stroke="white" />
+			<g id="grid" transform="translate(0,0)">
+				<g id="gridlines">
+					<line x1="0" y1="0" x2="0" y2="600" stroke="white" />
+					<line x1="50" y1="0" x2="50" y2="600" stroke="white" />
+					<line x1="100" y1="0" x2="100" y2="600" stroke="white" />
+					<line x1="150" y1="0" x2="150" y2="600" stroke="white" />
+					<line x1="200" y1="0" x2="200" y2="600" stroke="white" />
+					<line x1="250" y1="0" x2="250" y2="600" stroke="white" />
+					<line x1="300" y1="0" x2="300" y2="600" stroke="white" />
+					<line x1="350" y1="0" x2="350" y2="600" stroke="white" />
+					<line x1="400" y1="0" x2="400" y2="600" stroke="white" />
+					<line x1="450" y1="0" x2="450" y2="600" stroke="white" />
+					<line x1="500" y1="0" x2="500" y2="600" stroke="white" />
+					<line x1="550" y1="0" x2="550" y2="600" stroke="white" />
+					<line x1="600" y1="0" x2="600" y2="600" stroke="white" />
+					<line x1="0" y1="0" x2="600" y2="0" stroke="white" />
+					<line x1="0" y1="50" x2="600" y2="50" stroke="white" />
+					<line x1="0" y1="100" x2="600" y2="100" stroke="white" />
+					<line x1="0" y1="150" x2="600" y2="150" stroke="white" />
+					<line x1="0" y1="200" x2="600" y2="200" stroke="white" />
+					<line x1="0" y1="250" x2="600" y2="250" stroke="white" />
+					<line x1="0" y1="300" x2="600" y2="300" stroke="white" />
+					<line x1="0" y1="350" x2="600" y2="350" stroke="white" />
+					<line x1="0" y1="400" x2="600" y2="400" stroke="white" />
+					<line x1="0" y1="450" x2="600" y2="450" stroke="white" />
+					<line x1="0" y1="500" x2="600" y2="500" stroke="white" />
+					<line x1="0" y1="550" x2="600" y2="550" stroke="white" />
+					<line x1="0" y1="600" x2="600" y2="600" stroke="white" />
+				</g>
+				<g id="tilegrid" transform="translate(25,25)">
+					<use xlink:href="#tile_none" x="0" y="0" id="tilebase-0-0"/>
+					<use xlink:href="#tile_none" x="0" y="50" id="tilebase-0-1"/>
+					<use xlink:href="#tile_none" x="0" y="100" id="tilebase-0-2"/>
+					<use xlink:href="#tile_none" x="0" y="150" id="tilebase-0-3"/>
+					<use xlink:href="#tile_none" x="0" y="200" id="tilebase-0-4"/>
+					<use xlink:href="#tile_none" x="0" y="250" id="tilebase-0-5"/>
+					<use xlink:href="#tile_none" x="0" y="300" id="tilebase-0-6"/>
+					<use xlink:href="#tile_none" x="0" y="350" id="tilebase-0-7"/>
+					<use xlink:href="#tile_none" x="0" y="400" id="tilebase-0-8"/>
+					<use xlink:href="#tile_none" x="0" y="450" id="tilebase-0-9"/>
+					<use xlink:href="#tile_none" x="0" y="500" id="tilebase-0-10"/>
+					<use xlink:href="#tile_none" x="0" y="550" id="tilebase-0-11"/>
+					<use xlink:href="#tile_none" x="50" y="0" id="tilebase-1-0"/>
+					<use xlink:href="#tile_none" x="50" y="50" id="tilebase-1-1"/>
+					<use xlink:href="#tile_none" x="50" y="100" id="tilebase-1-2"/>
+					<use xlink:href="#tile_none" x="50" y="150" id="tilebase-1-3"/>
+					<use xlink:href="#tile_none" x="50" y="200" id="tilebase-1-4"/>
+					<use xlink:href="#tile_none" x="50" y="250" id="tilebase-1-5"/>
+					<use xlink:href="#tile_none" x="50" y="300" id="tilebase-1-6"/>
+					<use xlink:href="#tile_none" x="50" y="350" id="tilebase-1-7"/>
+					<use xlink:href="#tile_none" x="50" y="400" id="tilebase-1-8"/>
+					<use xlink:href="#tile_none" x="50" y="450" id="tilebase-1-9"/>
+					<use xlink:href="#tile_none" x="50" y="500" id="tilebase-1-10"/>
+					<use xlink:href="#tile_none" x="50" y="550" id="tilebase-1-11"/>
+					<use xlink:href="#tile_none" x="100" y="0" id="tilebase-2-0"/>
+					<use xlink:href="#tile_none" x="100" y="50" id="tilebase-2-1"/>
+					<use xlink:href="#tile_none" x="100" y="100" id="tilebase-2-2"/>
+					<use xlink:href="#tile_none" x="100" y="150" id="tilebase-2-3"/>
+					<use xlink:href="#tile_none" x="100" y="200" id="tilebase-2-4"/>
+					<use xlink:href="#tile_none" x="100" y="250" id="tilebase-2-5"/>
+					<use xlink:href="#tile_none" x="100" y="300" id="tilebase-2-6"/>
+					<use xlink:href="#tile_none" x="100" y="350" id="tilebase-2-7"/>
+					<use xlink:href="#tile_none" x="100" y="400" id="tilebase-2-8"/>
+					<use xlink:href="#tile_none" x="100" y="450" id="tilebase-2-9"/>
+					<use xlink:href="#tile_none" x="100" y="500" id="tilebase-2-10"/>
+					<use xlink:href="#tile_none" x="100" y="550" id="tilebase-2-11"/>
+					<use xlink:href="#tile_none" x="150" y="0" id="tilebase-3-0"/>
+					<use xlink:href="#tile_none" x="150" y="50" id="tilebase-3-1"/>
+					<use xlink:href="#tile_none" x="150" y="100" id="tilebase-3-2"/>
+					<use xlink:href="#tile_none" x="150" y="150" id="tilebase-3-3"/>
+					<use xlink:href="#tile_none" x="150" y="200" id="tilebase-3-4"/>
+					<use xlink:href="#tile_none" x="150" y="250" id="tilebase-3-5"/>
+					<use xlink:href="#tile_none" x="150" y="300" id="tilebase-3-6"/>
+					<use xlink:href="#tile_none" x="150" y="350" id="tilebase-3-7"/>
+					<use xlink:href="#tile_none" x="150" y="400" id="tilebase-3-8"/>
+					<use xlink:href="#tile_none" x="150" y="450" id="tilebase-3-9"/>
+					<use xlink:href="#tile_none" x="150" y="500" id="tilebase-3-10"/>
+					<use xlink:href="#tile_none" x="150" y="550" id="tilebase-3-11"/>
+					<use xlink:href="#tile_none" x="200" y="0" id="tilebase-4-0"/>
+					<use xlink:href="#tile_none" x="200" y="50" id="tilebase-4-1"/>
+					<use xlink:href="#tile_none" x="200" y="100" id="tilebase-4-2"/>
+					<use xlink:href="#tile_none" x="200" y="150" id="tilebase-4-3"/>
+					<use xlink:href="#tile_none" x="200" y="200" id="tilebase-4-4"/>
+					<use xlink:href="#tile_none" x="200" y="250" id="tilebase-4-5"/>
+					<use xlink:href="#tile_none" x="200" y="300" id="tilebase-4-6"/>
+					<use xlink:href="#tile_none" x="200" y="350" id="tilebase-4-7"/>
+					<use xlink:href="#tile_none" x="200" y="400" id="tilebase-4-8"/>
+					<use xlink:href="#tile_none" x="200" y="450" id="tilebase-4-9"/>
+					<use xlink:href="#tile_none" x="200" y="500" id="tilebase-4-10"/>
+					<use xlink:href="#tile_none" x="200" y="550" id="tilebase-4-11"/>
+					<use xlink:href="#tile_none" x="250" y="0" id="tilebase-5-0"/>
+					<use xlink:href="#tile_none" x="250" y="50" id="tilebase-5-1"/>
+					<use xlink:href="#tile_none" x="250" y="100" id="tilebase-5-2"/>
+					<use xlink:href="#tile_none" x="250" y="150" id="tilebase-5-3"/>
+					<use xlink:href="#tile_none" x="250" y="200" id="tilebase-5-4"/>
+					<use xlink:href="#tile_none" x="250" y="250" id="tilebase-5-5"/>
+					<use xlink:href="#tile_none" x="250" y="300" id="tilebase-5-6"/>
+					<use xlink:href="#tile_none" x="250" y="350" id="tilebase-5-7"/>
+					<use xlink:href="#tile_none" x="250" y="400" id="tilebase-5-8"/>
+					<use xlink:href="#tile_none" x="250" y="450" id="tilebase-5-9"/>
+					<use xlink:href="#tile_none" x="250" y="500" id="tilebase-5-10"/>
+					<use xlink:href="#tile_none" x="250" y="550" id="tilebase-5-11"/>
+					<use xlink:href="#tile_none" x="300" y="0" id="tilebase-6-0"/>
+					<use xlink:href="#tile_none" x="300" y="50" id="tilebase-6-1"/>
+					<use xlink:href="#tile_none" x="300" y="100" id="tilebase-6-2"/>
+					<use xlink:href="#tile_none" x="300" y="150" id="tilebase-6-3"/>
+					<use xlink:href="#tile_none" x="300" y="200" id="tilebase-6-4"/>
+					<use xlink:href="#tile_none" x="300" y="250" id="tilebase-6-5"/>
+					<use xlink:href="#tile_none" x="300" y="300" id="tilebase-6-6"/>
+					<use xlink:href="#tile_none" x="300" y="350" id="tilebase-6-7"/>
+					<use xlink:href="#tile_none" x="300" y="400" id="tilebase-6-8"/>
+					<use xlink:href="#tile_none" x="300" y="450" id="tilebase-6-9"/>
+					<use xlink:href="#tile_none" x="300" y="500" id="tilebase-6-10"/>
+					<use xlink:href="#tile_none" x="300" y="550" id="tilebase-6-11"/>
+					<use xlink:href="#tile_none" x="350" y="0" id="tilebase-7-0"/>
+					<use xlink:href="#tile_none" x="350" y="50" id="tilebase-7-1"/>
+					<use xlink:href="#tile_none" x="350" y="100" id="tilebase-7-2"/>
+					<use xlink:href="#tile_none" x="350" y="150" id="tilebase-7-3"/>
+					<use xlink:href="#tile_none" x="350" y="200" id="tilebase-7-4"/>
+					<use xlink:href="#tile_none" x="350" y="250" id="tilebase-7-5"/>
+					<use xlink:href="#tile_none" x="350" y="300" id="tilebase-7-6"/>
+					<use xlink:href="#tile_none" x="350" y="350" id="tilebase-7-7"/>
+					<use xlink:href="#tile_none" x="350" y="400" id="tilebase-7-8"/>
+					<use xlink:href="#tile_none" x="350" y="450" id="tilebase-7-9"/>
+					<use xlink:href="#tile_none" x="350" y="500" id="tilebase-7-10"/>
+					<use xlink:href="#tile_none" x="350" y="550" id="tilebase-7-11"/>
+					<use xlink:href="#tile_none" x="400" y="0" id="tilebase-8-0"/>
+					<use xlink:href="#tile_none" x="400" y="50" id="tilebase-8-1"/>
+					<use xlink:href="#tile_none" x="400" y="100" id="tilebase-8-2"/>
+					<use xlink:href="#tile_none" x="400" y="150" id="tilebase-8-3"/>
+					<use xlink:href="#tile_none" x="400" y="200" id="tilebase-8-4"/>
+					<use xlink:href="#tile_none" x="400" y="250" id="tilebase-8-5"/>
+					<use xlink:href="#tile_none" x="400" y="300" id="tilebase-8-6"/>
+					<use xlink:href="#tile_none" x="400" y="350" id="tilebase-8-7"/>
+					<use xlink:href="#tile_none" x="400" y="400" id="tilebase-8-8"/>
+					<use xlink:href="#tile_none" x="400" y="450" id="tilebase-8-9"/>
+					<use xlink:href="#tile_none" x="400" y="500" id="tilebase-8-10"/>
+					<use xlink:href="#tile_none" x="400" y="550" id="tilebase-8-11"/>
+					<use xlink:href="#tile_none" x="450" y="0" id="tilebase-9-0"/>
+					<use xlink:href="#tile_none" x="450" y="50" id="tilebase-9-1"/>
+					<use xlink:href="#tile_none" x="450" y="100" id="tilebase-9-2"/>
+					<use xlink:href="#tile_none" x="450" y="150" id="tilebase-9-3"/>
+					<use xlink:href="#tile_none" x="450" y="200" id="tilebase-9-4"/>
+					<use xlink:href="#tile_none" x="450" y="250" id="tilebase-9-5"/>
+					<use xlink:href="#tile_none" x="450" y="300" id="tilebase-9-6"/>
+					<use xlink:href="#tile_none" x="450" y="350" id="tilebase-9-7"/>
+					<use xlink:href="#tile_none" x="450" y="400" id="tilebase-9-8"/>
+					<use xlink:href="#tile_none" x="450" y="450" id="tilebase-9-9"/>
+					<use xlink:href="#tile_none" x="450" y="500" id="tilebase-9-10"/>
+					<use xlink:href="#tile_none" x="450" y="550" id="tilebase-9-11"/>
+					<use xlink:href="#tile_none" x="500" y="0" id="tilebase-10-0"/>
+					<use xlink:href="#tile_none" x="500" y="50" id="tilebase-10-1"/>
+					<use xlink:href="#tile_none" x="500" y="100" id="tilebase-10-2"/>
+					<use xlink:href="#tile_none" x="500" y="150" id="tilebase-10-3"/>
+					<use xlink:href="#tile_none" x="500" y="200" id="tilebase-10-4"/>
+					<use xlink:href="#tile_none" x="500" y="250" id="tilebase-10-5"/>
+					<use xlink:href="#tile_none" x="500" y="300" id="tilebase-10-6"/>
+					<use xlink:href="#tile_none" x="500" y="350" id="tilebase-10-7"/>
+					<use xlink:href="#tile_none" x="500" y="400" id="tilebase-10-8"/>
+					<use xlink:href="#tile_none" x="500" y="450" id="tilebase-10-9"/>
+					<use xlink:href="#tile_none" x="500" y="500" id="tilebase-10-10"/>
+					<use xlink:href="#tile_none" x="500" y="550" id="tilebase-10-11"/>
+					<use xlink:href="#tile_none" x="550" y="0" id="tilebase-11-0"/>
+					<use xlink:href="#tile_none" x="550" y="50" id="tilebase-11-1"/>
+					<use xlink:href="#tile_none" x="550" y="100" id="tilebase-11-2"/>
+					<use xlink:href="#tile_none" x="550" y="150" id="tilebase-11-3"/>
+					<use xlink:href="#tile_none" x="550" y="200" id="tilebase-11-4"/>
+					<use xlink:href="#tile_none" x="550" y="250" id="tilebase-11-5"/>
+					<use xlink:href="#tile_none" x="550" y="300" id="tilebase-11-6"/>
+					<use xlink:href="#tile_none" x="550" y="350" id="tilebase-11-7"/>
+					<use xlink:href="#tile_none" x="550" y="400" id="tilebase-11-8"/>
+					<use xlink:href="#tile_none" x="550" y="450" id="tilebase-11-9"/>
+					<use xlink:href="#tile_none" x="550" y="500" id="tilebase-11-10"/>
+					<use xlink:href="#tile_none" x="550" y="550" id="tilebase-11-11"/>
+				</g>
+				<g id="tileoverlay" transform="translate(25,25)">
+					<use xlink:href="#overlay_none" transform="translate(0,0)" id="tileoverlay-0-0"/>
+					<use xlink:href="#overlay_none" transform="translate(0,50)" id="tileoverlay-0-1"/>
+					<use xlink:href="#overlay_none" transform="translate(0,100)" id="tileoverlay-0-2"/>
+					<use xlink:href="#overlay_none" transform="translate(0,150)" id="tileoverlay-0-3"/>
+					<use xlink:href="#overlay_none" transform="translate(0,200)" id="tileoverlay-0-4"/>
+					<use xlink:href="#overlay_none" transform="translate(0,250)" id="tileoverlay-0-5"/>
+					<use xlink:href="#overlay_none" transform="translate(0,300)" id="tileoverlay-0-6"/>
+					<use xlink:href="#overlay_none" transform="translate(0,350)" id="tileoverlay-0-7"/>
+					<use xlink:href="#overlay_none" transform="translate(0,400)" id="tileoverlay-0-8"/>
+					<use xlink:href="#overlay_none" transform="translate(0,450)" id="tileoverlay-0-9"/>
+					<use xlink:href="#overlay_none" transform="translate(0,500)" id="tileoverlay-0-10"/>
+					<use xlink:href="#overlay_none" transform="translate(0,550)" id="tileoverlay-0-11"/>
+					<use xlink:href="#overlay_none" transform="translate(50,0)" id="tileoverlay-1-0"/>
+					<use xlink:href="#overlay_none" transform="translate(50,50)" id="tileoverlay-1-1"/>
+					<use xlink:href="#overlay_none" transform="translate(50,100)" id="tileoverlay-1-2"/>
+					<use xlink:href="#overlay_none" transform="translate(50,150)" id="tileoverlay-1-3"/>
+					<use xlink:href="#overlay_none" transform="translate(50,200)" id="tileoverlay-1-4"/>
+					<use xlink:href="#overlay_none" transform="translate(50,250)" id="tileoverlay-1-5"/>
+					<use xlink:href="#overlay_none" transform="translate(50,300)" id="tileoverlay-1-6"/>
+					<use xlink:href="#overlay_none" transform="translate(50,350)" id="tileoverlay-1-7"/>
+					<use xlink:href="#overlay_none" transform="translate(50,400)" id="tileoverlay-1-8"/>
+					<use xlink:href="#overlay_none" transform="translate(50,450)" id="tileoverlay-1-9"/>
+					<use xlink:href="#overlay_none" transform="translate(50,500)" id="tileoverlay-1-10"/>
+					<use xlink:href="#overlay_none" transform="translate(50,550)" id="tileoverlay-1-11"/>
+					<use xlink:href="#overlay_none" transform="translate(100,0)" id="tileoverlay-2-0"/>
+					<use xlink:href="#overlay_none" transform="translate(100,50)" id="tileoverlay-2-1"/>
+					<use xlink:href="#overlay_none" transform="translate(100,100)" id="tileoverlay-2-2"/>
+					<use xlink:href="#overlay_none" transform="translate(100,150)" id="tileoverlay-2-3"/>
+					<use xlink:href="#overlay_none" transform="translate(100,200)" id="tileoverlay-2-4"/>
+					<use xlink:href="#overlay_none" transform="translate(100,250)" id="tileoverlay-2-5"/>
+					<use xlink:href="#overlay_none" transform="translate(100,300)" id="tileoverlay-2-6"/>
+					<use xlink:href="#overlay_none" transform="translate(100,350)" id="tileoverlay-2-7"/>
+					<use xlink:href="#overlay_none" transform="translate(100,400)" id="tileoverlay-2-8"/>
+					<use xlink:href="#overlay_none" transform="translate(100,450)" id="tileoverlay-2-9"/>
+					<use xlink:href="#overlay_none" transform="translate(100,500)" id="tileoverlay-2-10"/>
+					<use xlink:href="#overlay_none" transform="translate(100,550)" id="tileoverlay-2-11"/>
+					<use xlink:href="#overlay_none" transform="translate(150,0)" id="tileoverlay-3-0"/>
+					<use xlink:href="#overlay_none" transform="translate(150,50)" id="tileoverlay-3-1"/>
+					<use xlink:href="#overlay_none" transform="translate(150,100)" id="tileoverlay-3-2"/>
+					<use xlink:href="#overlay_none" transform="translate(150,150)" id="tileoverlay-3-3"/>
+					<use xlink:href="#overlay_none" transform="translate(150,200)" id="tileoverlay-3-4"/>
+					<use xlink:href="#overlay_none" transform="translate(150,250)" id="tileoverlay-3-5"/>
+					<use xlink:href="#overlay_none" transform="translate(150,300)" id="tileoverlay-3-6"/>
+					<use xlink:href="#overlay_none" transform="translate(150,350)" id="tileoverlay-3-7"/>
+					<use xlink:href="#overlay_none" transform="translate(150,400)" id="tileoverlay-3-8"/>
+					<use xlink:href="#overlay_none" transform="translate(150,450)" id="tileoverlay-3-9"/>
+					<use xlink:href="#overlay_none" transform="translate(150,500)" id="tileoverlay-3-10"/>
+					<use xlink:href="#overlay_none" transform="translate(150,550)" id="tileoverlay-3-11"/>
+					<use xlink:href="#overlay_none" transform="translate(200,0)" id="tileoverlay-4-0"/>
+					<use xlink:href="#overlay_none" transform="translate(200,50)" id="tileoverlay-4-1"/>
+					<use xlink:href="#overlay_none" transform="translate(200,100)" id="tileoverlay-4-2"/>
+					<use xlink:href="#overlay_none" transform="translate(200,150)" id="tileoverlay-4-3"/>
+					<use xlink:href="#overlay_none" transform="translate(200,200)" id="tileoverlay-4-4"/>
+					<use xlink:href="#overlay_none" transform="translate(200,250)" id="tileoverlay-4-5"/>
+					<use xlink:href="#overlay_none" transform="translate(200,300)" id="tileoverlay-4-6"/>
+					<use xlink:href="#overlay_none" transform="translate(200,350)" id="tileoverlay-4-7"/>
+					<use xlink:href="#overlay_none" transform="translate(200,400)" id="tileoverlay-4-8"/>
+					<use xlink:href="#overlay_none" transform="translate(200,450)" id="tileoverlay-4-9"/>
+					<use xlink:href="#overlay_none" transform="translate(200,500)" id="tileoverlay-4-10"/>
+					<use xlink:href="#overlay_none" transform="translate(200,550)" id="tileoverlay-4-11"/>
+					<use xlink:href="#overlay_none" transform="translate(250,0)" id="tileoverlay-5-0"/>
+					<use xlink:href="#overlay_none" transform="translate(250,50)" id="tileoverlay-5-1"/>
+					<use xlink:href="#overlay_none" transform="translate(250,100)" id="tileoverlay-5-2"/>
+					<use xlink:href="#overlay_none" transform="translate(250,150)" id="tileoverlay-5-3"/>
+					<use xlink:href="#overlay_none" transform="translate(250,200)" id="tileoverlay-5-4"/>
+					<use xlink:href="#overlay_none" transform="translate(250,250)" id="tileoverlay-5-5"/>
+					<use xlink:href="#overlay_none" transform="translate(250,300)" id="tileoverlay-5-6"/>
+					<use xlink:href="#overlay_none" transform="translate(250,350)" id="tileoverlay-5-7"/>
+					<use xlink:href="#overlay_none" transform="translate(250,400)" id="tileoverlay-5-8"/>
+					<use xlink:href="#overlay_none" transform="translate(250,450)" id="tileoverlay-5-9"/>
+					<use xlink:href="#overlay_none" transform="translate(250,500)" id="tileoverlay-5-10"/>
+					<use xlink:href="#overlay_none" transform="translate(250,550)" id="tileoverlay-5-11"/>
+					<use xlink:href="#overlay_none" transform="translate(300,0)" id="tileoverlay-6-0"/>
+					<use xlink:href="#overlay_none" transform="translate(300,50)" id="tileoverlay-6-1"/>
+					<use xlink:href="#overlay_none" transform="translate(300,100)" id="tileoverlay-6-2"/>
+					<use xlink:href="#overlay_none" transform="translate(300,150)" id="tileoverlay-6-3"/>
+					<use xlink:href="#overlay_none" transform="translate(300,200)" id="tileoverlay-6-4"/>
+					<use xlink:href="#overlay_none" transform="translate(300,250)" id="tileoverlay-6-5"/>
+					<use xlink:href="#overlay_none" transform="translate(300,300)" id="tileoverlay-6-6"/>
+					<use xlink:href="#overlay_none" transform="translate(300,350)" id="tileoverlay-6-7"/>
+					<use xlink:href="#overlay_none" transform="translate(300,400)" id="tileoverlay-6-8"/>
+					<use xlink:href="#overlay_none" transform="translate(300,450)" id="tileoverlay-6-9"/>
+					<use xlink:href="#overlay_none" transform="translate(300,500)" id="tileoverlay-6-10"/>
+					<use xlink:href="#overlay_none" transform="translate(300,550)" id="tileoverlay-6-11"/>
+					<use xlink:href="#overlay_none" transform="translate(350,0)" id="tileoverlay-7-0"/>
+					<use xlink:href="#overlay_none" transform="translate(350,50)" id="tileoverlay-7-1"/>
+					<use xlink:href="#overlay_none" transform="translate(350,100)" id="tileoverlay-7-2"/>
+					<use xlink:href="#overlay_none" transform="translate(350,150)" id="tileoverlay-7-3"/>
+					<use xlink:href="#overlay_none" transform="translate(350,200)" id="tileoverlay-7-4"/>
+					<use xlink:href="#overlay_none" transform="translate(350,250)" id="tileoverlay-7-5"/>
+					<use xlink:href="#overlay_none" transform="translate(350,300)" id="tileoverlay-7-6"/>
+					<use xlink:href="#overlay_none" transform="translate(350,350)" id="tileoverlay-7-7"/>
+					<use xlink:href="#overlay_none" transform="translate(350,400)" id="tileoverlay-7-8"/>
+					<use xlink:href="#overlay_none" transform="translate(350,450)" id="tileoverlay-7-9"/>
+					<use xlink:href="#overlay_none" transform="translate(350,500)" id="tileoverlay-7-10"/>
+					<use xlink:href="#overlay_none" transform="translate(350,550)" id="tileoverlay-7-11"/>
+					<use xlink:href="#overlay_none" transform="translate(400,0)" id="tileoverlay-8-0"/>
+					<use xlink:href="#overlay_none" transform="translate(400,50)" id="tileoverlay-8-1"/>
+					<use xlink:href="#overlay_none" transform="translate(400,100)" id="tileoverlay-8-2"/>
+					<use xlink:href="#overlay_none" transform="translate(400,150)" id="tileoverlay-8-3"/>
+					<use xlink:href="#overlay_none" transform="translate(400,200)" id="tileoverlay-8-4"/>
+					<use xlink:href="#overlay_none" transform="translate(400,250)" id="tileoverlay-8-5"/>
+					<use xlink:href="#overlay_none" transform="translate(400,300)" id="tileoverlay-8-6"/>
+					<use xlink:href="#overlay_none" transform="translate(400,350)" id="tileoverlay-8-7"/>
+					<use xlink:href="#overlay_none" transform="translate(400,400)" id="tileoverlay-8-8"/>
+					<use xlink:href="#overlay_none" transform="translate(400,450)" id="tileoverlay-8-9"/>
+					<use xlink:href="#overlay_none" transform="translate(400,500)" id="tileoverlay-8-10"/>
+					<use xlink:href="#overlay_none" transform="translate(400,550)" id="tileoverlay-8-11"/>
+					<use xlink:href="#overlay_none" transform="translate(450,0)" id="tileoverlay-9-0"/>
+					<use xlink:href="#overlay_none" transform="translate(450,50)" id="tileoverlay-9-1"/>
+					<use xlink:href="#overlay_none" transform="translate(450,100)" id="tileoverlay-9-2"/>
+					<use xlink:href="#overlay_none" transform="translate(450,150)" id="tileoverlay-9-3"/>
+					<use xlink:href="#overlay_none" transform="translate(450,200)" id="tileoverlay-9-4"/>
+					<use xlink:href="#overlay_none" transform="translate(450,250)" id="tileoverlay-9-5"/>
+					<use xlink:href="#overlay_none" transform="translate(450,300)" id="tileoverlay-9-6"/>
+					<use xlink:href="#overlay_none" transform="translate(450,350)" id="tileoverlay-9-7"/>
+					<use xlink:href="#overlay_none" transform="translate(450,400)" id="tileoverlay-9-8"/>
+					<use xlink:href="#overlay_none" transform="translate(450,450)" id="tileoverlay-9-9"/>
+					<use xlink:href="#overlay_none" transform="translate(450,500)" id="tileoverlay-9-10"/>
+					<use xlink:href="#overlay_none" transform="translate(450,550)" id="tileoverlay-9-11"/>
+					<use xlink:href="#overlay_none" transform="translate(500,0)" id="tileoverlay-10-0"/>
+					<use xlink:href="#overlay_none" transform="translate(500,50)" id="tileoverlay-10-1"/>
+					<use xlink:href="#overlay_none" transform="translate(500,100)" id="tileoverlay-10-2"/>
+					<use xlink:href="#overlay_none" transform="translate(500,150)" id="tileoverlay-10-3"/>
+					<use xlink:href="#overlay_none" transform="translate(500,200)" id="tileoverlay-10-4"/>
+					<use xlink:href="#overlay_none" transform="translate(500,250)" id="tileoverlay-10-5"/>
+					<use xlink:href="#overlay_none" transform="translate(500,300)" id="tileoverlay-10-6"/>
+					<use xlink:href="#overlay_none" transform="translate(500,350)" id="tileoverlay-10-7"/>
+					<use xlink:href="#overlay_none" transform="translate(500,400)" id="tileoverlay-10-8"/>
+					<use xlink:href="#overlay_none" transform="translate(500,450)" id="tileoverlay-10-9"/>
+					<use xlink:href="#overlay_none" transform="translate(500,500)" id="tileoverlay-10-10"/>
+					<use xlink:href="#overlay_none" transform="translate(500,550)" id="tileoverlay-10-11"/>
+					<use xlink:href="#overlay_none" transform="translate(550,0)" id="tileoverlay-11-0"/>
+					<use xlink:href="#overlay_none" transform="translate(550,50)" id="tileoverlay-11-1"/>
+					<use xlink:href="#overlay_none" transform="translate(550,100)" id="tileoverlay-11-2"/>
+					<use xlink:href="#overlay_none" transform="translate(550,150)" id="tileoverlay-11-3"/>
+					<use xlink:href="#overlay_none" transform="translate(550,200)" id="tileoverlay-11-4"/>
+					<use xlink:href="#overlay_none" transform="translate(550,250)" id="tileoverlay-11-5"/>
+					<use xlink:href="#overlay_none" transform="translate(550,300)" id="tileoverlay-11-6"/>
+					<use xlink:href="#overlay_none" transform="translate(550,350)" id="tileoverlay-11-7"/>
+					<use xlink:href="#overlay_none" transform="translate(550,400)" id="tileoverlay-11-8"/>
+					<use xlink:href="#overlay_none" transform="translate(550,450)" id="tileoverlay-11-9"/>
+					<use xlink:href="#overlay_none" transform="translate(550,500)" id="tileoverlay-11-10"/>
+					<use xlink:href="#overlay_none" transform="translate(550,550)" id="tileoverlay-11-11"/>
+				</g>
+				<g id="animation" transform="translate(25,25)">
+					<use xlink:href="#animation_none" transform="translate(0,0)" id="animation-0-0"/>
+					<use xlink:href="#animation_none" transform="translate(0,50)" id="animation-0-1"/>
+					<use xlink:href="#animation_none" transform="translate(0,100)" id="animation-0-2"/>
+					<use xlink:href="#animation_none" transform="translate(0,150)" id="animation-0-3"/>
+					<use xlink:href="#animation_none" transform="translate(0,200)" id="animation-0-4"/>
+					<use xlink:href="#animation_none" transform="translate(0,250)" id="animation-0-5"/>
+					<use xlink:href="#animation_none" transform="translate(0,300)" id="animation-0-6"/>
+					<use xlink:href="#animation_none" transform="translate(0,350)" id="animation-0-7"/>
+					<use xlink:href="#animation_none" transform="translate(0,400)" id="animation-0-8"/>
+					<use xlink:href="#animation_none" transform="translate(0,450)" id="animation-0-9"/>
+					<use xlink:href="#animation_none" transform="translate(0,500)" id="animation-0-10"/>
+					<use xlink:href="#animation_none" transform="translate(0,550)" id="animation-0-11"/>
+					<use xlink:href="#animation_none" transform="translate(50,0)" id="animation-1-0"/>
+					<use xlink:href="#animation_none" transform="translate(50,50)" id="animation-1-1"/>
+					<use xlink:href="#animation_none" transform="translate(50,100)" id="animation-1-2"/>
+					<use xlink:href="#animation_none" transform="translate(50,150)" id="animation-1-3"/>
+					<use xlink:href="#animation_none" transform="translate(50,200)" id="animation-1-4"/>
+					<use xlink:href="#animation_none" transform="translate(50,250)" id="animation-1-5"/>
+					<use xlink:href="#animation_none" transform="translate(50,300)" id="animation-1-6"/>
+					<use xlink:href="#animation_none" transform="translate(50,350)" id="animation-1-7"/>
+					<use xlink:href="#animation_none" transform="translate(50,400)" id="animation-1-8"/>
+					<use xlink:href="#animation_none" transform="translate(50,450)" id="animation-1-9"/>
+					<use xlink:href="#animation_none" transform="translate(50,500)" id="animation-1-10"/>
+					<use xlink:href="#animation_none" transform="translate(50,550)" id="animation-1-11"/>
+					<use xlink:href="#animation_none" transform="translate(100,0)" id="animation-2-0"/>
+					<use xlink:href="#animation_none" transform="translate(100,50)" id="animation-2-1"/>
+					<use xlink:href="#animation_none" transform="translate(100,100)" id="animation-2-2"/>
+					<use xlink:href="#animation_none" transform="translate(100,150)" id="animation-2-3"/>
+					<use xlink:href="#animation_none" transform="translate(100,200)" id="animation-2-4"/>
+					<use xlink:href="#animation_none" transform="translate(100,250)" id="animation-2-5"/>
+					<use xlink:href="#animation_none" transform="translate(100,300)" id="animation-2-6"/>
+					<use xlink:href="#animation_none" transform="translate(100,350)" id="animation-2-7"/>
+					<use xlink:href="#animation_none" transform="translate(100,400)" id="animation-2-8"/>
+					<use xlink:href="#animation_none" transform="translate(100,450)" id="animation-2-9"/>
+					<use xlink:href="#animation_none" transform="translate(100,500)" id="animation-2-10"/>
+					<use xlink:href="#animation_none" transform="translate(100,550)" id="animation-2-11"/>
+					<use xlink:href="#animation_none" transform="translate(150,0)" id="animation-3-0"/>
+					<use xlink:href="#animation_none" transform="translate(150,50)" id="animation-3-1"/>
+					<use xlink:href="#animation_none" transform="translate(150,100)" id="animation-3-2"/>
+					<use xlink:href="#animation_none" transform="translate(150,150)" id="animation-3-3"/>
+					<use xlink:href="#animation_none" transform="translate(150,200)" id="animation-3-4"/>
+					<use xlink:href="#animation_none" transform="translate(150,250)" id="animation-3-5"/>
+					<use xlink:href="#animation_none" transform="translate(150,300)" id="animation-3-6"/>
+					<use xlink:href="#animation_none" transform="translate(150,350)" id="animation-3-7"/>
+					<use xlink:href="#animation_none" transform="translate(150,400)" id="animation-3-8"/>
+					<use xlink:href="#animation_none" transform="translate(150,450)" id="animation-3-9"/>
+					<use xlink:href="#animation_none" transform="translate(150,500)" id="animation-3-10"/>
+					<use xlink:href="#animation_none" transform="translate(150,550)" id="animation-3-11"/>
+					<use xlink:href="#animation_none" transform="translate(200,0)" id="animation-4-0"/>
+					<use xlink:href="#animation_none" transform="translate(200,50)" id="animation-4-1"/>
+					<use xlink:href="#animation_none" transform="translate(200,100)" id="animation-4-2"/>
+					<use xlink:href="#animation_none" transform="translate(200,150)" id="animation-4-3"/>
+					<use xlink:href="#animation_none" transform="translate(200,200)" id="animation-4-4"/>
+					<use xlink:href="#animation_none" transform="translate(200,250)" id="animation-4-5"/>
+					<use xlink:href="#animation_none" transform="translate(200,300)" id="animation-4-6"/>
+					<use xlink:href="#animation_none" transform="translate(200,350)" id="animation-4-7"/>
+					<use xlink:href="#animation_none" transform="translate(200,400)" id="animation-4-8"/>
+					<use xlink:href="#animation_none" transform="translate(200,450)" id="animation-4-9"/>
+					<use xlink:href="#animation_none" transform="translate(200,500)" id="animation-4-10"/>
+					<use xlink:href="#animation_none" transform="translate(200,550)" id="animation-4-11"/>
+					<use xlink:href="#animation_none" transform="translate(250,0)" id="animation-5-0"/>
+					<use xlink:href="#animation_none" transform="translate(250,50)" id="animation-5-1"/>
+					<use xlink:href="#animation_none" transform="translate(250,100)" id="animation-5-2"/>
+					<use xlink:href="#animation_none" transform="translate(250,150)" id="animation-5-3"/>
+					<use xlink:href="#animation_none" transform="translate(250,200)" id="animation-5-4"/>
+					<use xlink:href="#animation_none" transform="translate(250,250)" id="animation-5-5"/>
+					<use xlink:href="#animation_none" transform="translate(250,300)" id="animation-5-6"/>
+					<use xlink:href="#animation_none" transform="translate(250,350)" id="animation-5-7"/>
+					<use xlink:href="#animation_none" transform="translate(250,400)" id="animation-5-8"/>
+					<use xlink:href="#animation_none" transform="translate(250,450)" id="animation-5-9"/>
+					<use xlink:href="#animation_none" transform="translate(250,500)" id="animation-5-10"/>
+					<use xlink:href="#animation_none" transform="translate(250,550)" id="animation-5-11"/>
+					<use xlink:href="#animation_none" transform="translate(300,0)" id="animation-6-0"/>
+					<use xlink:href="#animation_none" transform="translate(300,50)" id="animation-6-1"/>
+					<use xlink:href="#animation_none" transform="translate(300,100)" id="animation-6-2"/>
+					<use xlink:href="#animation_none" transform="translate(300,150)" id="animation-6-3"/>
+					<use xlink:href="#animation_none" transform="translate(300,200)" id="animation-6-4"/>
+					<use xlink:href="#animation_none" transform="translate(300,250)" id="animation-6-5"/>
+					<use xlink:href="#animation_none" transform="translate(300,300)" id="animation-6-6"/>
+					<use xlink:href="#animation_none" transform="translate(300,350)" id="animation-6-7"/>
+					<use xlink:href="#animation_none" transform="translate(300,400)" id="animation-6-8"/>
+					<use xlink:href="#animation_none" transform="translate(300,450)" id="animation-6-9"/>
+					<use xlink:href="#animation_none" transform="translate(300,500)" id="animation-6-10"/>
+					<use xlink:href="#animation_none" transform="translate(300,550)" id="animation-6-11"/>
+					<use xlink:href="#animation_none" transform="translate(350,0)" id="animation-7-0"/>
+					<use xlink:href="#animation_none" transform="translate(350,50)" id="animation-7-1"/>
+					<use xlink:href="#animation_none" transform="translate(350,100)" id="animation-7-2"/>
+					<use xlink:href="#animation_none" transform="translate(350,150)" id="animation-7-3"/>
+					<use xlink:href="#animation_none" transform="translate(350,200)" id="animation-7-4"/>
+					<use xlink:href="#animation_none" transform="translate(350,250)" id="animation-7-5"/>
+					<use xlink:href="#animation_none" transform="translate(350,300)" id="animation-7-6"/>
+					<use xlink:href="#animation_none" transform="translate(350,350)" id="animation-7-7"/>
+					<use xlink:href="#animation_none" transform="translate(350,400)" id="animation-7-8"/>
+					<use xlink:href="#animation_none" transform="translate(350,450)" id="animation-7-9"/>
+					<use xlink:href="#animation_none" transform="translate(350,500)" id="animation-7-10"/>
+					<use xlink:href="#animation_none" transform="translate(350,550)" id="animation-7-11"/>
+					<use xlink:href="#animation_none" transform="translate(400,0)" id="animation-8-0"/>
+					<use xlink:href="#animation_none" transform="translate(400,50)" id="animation-8-1"/>
+					<use xlink:href="#animation_none" transform="translate(400,100)" id="animation-8-2"/>
+					<use xlink:href="#animation_none" transform="translate(400,150)" id="animation-8-3"/>
+					<use xlink:href="#animation_none" transform="translate(400,200)" id="animation-8-4"/>
+					<use xlink:href="#animation_none" transform="translate(400,250)" id="animation-8-5"/>
+					<use xlink:href="#animation_none" transform="translate(400,300)" id="animation-8-6"/>
+					<use xlink:href="#animation_none" transform="translate(400,350)" id="animation-8-7"/>
+					<use xlink:href="#animation_none" transform="translate(400,400)" id="animation-8-8"/>
+					<use xlink:href="#animation_none" transform="translate(400,450)" id="animation-8-9"/>
+					<use xlink:href="#animation_none" transform="translate(400,500)" id="animation-8-10"/>
+					<use xlink:href="#animation_none" transform="translate(400,550)" id="animation-8-11"/>
+					<use xlink:href="#animation_none" transform="translate(450,0)" id="animation-9-0"/>
+					<use xlink:href="#animation_none" transform="translate(450,50)" id="animation-9-1"/>
+					<use xlink:href="#animation_none" transform="translate(450,100)" id="animation-9-2"/>
+					<use xlink:href="#animation_none" transform="translate(450,150)" id="animation-9-3"/>
+					<use xlink:href="#animation_none" transform="translate(450,200)" id="animation-9-4"/>
+					<use xlink:href="#animation_none" transform="translate(450,250)" id="animation-9-5"/>
+					<use xlink:href="#animation_none" transform="translate(450,300)" id="animation-9-6"/>
+					<use xlink:href="#animation_none" transform="translate(450,350)" id="animation-9-7"/>
+					<use xlink:href="#animation_none" transform="translate(450,400)" id="animation-9-8"/>
+					<use xlink:href="#animation_none" transform="translate(450,450)" id="animation-9-9"/>
+					<use xlink:href="#animation_none" transform="translate(450,500)" id="animation-9-10"/>
+					<use xlink:href="#animation_none" transform="translate(450,550)" id="animation-9-11"/>
+					<use xlink:href="#animation_none" transform="translate(500,0)" id="animation-10-0"/>
+					<use xlink:href="#animation_none" transform="translate(500,50)" id="animation-10-1"/>
+					<use xlink:href="#animation_none" transform="translate(500,100)" id="animation-10-2"/>
+					<use xlink:href="#animation_none" transform="translate(500,150)" id="animation-10-3"/>
+					<use xlink:href="#animation_none" transform="translate(500,200)" id="animation-10-4"/>
+					<use xlink:href="#animation_none" transform="translate(500,250)" id="animation-10-5"/>
+					<use xlink:href="#animation_none" transform="translate(500,300)" id="animation-10-6"/>
+					<use xlink:href="#animation_none" transform="translate(500,350)" id="animation-10-7"/>
+					<use xlink:href="#animation_none" transform="translate(500,400)" id="animation-10-8"/>
+					<use xlink:href="#animation_none" transform="translate(500,450)" id="animation-10-9"/>
+					<use xlink:href="#animation_none" transform="translate(500,500)" id="animation-10-10"/>
+					<use xlink:href="#animation_none" transform="translate(500,550)" id="animation-10-11"/>
+					<use xlink:href="#animation_none" transform="translate(550,0)" id="animation-11-0"/>
+					<use xlink:href="#animation_none" transform="translate(550,50)" id="animation-11-1"/>
+					<use xlink:href="#animation_none" transform="translate(550,100)" id="animation-11-2"/>
+					<use xlink:href="#animation_none" transform="translate(550,150)" id="animation-11-3"/>
+					<use xlink:href="#animation_none" transform="translate(550,200)" id="animation-11-4"/>
+					<use xlink:href="#animation_none" transform="translate(550,250)" id="animation-11-5"/>
+					<use xlink:href="#animation_none" transform="translate(550,300)" id="animation-11-6"/>
+					<use xlink:href="#animation_none" transform="translate(550,350)" id="animation-11-7"/>
+					<use xlink:href="#animation_none" transform="translate(550,400)" id="animation-11-8"/>
+					<use xlink:href="#animation_none" transform="translate(550,450)" id="animation-11-9"/>
+					<use xlink:href="#animation_none" transform="translate(550,500)" id="animation-11-10"/>
+					<use xlink:href="#animation_none" transform="translate(550,550)" id="animation-11-11"/>
+				</g>
 			</g>
-			<g id="tilegrid" transform="translate(25,25)">
-				<use xlink:href="#tile_none" x="0" y="0" id="tilebase-0-0"/>
-				<use xlink:href="#tile_none" x="0" y="50" id="tilebase-0-1"/>
-				<use xlink:href="#tile_none" x="0" y="100" id="tilebase-0-2"/>
-				<use xlink:href="#tile_none" x="0" y="150" id="tilebase-0-3"/>
-				<use xlink:href="#tile_none" x="0" y="200" id="tilebase-0-4"/>
-				<use xlink:href="#tile_none" x="0" y="250" id="tilebase-0-5"/>
-				<use xlink:href="#tile_none" x="0" y="300" id="tilebase-0-6"/>
-				<use xlink:href="#tile_none" x="0" y="350" id="tilebase-0-7"/>
-				<use xlink:href="#tile_none" x="0" y="400" id="tilebase-0-8"/>
-				<use xlink:href="#tile_none" x="0" y="450" id="tilebase-0-9"/>
-				<use xlink:href="#tile_none" x="0" y="500" id="tilebase-0-10"/>
-				<use xlink:href="#tile_none" x="0" y="550" id="tilebase-0-11"/>
-				<use xlink:href="#tile_none" x="50" y="0" id="tilebase-1-0"/>
-				<use xlink:href="#tile_none" x="50" y="50" id="tilebase-1-1"/>
-				<use xlink:href="#tile_none" x="50" y="100" id="tilebase-1-2"/>
-				<use xlink:href="#tile_none" x="50" y="150" id="tilebase-1-3"/>
-				<use xlink:href="#tile_none" x="50" y="200" id="tilebase-1-4"/>
-				<use xlink:href="#tile_none" x="50" y="250" id="tilebase-1-5"/>
-				<use xlink:href="#tile_none" x="50" y="300" id="tilebase-1-6"/>
-				<use xlink:href="#tile_none" x="50" y="350" id="tilebase-1-7"/>
-				<use xlink:href="#tile_none" x="50" y="400" id="tilebase-1-8"/>
-				<use xlink:href="#tile_none" x="50" y="450" id="tilebase-1-9"/>
-				<use xlink:href="#tile_none" x="50" y="500" id="tilebase-1-10"/>
-				<use xlink:href="#tile_none" x="50" y="550" id="tilebase-1-11"/>
-				<use xlink:href="#tile_none" x="100" y="0" id="tilebase-2-0"/>
-				<use xlink:href="#tile_none" x="100" y="50" id="tilebase-2-1"/>
-				<use xlink:href="#tile_none" x="100" y="100" id="tilebase-2-2"/>
-				<use xlink:href="#tile_none" x="100" y="150" id="tilebase-2-3"/>
-				<use xlink:href="#tile_none" x="100" y="200" id="tilebase-2-4"/>
-				<use xlink:href="#tile_none" x="100" y="250" id="tilebase-2-5"/>
-				<use xlink:href="#tile_none" x="100" y="300" id="tilebase-2-6"/>
-				<use xlink:href="#tile_none" x="100" y="350" id="tilebase-2-7"/>
-				<use xlink:href="#tile_none" x="100" y="400" id="tilebase-2-8"/>
-				<use xlink:href="#tile_none" x="100" y="450" id="tilebase-2-9"/>
-				<use xlink:href="#tile_none" x="100" y="500" id="tilebase-2-10"/>
-				<use xlink:href="#tile_none" x="100" y="550" id="tilebase-2-11"/>
-				<use xlink:href="#tile_none" x="150" y="0" id="tilebase-3-0"/>
-				<use xlink:href="#tile_none" x="150" y="50" id="tilebase-3-1"/>
-				<use xlink:href="#tile_none" x="150" y="100" id="tilebase-3-2"/>
-				<use xlink:href="#tile_none" x="150" y="150" id="tilebase-3-3"/>
-				<use xlink:href="#tile_none" x="150" y="200" id="tilebase-3-4"/>
-				<use xlink:href="#tile_none" x="150" y="250" id="tilebase-3-5"/>
-				<use xlink:href="#tile_none" x="150" y="300" id="tilebase-3-6"/>
-				<use xlink:href="#tile_none" x="150" y="350" id="tilebase-3-7"/>
-				<use xlink:href="#tile_none" x="150" y="400" id="tilebase-3-8"/>
-				<use xlink:href="#tile_none" x="150" y="450" id="tilebase-3-9"/>
-				<use xlink:href="#tile_none" x="150" y="500" id="tilebase-3-10"/>
-				<use xlink:href="#tile_none" x="150" y="550" id="tilebase-3-11"/>
-				<use xlink:href="#tile_none" x="200" y="0" id="tilebase-4-0"/>
-				<use xlink:href="#tile_none" x="200" y="50" id="tilebase-4-1"/>
-				<use xlink:href="#tile_none" x="200" y="100" id="tilebase-4-2"/>
-				<use xlink:href="#tile_none" x="200" y="150" id="tilebase-4-3"/>
-				<use xlink:href="#tile_none" x="200" y="200" id="tilebase-4-4"/>
-				<use xlink:href="#tile_none" x="200" y="250" id="tilebase-4-5"/>
-				<use xlink:href="#tile_none" x="200" y="300" id="tilebase-4-6"/>
-				<use xlink:href="#tile_none" x="200" y="350" id="tilebase-4-7"/>
-				<use xlink:href="#tile_none" x="200" y="400" id="tilebase-4-8"/>
-				<use xlink:href="#tile_none" x="200" y="450" id="tilebase-4-9"/>
-				<use xlink:href="#tile_none" x="200" y="500" id="tilebase-4-10"/>
-				<use xlink:href="#tile_none" x="200" y="550" id="tilebase-4-11"/>
-				<use xlink:href="#tile_none" x="250" y="0" id="tilebase-5-0"/>
-				<use xlink:href="#tile_none" x="250" y="50" id="tilebase-5-1"/>
-				<use xlink:href="#tile_none" x="250" y="100" id="tilebase-5-2"/>
-				<use xlink:href="#tile_none" x="250" y="150" id="tilebase-5-3"/>
-				<use xlink:href="#tile_none" x="250" y="200" id="tilebase-5-4"/>
-				<use xlink:href="#tile_none" x="250" y="250" id="tilebase-5-5"/>
-				<use xlink:href="#tile_none" x="250" y="300" id="tilebase-5-6"/>
-				<use xlink:href="#tile_none" x="250" y="350" id="tilebase-5-7"/>
-				<use xlink:href="#tile_none" x="250" y="400" id="tilebase-5-8"/>
-				<use xlink:href="#tile_none" x="250" y="450" id="tilebase-5-9"/>
-				<use xlink:href="#tile_none" x="250" y="500" id="tilebase-5-10"/>
-				<use xlink:href="#tile_none" x="250" y="550" id="tilebase-5-11"/>
-				<use xlink:href="#tile_none" x="300" y="0" id="tilebase-6-0"/>
-				<use xlink:href="#tile_none" x="300" y="50" id="tilebase-6-1"/>
-				<use xlink:href="#tile_none" x="300" y="100" id="tilebase-6-2"/>
-				<use xlink:href="#tile_none" x="300" y="150" id="tilebase-6-3"/>
-				<use xlink:href="#tile_none" x="300" y="200" id="tilebase-6-4"/>
-				<use xlink:href="#tile_none" x="300" y="250" id="tilebase-6-5"/>
-				<use xlink:href="#tile_none" x="300" y="300" id="tilebase-6-6"/>
-				<use xlink:href="#tile_none" x="300" y="350" id="tilebase-6-7"/>
-				<use xlink:href="#tile_none" x="300" y="400" id="tilebase-6-8"/>
-				<use xlink:href="#tile_none" x="300" y="450" id="tilebase-6-9"/>
-				<use xlink:href="#tile_none" x="300" y="500" id="tilebase-6-10"/>
-				<use xlink:href="#tile_none" x="300" y="550" id="tilebase-6-11"/>
-				<use xlink:href="#tile_none" x="350" y="0" id="tilebase-7-0"/>
-				<use xlink:href="#tile_none" x="350" y="50" id="tilebase-7-1"/>
-				<use xlink:href="#tile_none" x="350" y="100" id="tilebase-7-2"/>
-				<use xlink:href="#tile_none" x="350" y="150" id="tilebase-7-3"/>
-				<use xlink:href="#tile_none" x="350" y="200" id="tilebase-7-4"/>
-				<use xlink:href="#tile_none" x="350" y="250" id="tilebase-7-5"/>
-				<use xlink:href="#tile_none" x="350" y="300" id="tilebase-7-6"/>
-				<use xlink:href="#tile_none" x="350" y="350" id="tilebase-7-7"/>
-				<use xlink:href="#tile_none" x="350" y="400" id="tilebase-7-8"/>
-				<use xlink:href="#tile_none" x="350" y="450" id="tilebase-7-9"/>
-				<use xlink:href="#tile_none" x="350" y="500" id="tilebase-7-10"/>
-				<use xlink:href="#tile_none" x="350" y="550" id="tilebase-7-11"/>
-				<use xlink:href="#tile_none" x="400" y="0" id="tilebase-8-0"/>
-				<use xlink:href="#tile_none" x="400" y="50" id="tilebase-8-1"/>
-				<use xlink:href="#tile_none" x="400" y="100" id="tilebase-8-2"/>
-				<use xlink:href="#tile_none" x="400" y="150" id="tilebase-8-3"/>
-				<use xlink:href="#tile_none" x="400" y="200" id="tilebase-8-4"/>
-				<use xlink:href="#tile_none" x="400" y="250" id="tilebase-8-5"/>
-				<use xlink:href="#tile_none" x="400" y="300" id="tilebase-8-6"/>
-				<use xlink:href="#tile_none" x="400" y="350" id="tilebase-8-7"/>
-				<use xlink:href="#tile_none" x="400" y="400" id="tilebase-8-8"/>
-				<use xlink:href="#tile_none" x="400" y="450" id="tilebase-8-9"/>
-				<use xlink:href="#tile_none" x="400" y="500" id="tilebase-8-10"/>
-				<use xlink:href="#tile_none" x="400" y="550" id="tilebase-8-11"/>
-				<use xlink:href="#tile_none" x="450" y="0" id="tilebase-9-0"/>
-				<use xlink:href="#tile_none" x="450" y="50" id="tilebase-9-1"/>
-				<use xlink:href="#tile_none" x="450" y="100" id="tilebase-9-2"/>
-				<use xlink:href="#tile_none" x="450" y="150" id="tilebase-9-3"/>
-				<use xlink:href="#tile_none" x="450" y="200" id="tilebase-9-4"/>
-				<use xlink:href="#tile_none" x="450" y="250" id="tilebase-9-5"/>
-				<use xlink:href="#tile_none" x="450" y="300" id="tilebase-9-6"/>
-				<use xlink:href="#tile_none" x="450" y="350" id="tilebase-9-7"/>
-				<use xlink:href="#tile_none" x="450" y="400" id="tilebase-9-8"/>
-				<use xlink:href="#tile_none" x="450" y="450" id="tilebase-9-9"/>
-				<use xlink:href="#tile_none" x="450" y="500" id="tilebase-9-10"/>
-				<use xlink:href="#tile_none" x="450" y="550" id="tilebase-9-11"/>
-				<use xlink:href="#tile_none" x="500" y="0" id="tilebase-10-0"/>
-				<use xlink:href="#tile_none" x="500" y="50" id="tilebase-10-1"/>
-				<use xlink:href="#tile_none" x="500" y="100" id="tilebase-10-2"/>
-				<use xlink:href="#tile_none" x="500" y="150" id="tilebase-10-3"/>
-				<use xlink:href="#tile_none" x="500" y="200" id="tilebase-10-4"/>
-				<use xlink:href="#tile_none" x="500" y="250" id="tilebase-10-5"/>
-				<use xlink:href="#tile_none" x="500" y="300" id="tilebase-10-6"/>
-				<use xlink:href="#tile_none" x="500" y="350" id="tilebase-10-7"/>
-				<use xlink:href="#tile_none" x="500" y="400" id="tilebase-10-8"/>
-				<use xlink:href="#tile_none" x="500" y="450" id="tilebase-10-9"/>
-				<use xlink:href="#tile_none" x="500" y="500" id="tilebase-10-10"/>
-				<use xlink:href="#tile_none" x="500" y="550" id="tilebase-10-11"/>
-				<use xlink:href="#tile_none" x="550" y="0" id="tilebase-11-0"/>
-				<use xlink:href="#tile_none" x="550" y="50" id="tilebase-11-1"/>
-				<use xlink:href="#tile_none" x="550" y="100" id="tilebase-11-2"/>
-				<use xlink:href="#tile_none" x="550" y="150" id="tilebase-11-3"/>
-				<use xlink:href="#tile_none" x="550" y="200" id="tilebase-11-4"/>
-				<use xlink:href="#tile_none" x="550" y="250" id="tilebase-11-5"/>
-				<use xlink:href="#tile_none" x="550" y="300" id="tilebase-11-6"/>
-				<use xlink:href="#tile_none" x="550" y="350" id="tilebase-11-7"/>
-				<use xlink:href="#tile_none" x="550" y="400" id="tilebase-11-8"/>
-				<use xlink:href="#tile_none" x="550" y="450" id="tilebase-11-9"/>
-				<use xlink:href="#tile_none" x="550" y="500" id="tilebase-11-10"/>
-				<use xlink:href="#tile_none" x="550" y="550" id="tilebase-11-11"/>
-			</g>
-			<g id="tileoverlay" transform="translate(25,25)">
-				<use xlink:href="#overlay_none" transform="translate(0,0)" id="tileoverlay-0-0"/>
-				<use xlink:href="#overlay_none" transform="translate(0,50)" id="tileoverlay-0-1"/>
-				<use xlink:href="#overlay_none" transform="translate(0,100)" id="tileoverlay-0-2"/>
-				<use xlink:href="#overlay_none" transform="translate(0,150)" id="tileoverlay-0-3"/>
-				<use xlink:href="#overlay_none" transform="translate(0,200)" id="tileoverlay-0-4"/>
-				<use xlink:href="#overlay_none" transform="translate(0,250)" id="tileoverlay-0-5"/>
-				<use xlink:href="#overlay_none" transform="translate(0,300)" id="tileoverlay-0-6"/>
-				<use xlink:href="#overlay_none" transform="translate(0,350)" id="tileoverlay-0-7"/>
-				<use xlink:href="#overlay_none" transform="translate(0,400)" id="tileoverlay-0-8"/>
-				<use xlink:href="#overlay_none" transform="translate(0,450)" id="tileoverlay-0-9"/>
-				<use xlink:href="#overlay_none" transform="translate(0,500)" id="tileoverlay-0-10"/>
-				<use xlink:href="#overlay_none" transform="translate(0,550)" id="tileoverlay-0-11"/>
-				<use xlink:href="#overlay_none" transform="translate(50,0)" id="tileoverlay-1-0"/>
-				<use xlink:href="#overlay_none" transform="translate(50,50)" id="tileoverlay-1-1"/>
-				<use xlink:href="#overlay_none" transform="translate(50,100)" id="tileoverlay-1-2"/>
-				<use xlink:href="#overlay_none" transform="translate(50,150)" id="tileoverlay-1-3"/>
-				<use xlink:href="#overlay_none" transform="translate(50,200)" id="tileoverlay-1-4"/>
-				<use xlink:href="#overlay_none" transform="translate(50,250)" id="tileoverlay-1-5"/>
-				<use xlink:href="#overlay_none" transform="translate(50,300)" id="tileoverlay-1-6"/>
-				<use xlink:href="#overlay_none" transform="translate(50,350)" id="tileoverlay-1-7"/>
-				<use xlink:href="#overlay_none" transform="translate(50,400)" id="tileoverlay-1-8"/>
-				<use xlink:href="#overlay_none" transform="translate(50,450)" id="tileoverlay-1-9"/>
-				<use xlink:href="#overlay_none" transform="translate(50,500)" id="tileoverlay-1-10"/>
-				<use xlink:href="#overlay_none" transform="translate(50,550)" id="tileoverlay-1-11"/>
-				<use xlink:href="#overlay_none" transform="translate(100,0)" id="tileoverlay-2-0"/>
-				<use xlink:href="#overlay_none" transform="translate(100,50)" id="tileoverlay-2-1"/>
-				<use xlink:href="#overlay_none" transform="translate(100,100)" id="tileoverlay-2-2"/>
-				<use xlink:href="#overlay_none" transform="translate(100,150)" id="tileoverlay-2-3"/>
-				<use xlink:href="#overlay_none" transform="translate(100,200)" id="tileoverlay-2-4"/>
-				<use xlink:href="#overlay_none" transform="translate(100,250)" id="tileoverlay-2-5"/>
-				<use xlink:href="#overlay_none" transform="translate(100,300)" id="tileoverlay-2-6"/>
-				<use xlink:href="#overlay_none" transform="translate(100,350)" id="tileoverlay-2-7"/>
-				<use xlink:href="#overlay_none" transform="translate(100,400)" id="tileoverlay-2-8"/>
-				<use xlink:href="#overlay_none" transform="translate(100,450)" id="tileoverlay-2-9"/>
-				<use xlink:href="#overlay_none" transform="translate(100,500)" id="tileoverlay-2-10"/>
-				<use xlink:href="#overlay_none" transform="translate(100,550)" id="tileoverlay-2-11"/>
-				<use xlink:href="#overlay_none" transform="translate(150,0)" id="tileoverlay-3-0"/>
-				<use xlink:href="#overlay_none" transform="translate(150,50)" id="tileoverlay-3-1"/>
-				<use xlink:href="#overlay_none" transform="translate(150,100)" id="tileoverlay-3-2"/>
-				<use xlink:href="#overlay_none" transform="translate(150,150)" id="tileoverlay-3-3"/>
-				<use xlink:href="#overlay_none" transform="translate(150,200)" id="tileoverlay-3-4"/>
-				<use xlink:href="#overlay_none" transform="translate(150,250)" id="tileoverlay-3-5"/>
-				<use xlink:href="#overlay_none" transform="translate(150,300)" id="tileoverlay-3-6"/>
-				<use xlink:href="#overlay_none" transform="translate(150,350)" id="tileoverlay-3-7"/>
-				<use xlink:href="#overlay_none" transform="translate(150,400)" id="tileoverlay-3-8"/>
-				<use xlink:href="#overlay_none" transform="translate(150,450)" id="tileoverlay-3-9"/>
-				<use xlink:href="#overlay_none" transform="translate(150,500)" id="tileoverlay-3-10"/>
-				<use xlink:href="#overlay_none" transform="translate(150,550)" id="tileoverlay-3-11"/>
-				<use xlink:href="#overlay_none" transform="translate(200,0)" id="tileoverlay-4-0"/>
-				<use xlink:href="#overlay_none" transform="translate(200,50)" id="tileoverlay-4-1"/>
-				<use xlink:href="#overlay_none" transform="translate(200,100)" id="tileoverlay-4-2"/>
-				<use xlink:href="#overlay_none" transform="translate(200,150)" id="tileoverlay-4-3"/>
-				<use xlink:href="#overlay_none" transform="translate(200,200)" id="tileoverlay-4-4"/>
-				<use xlink:href="#overlay_none" transform="translate(200,250)" id="tileoverlay-4-5"/>
-				<use xlink:href="#overlay_none" transform="translate(200,300)" id="tileoverlay-4-6"/>
-				<use xlink:href="#overlay_none" transform="translate(200,350)" id="tileoverlay-4-7"/>
-				<use xlink:href="#overlay_none" transform="translate(200,400)" id="tileoverlay-4-8"/>
-				<use xlink:href="#overlay_none" transform="translate(200,450)" id="tileoverlay-4-9"/>
-				<use xlink:href="#overlay_none" transform="translate(200,500)" id="tileoverlay-4-10"/>
-				<use xlink:href="#overlay_none" transform="translate(200,550)" id="tileoverlay-4-11"/>
-				<use xlink:href="#overlay_none" transform="translate(250,0)" id="tileoverlay-5-0"/>
-				<use xlink:href="#overlay_none" transform="translate(250,50)" id="tileoverlay-5-1"/>
-				<use xlink:href="#overlay_none" transform="translate(250,100)" id="tileoverlay-5-2"/>
-				<use xlink:href="#overlay_none" transform="translate(250,150)" id="tileoverlay-5-3"/>
-				<use xlink:href="#overlay_none" transform="translate(250,200)" id="tileoverlay-5-4"/>
-				<use xlink:href="#overlay_none" transform="translate(250,250)" id="tileoverlay-5-5"/>
-				<use xlink:href="#overlay_none" transform="translate(250,300)" id="tileoverlay-5-6"/>
-				<use xlink:href="#overlay_none" transform="translate(250,350)" id="tileoverlay-5-7"/>
-				<use xlink:href="#overlay_none" transform="translate(250,400)" id="tileoverlay-5-8"/>
-				<use xlink:href="#overlay_none" transform="translate(250,450)" id="tileoverlay-5-9"/>
-				<use xlink:href="#overlay_none" transform="translate(250,500)" id="tileoverlay-5-10"/>
-				<use xlink:href="#overlay_none" transform="translate(250,550)" id="tileoverlay-5-11"/>
-				<use xlink:href="#overlay_none" transform="translate(300,0)" id="tileoverlay-6-0"/>
-				<use xlink:href="#overlay_none" transform="translate(300,50)" id="tileoverlay-6-1"/>
-				<use xlink:href="#overlay_none" transform="translate(300,100)" id="tileoverlay-6-2"/>
-				<use xlink:href="#overlay_none" transform="translate(300,150)" id="tileoverlay-6-3"/>
-				<use xlink:href="#overlay_none" transform="translate(300,200)" id="tileoverlay-6-4"/>
-				<use xlink:href="#overlay_none" transform="translate(300,250)" id="tileoverlay-6-5"/>
-				<use xlink:href="#overlay_none" transform="translate(300,300)" id="tileoverlay-6-6"/>
-				<use xlink:href="#overlay_none" transform="translate(300,350)" id="tileoverlay-6-7"/>
-				<use xlink:href="#overlay_none" transform="translate(300,400)" id="tileoverlay-6-8"/>
-				<use xlink:href="#overlay_none" transform="translate(300,450)" id="tileoverlay-6-9"/>
-				<use xlink:href="#overlay_none" transform="translate(300,500)" id="tileoverlay-6-10"/>
-				<use xlink:href="#overlay_none" transform="translate(300,550)" id="tileoverlay-6-11"/>
-				<use xlink:href="#overlay_none" transform="translate(350,0)" id="tileoverlay-7-0"/>
-				<use xlink:href="#overlay_none" transform="translate(350,50)" id="tileoverlay-7-1"/>
-				<use xlink:href="#overlay_none" transform="translate(350,100)" id="tileoverlay-7-2"/>
-				<use xlink:href="#overlay_none" transform="translate(350,150)" id="tileoverlay-7-3"/>
-				<use xlink:href="#overlay_none" transform="translate(350,200)" id="tileoverlay-7-4"/>
-				<use xlink:href="#overlay_none" transform="translate(350,250)" id="tileoverlay-7-5"/>
-				<use xlink:href="#overlay_none" transform="translate(350,300)" id="tileoverlay-7-6"/>
-				<use xlink:href="#overlay_none" transform="translate(350,350)" id="tileoverlay-7-7"/>
-				<use xlink:href="#overlay_none" transform="translate(350,400)" id="tileoverlay-7-8"/>
-				<use xlink:href="#overlay_none" transform="translate(350,450)" id="tileoverlay-7-9"/>
-				<use xlink:href="#overlay_none" transform="translate(350,500)" id="tileoverlay-7-10"/>
-				<use xlink:href="#overlay_none" transform="translate(350,550)" id="tileoverlay-7-11"/>
-				<use xlink:href="#overlay_none" transform="translate(400,0)" id="tileoverlay-8-0"/>
-				<use xlink:href="#overlay_none" transform="translate(400,50)" id="tileoverlay-8-1"/>
-				<use xlink:href="#overlay_none" transform="translate(400,100)" id="tileoverlay-8-2"/>
-				<use xlink:href="#overlay_none" transform="translate(400,150)" id="tileoverlay-8-3"/>
-				<use xlink:href="#overlay_none" transform="translate(400,200)" id="tileoverlay-8-4"/>
-				<use xlink:href="#overlay_none" transform="translate(400,250)" id="tileoverlay-8-5"/>
-				<use xlink:href="#overlay_none" transform="translate(400,300)" id="tileoverlay-8-6"/>
-				<use xlink:href="#overlay_none" transform="translate(400,350)" id="tileoverlay-8-7"/>
-				<use xlink:href="#overlay_none" transform="translate(400,400)" id="tileoverlay-8-8"/>
-				<use xlink:href="#overlay_none" transform="translate(400,450)" id="tileoverlay-8-9"/>
-				<use xlink:href="#overlay_none" transform="translate(400,500)" id="tileoverlay-8-10"/>
-				<use xlink:href="#overlay_none" transform="translate(400,550)" id="tileoverlay-8-11"/>
-				<use xlink:href="#overlay_none" transform="translate(450,0)" id="tileoverlay-9-0"/>
-				<use xlink:href="#overlay_none" transform="translate(450,50)" id="tileoverlay-9-1"/>
-				<use xlink:href="#overlay_none" transform="translate(450,100)" id="tileoverlay-9-2"/>
-				<use xlink:href="#overlay_none" transform="translate(450,150)" id="tileoverlay-9-3"/>
-				<use xlink:href="#overlay_none" transform="translate(450,200)" id="tileoverlay-9-4"/>
-				<use xlink:href="#overlay_none" transform="translate(450,250)" id="tileoverlay-9-5"/>
-				<use xlink:href="#overlay_none" transform="translate(450,300)" id="tileoverlay-9-6"/>
-				<use xlink:href="#overlay_none" transform="translate(450,350)" id="tileoverlay-9-7"/>
-				<use xlink:href="#overlay_none" transform="translate(450,400)" id="tileoverlay-9-8"/>
-				<use xlink:href="#overlay_none" transform="translate(450,450)" id="tileoverlay-9-9"/>
-				<use xlink:href="#overlay_none" transform="translate(450,500)" id="tileoverlay-9-10"/>
-				<use xlink:href="#overlay_none" transform="translate(450,550)" id="tileoverlay-9-11"/>
-				<use xlink:href="#overlay_none" transform="translate(500,0)" id="tileoverlay-10-0"/>
-				<use xlink:href="#overlay_none" transform="translate(500,50)" id="tileoverlay-10-1"/>
-				<use xlink:href="#overlay_none" transform="translate(500,100)" id="tileoverlay-10-2"/>
-				<use xlink:href="#overlay_none" transform="translate(500,150)" id="tileoverlay-10-3"/>
-				<use xlink:href="#overlay_none" transform="translate(500,200)" id="tileoverlay-10-4"/>
-				<use xlink:href="#overlay_none" transform="translate(500,250)" id="tileoverlay-10-5"/>
-				<use xlink:href="#overlay_none" transform="translate(500,300)" id="tileoverlay-10-6"/>
-				<use xlink:href="#overlay_none" transform="translate(500,350)" id="tileoverlay-10-7"/>
-				<use xlink:href="#overlay_none" transform="translate(500,400)" id="tileoverlay-10-8"/>
-				<use xlink:href="#overlay_none" transform="translate(500,450)" id="tileoverlay-10-9"/>
-				<use xlink:href="#overlay_none" transform="translate(500,500)" id="tileoverlay-10-10"/>
-				<use xlink:href="#overlay_none" transform="translate(500,550)" id="tileoverlay-10-11"/>
-				<use xlink:href="#overlay_none" transform="translate(550,0)" id="tileoverlay-11-0"/>
-				<use xlink:href="#overlay_none" transform="translate(550,50)" id="tileoverlay-11-1"/>
-				<use xlink:href="#overlay_none" transform="translate(550,100)" id="tileoverlay-11-2"/>
-				<use xlink:href="#overlay_none" transform="translate(550,150)" id="tileoverlay-11-3"/>
-				<use xlink:href="#overlay_none" transform="translate(550,200)" id="tileoverlay-11-4"/>
-				<use xlink:href="#overlay_none" transform="translate(550,250)" id="tileoverlay-11-5"/>
-				<use xlink:href="#overlay_none" transform="translate(550,300)" id="tileoverlay-11-6"/>
-				<use xlink:href="#overlay_none" transform="translate(550,350)" id="tileoverlay-11-7"/>
-				<use xlink:href="#overlay_none" transform="translate(550,400)" id="tileoverlay-11-8"/>
-				<use xlink:href="#overlay_none" transform="translate(550,450)" id="tileoverlay-11-9"/>
-				<use xlink:href="#overlay_none" transform="translate(550,500)" id="tileoverlay-11-10"/>
-				<use xlink:href="#overlay_none" transform="translate(550,550)" id="tileoverlay-11-11"/>
-			</g>
-			<g id="animation" transform="translate(25,25)">
-				<use xlink:href="#animation_none" transform="translate(0,0)" id="animation-0-0"/>
-				<use xlink:href="#animation_none" transform="translate(0,50)" id="animation-0-1"/>
-				<use xlink:href="#animation_none" transform="translate(0,100)" id="animation-0-2"/>
-				<use xlink:href="#animation_none" transform="translate(0,150)" id="animation-0-3"/>
-				<use xlink:href="#animation_none" transform="translate(0,200)" id="animation-0-4"/>
-				<use xlink:href="#animation_none" transform="translate(0,250)" id="animation-0-5"/>
-				<use xlink:href="#animation_none" transform="translate(0,300)" id="animation-0-6"/>
-				<use xlink:href="#animation_none" transform="translate(0,350)" id="animation-0-7"/>
-				<use xlink:href="#animation_none" transform="translate(0,400)" id="animation-0-8"/>
-				<use xlink:href="#animation_none" transform="translate(0,450)" id="animation-0-9"/>
-				<use xlink:href="#animation_none" transform="translate(0,500)" id="animation-0-10"/>
-				<use xlink:href="#animation_none" transform="translate(0,550)" id="animation-0-11"/>
-				<use xlink:href="#animation_none" transform="translate(50,0)" id="animation-1-0"/>
-				<use xlink:href="#animation_none" transform="translate(50,50)" id="animation-1-1"/>
-				<use xlink:href="#animation_none" transform="translate(50,100)" id="animation-1-2"/>
-				<use xlink:href="#animation_none" transform="translate(50,150)" id="animation-1-3"/>
-				<use xlink:href="#animation_none" transform="translate(50,200)" id="animation-1-4"/>
-				<use xlink:href="#animation_none" transform="translate(50,250)" id="animation-1-5"/>
-				<use xlink:href="#animation_none" transform="translate(50,300)" id="animation-1-6"/>
-				<use xlink:href="#animation_none" transform="translate(50,350)" id="animation-1-7"/>
-				<use xlink:href="#animation_none" transform="translate(50,400)" id="animation-1-8"/>
-				<use xlink:href="#animation_none" transform="translate(50,450)" id="animation-1-9"/>
-				<use xlink:href="#animation_none" transform="translate(50,500)" id="animation-1-10"/>
-				<use xlink:href="#animation_none" transform="translate(50,550)" id="animation-1-11"/>
-				<use xlink:href="#animation_none" transform="translate(100,0)" id="animation-2-0"/>
-				<use xlink:href="#animation_none" transform="translate(100,50)" id="animation-2-1"/>
-				<use xlink:href="#animation_none" transform="translate(100,100)" id="animation-2-2"/>
-				<use xlink:href="#animation_none" transform="translate(100,150)" id="animation-2-3"/>
-				<use xlink:href="#animation_none" transform="translate(100,200)" id="animation-2-4"/>
-				<use xlink:href="#animation_none" transform="translate(100,250)" id="animation-2-5"/>
-				<use xlink:href="#animation_none" transform="translate(100,300)" id="animation-2-6"/>
-				<use xlink:href="#animation_none" transform="translate(100,350)" id="animation-2-7"/>
-				<use xlink:href="#animation_none" transform="translate(100,400)" id="animation-2-8"/>
-				<use xlink:href="#animation_none" transform="translate(100,450)" id="animation-2-9"/>
-				<use xlink:href="#animation_none" transform="translate(100,500)" id="animation-2-10"/>
-				<use xlink:href="#animation_none" transform="translate(100,550)" id="animation-2-11"/>
-				<use xlink:href="#animation_none" transform="translate(150,0)" id="animation-3-0"/>
-				<use xlink:href="#animation_none" transform="translate(150,50)" id="animation-3-1"/>
-				<use xlink:href="#animation_none" transform="translate(150,100)" id="animation-3-2"/>
-				<use xlink:href="#animation_none" transform="translate(150,150)" id="animation-3-3"/>
-				<use xlink:href="#animation_none" transform="translate(150,200)" id="animation-3-4"/>
-				<use xlink:href="#animation_none" transform="translate(150,250)" id="animation-3-5"/>
-				<use xlink:href="#animation_none" transform="translate(150,300)" id="animation-3-6"/>
-				<use xlink:href="#animation_none" transform="translate(150,350)" id="animation-3-7"/>
-				<use xlink:href="#animation_none" transform="translate(150,400)" id="animation-3-8"/>
-				<use xlink:href="#animation_none" transform="translate(150,450)" id="animation-3-9"/>
-				<use xlink:href="#animation_none" transform="translate(150,500)" id="animation-3-10"/>
-				<use xlink:href="#animation_none" transform="translate(150,550)" id="animation-3-11"/>
-				<use xlink:href="#animation_none" transform="translate(200,0)" id="animation-4-0"/>
-				<use xlink:href="#animation_none" transform="translate(200,50)" id="animation-4-1"/>
-				<use xlink:href="#animation_none" transform="translate(200,100)" id="animation-4-2"/>
-				<use xlink:href="#animation_none" transform="translate(200,150)" id="animation-4-3"/>
-				<use xlink:href="#animation_none" transform="translate(200,200)" id="animation-4-4"/>
-				<use xlink:href="#animation_none" transform="translate(200,250)" id="animation-4-5"/>
-				<use xlink:href="#animation_none" transform="translate(200,300)" id="animation-4-6"/>
-				<use xlink:href="#animation_none" transform="translate(200,350)" id="animation-4-7"/>
-				<use xlink:href="#animation_none" transform="translate(200,400)" id="animation-4-8"/>
-				<use xlink:href="#animation_none" transform="translate(200,450)" id="animation-4-9"/>
-				<use xlink:href="#animation_none" transform="translate(200,500)" id="animation-4-10"/>
-				<use xlink:href="#animation_none" transform="translate(200,550)" id="animation-4-11"/>
-				<use xlink:href="#animation_none" transform="translate(250,0)" id="animation-5-0"/>
-				<use xlink:href="#animation_none" transform="translate(250,50)" id="animation-5-1"/>
-				<use xlink:href="#animation_none" transform="translate(250,100)" id="animation-5-2"/>
-				<use xlink:href="#animation_none" transform="translate(250,150)" id="animation-5-3"/>
-				<use xlink:href="#animation_none" transform="translate(250,200)" id="animation-5-4"/>
-				<use xlink:href="#animation_none" transform="translate(250,250)" id="animation-5-5"/>
-				<use xlink:href="#animation_none" transform="translate(250,300)" id="animation-5-6"/>
-				<use xlink:href="#animation_none" transform="translate(250,350)" id="animation-5-7"/>
-				<use xlink:href="#animation_none" transform="translate(250,400)" id="animation-5-8"/>
-				<use xlink:href="#animation_none" transform="translate(250,450)" id="animation-5-9"/>
-				<use xlink:href="#animation_none" transform="translate(250,500)" id="animation-5-10"/>
-				<use xlink:href="#animation_none" transform="translate(250,550)" id="animation-5-11"/>
-				<use xlink:href="#animation_none" transform="translate(300,0)" id="animation-6-0"/>
-				<use xlink:href="#animation_none" transform="translate(300,50)" id="animation-6-1"/>
-				<use xlink:href="#animation_none" transform="translate(300,100)" id="animation-6-2"/>
-				<use xlink:href="#animation_none" transform="translate(300,150)" id="animation-6-3"/>
-				<use xlink:href="#animation_none" transform="translate(300,200)" id="animation-6-4"/>
-				<use xlink:href="#animation_none" transform="translate(300,250)" id="animation-6-5"/>
-				<use xlink:href="#animation_none" transform="translate(300,300)" id="animation-6-6"/>
-				<use xlink:href="#animation_none" transform="translate(300,350)" id="animation-6-7"/>
-				<use xlink:href="#animation_none" transform="translate(300,400)" id="animation-6-8"/>
-				<use xlink:href="#animation_none" transform="translate(300,450)" id="animation-6-9"/>
-				<use xlink:href="#animation_none" transform="translate(300,500)" id="animation-6-10"/>
-				<use xlink:href="#animation_none" transform="translate(300,550)" id="animation-6-11"/>
-				<use xlink:href="#animation_none" transform="translate(350,0)" id="animation-7-0"/>
-				<use xlink:href="#animation_none" transform="translate(350,50)" id="animation-7-1"/>
-				<use xlink:href="#animation_none" transform="translate(350,100)" id="animation-7-2"/>
-				<use xlink:href="#animation_none" transform="translate(350,150)" id="animation-7-3"/>
-				<use xlink:href="#animation_none" transform="translate(350,200)" id="animation-7-4"/>
-				<use xlink:href="#animation_none" transform="translate(350,250)" id="animation-7-5"/>
-				<use xlink:href="#animation_none" transform="translate(350,300)" id="animation-7-6"/>
-				<use xlink:href="#animation_none" transform="translate(350,350)" id="animation-7-7"/>
-				<use xlink:href="#animation_none" transform="translate(350,400)" id="animation-7-8"/>
-				<use xlink:href="#animation_none" transform="translate(350,450)" id="animation-7-9"/>
-				<use xlink:href="#animation_none" transform="translate(350,500)" id="animation-7-10"/>
-				<use xlink:href="#animation_none" transform="translate(350,550)" id="animation-7-11"/>
-				<use xlink:href="#animation_none" transform="translate(400,0)" id="animation-8-0"/>
-				<use xlink:href="#animation_none" transform="translate(400,50)" id="animation-8-1"/>
-				<use xlink:href="#animation_none" transform="translate(400,100)" id="animation-8-2"/>
-				<use xlink:href="#animation_none" transform="translate(400,150)" id="animation-8-3"/>
-				<use xlink:href="#animation_none" transform="translate(400,200)" id="animation-8-4"/>
-				<use xlink:href="#animation_none" transform="translate(400,250)" id="animation-8-5"/>
-				<use xlink:href="#animation_none" transform="translate(400,300)" id="animation-8-6"/>
-				<use xlink:href="#animation_none" transform="translate(400,350)" id="animation-8-7"/>
-				<use xlink:href="#animation_none" transform="translate(400,400)" id="animation-8-8"/>
-				<use xlink:href="#animation_none" transform="translate(400,450)" id="animation-8-9"/>
-				<use xlink:href="#animation_none" transform="translate(400,500)" id="animation-8-10"/>
-				<use xlink:href="#animation_none" transform="translate(400,550)" id="animation-8-11"/>
-				<use xlink:href="#animation_none" transform="translate(450,0)" id="animation-9-0"/>
-				<use xlink:href="#animation_none" transform="translate(450,50)" id="animation-9-1"/>
-				<use xlink:href="#animation_none" transform="translate(450,100)" id="animation-9-2"/>
-				<use xlink:href="#animation_none" transform="translate(450,150)" id="animation-9-3"/>
-				<use xlink:href="#animation_none" transform="translate(450,200)" id="animation-9-4"/>
-				<use xlink:href="#animation_none" transform="translate(450,250)" id="animation-9-5"/>
-				<use xlink:href="#animation_none" transform="translate(450,300)" id="animation-9-6"/>
-				<use xlink:href="#animation_none" transform="translate(450,350)" id="animation-9-7"/>
-				<use xlink:href="#animation_none" transform="translate(450,400)" id="animation-9-8"/>
-				<use xlink:href="#animation_none" transform="translate(450,450)" id="animation-9-9"/>
-				<use xlink:href="#animation_none" transform="translate(450,500)" id="animation-9-10"/>
-				<use xlink:href="#animation_none" transform="translate(450,550)" id="animation-9-11"/>
-				<use xlink:href="#animation_none" transform="translate(500,0)" id="animation-10-0"/>
-				<use xlink:href="#animation_none" transform="translate(500,50)" id="animation-10-1"/>
-				<use xlink:href="#animation_none" transform="translate(500,100)" id="animation-10-2"/>
-				<use xlink:href="#animation_none" transform="translate(500,150)" id="animation-10-3"/>
-				<use xlink:href="#animation_none" transform="translate(500,200)" id="animation-10-4"/>
-				<use xlink:href="#animation_none" transform="translate(500,250)" id="animation-10-5"/>
-				<use xlink:href="#animation_none" transform="translate(500,300)" id="animation-10-6"/>
-				<use xlink:href="#animation_none" transform="translate(500,350)" id="animation-10-7"/>
-				<use xlink:href="#animation_none" transform="translate(500,400)" id="animation-10-8"/>
-				<use xlink:href="#animation_none" transform="translate(500,450)" id="animation-10-9"/>
-				<use xlink:href="#animation_none" transform="translate(500,500)" id="animation-10-10"/>
-				<use xlink:href="#animation_none" transform="translate(500,550)" id="animation-10-11"/>
-				<use xlink:href="#animation_none" transform="translate(550,0)" id="animation-11-0"/>
-				<use xlink:href="#animation_none" transform="translate(550,50)" id="animation-11-1"/>
-				<use xlink:href="#animation_none" transform="translate(550,100)" id="animation-11-2"/>
-				<use xlink:href="#animation_none" transform="translate(550,150)" id="animation-11-3"/>
-				<use xlink:href="#animation_none" transform="translate(550,200)" id="animation-11-4"/>
-				<use xlink:href="#animation_none" transform="translate(550,250)" id="animation-11-5"/>
-				<use xlink:href="#animation_none" transform="translate(550,300)" id="animation-11-6"/>
-				<use xlink:href="#animation_none" transform="translate(550,350)" id="animation-11-7"/>
-				<use xlink:href="#animation_none" transform="translate(550,400)" id="animation-11-8"/>
-				<use xlink:href="#animation_none" transform="translate(550,450)" id="animation-11-9"/>
-				<use xlink:href="#animation_none" transform="translate(550,500)" id="animation-11-10"/>
-				<use xlink:href="#animation_none" transform="translate(550,550)" id="animation-11-11"/>
+			<g id="machine" transform="translate(0,251)">
+				<rect fill="rgb(45, 46, 39)" stroke="none" x="-1" y="349" width="602" height="252"/>	
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(0,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(40,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(80,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(120,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(160,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(200,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(240,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(280,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(320,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(360,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(400,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(440,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(480,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(520,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(560,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(600,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(640,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(680,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(720,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(760,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(800,-1)"/>
+				<polygon points="0,350 20,350 -630,1000 -650,1000" stroke="none" fill="rgb(35, 36, 29)" transform="translate(840,-1)"/>
 			</g>
 			<rect fill="rgb(6, 30, 45)" stroke="none" x="-25" y="-25" width="25" height="655"/>
 			<rect fill="rgb(6, 30, 45)" stroke="none" x="600" y="-25" width="350" height="655"/>
@@ -940,8 +974,8 @@
 			const tileNames = ["red","orange","yellow","green","blue","purple","white","hyper","dark"];
 			const tileSpawn = ["red","orange","yellow","green","blue","purple","white","hyper"];
 			const matchable = ["red","orange","yellow","green","blue","purple","white"];
-			const groundTiles = ["dirt","darkstone","hyperdirt","treasure"];
-			const dirtLike = ["dirt","hyperdirt","treasure"];
+			const groundTiles = ["dirt","grass","darkstone","hyperdirt","treasure"];
+			const dirtLike = ["dirt","grass","hyperdirt","treasure"];
 			let tilesBroken = -144;
 			let grid = {};
 			let darkMatchList = [];
@@ -986,17 +1020,13 @@
 			const neighborhood = [].concat([{x:0,y:0}],neighborhoodHalf,neighborhoodHalf.map(a=>{return {x:-a.x,y:-a.y}}));
 			let animations = {};
 			function resetBoard(){
+				machineAnimation = -1;
 				for (let x=0;x<12;x++){
 					for (let y=0;y<12;y++){
-						if ((y>=7)&&(mode=="mine")){
-							let rand = Math.floor(Math.random()*140);
-							if (rand == 0){
-								grid[`${x}-${y}`] = {tile:"hyperdirt",overlay:"none"};
-							} else if (rand <= 7){
-								grid[`${x}-${y}`] = {tile:"darkstone",overlay:"none"};
-							} else {
-								grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
-							}
+						if ((y==7)&&(mode=="mine")){
+							grid[`${x}-${y}`] = {tile:"grass",overlay:"none"};
+						} else if ((y>7)&&(mode=="mine")){
+							grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:1};
 						} else {
 							grid[`${x}-${y}`] = {tile:"none",overlay:"none"};
 						}
@@ -1010,6 +1040,26 @@
 				}
 			}
 			resetBoard();
+			function getGroundTile(){
+				let rand = Math.floor(Math.random()*140);
+				if (rand == 0){
+					return {tile:"hyperdirt",overlay:"none"};
+				} else if (rand <= 7){
+					return {tile:"darkstone",overlay:"none"};
+				} else {
+					return {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
+				}
+			}
+			function hasGroundTiles(){
+				for (let x=0;x<12;x++){
+					for (let y=7;y<12;y++){
+						if (groundTiles.includes(grid[`${x}-${y}`].tile)){
+							return true;
+						}
+					}
+				}
+				return false;
+			}
 			function swap(c1, c2){
 				let copy1 = Object.assign({},grid[c1])
 				let copy2 = Object.assign({},grid[c2])
@@ -1308,7 +1358,7 @@
 					}
 				}
 				document.getElementById("tileNumber").firstChild.data = Math.max(0,tilesBroken);
-				document.getElementById("depth").firstChild.data = depth + "m";
+				document.getElementById("depth").firstChild.data = Math.floor(depth) + "m";
 			}
 			function fall(){
 				//console.log("fall");
@@ -1489,7 +1539,9 @@
 			for (let x=0;x<12;x++){
 				for (let y=0;y<12;y++){
 					document.getElementById(`click-${x}-${y}`).addEventListener('click', (e) => {
-						clickBox(e.target.id);
+						if (machineAnimation == -1){
+							clickBox(e.target.id);
+						}
 					});
 				}
 			}
@@ -1505,18 +1557,59 @@
 				mode = "endless";
 				resetBoard();
 			});
+			gridUpdate = 0;
+			machineAnimation = -1;
 			function main(){
-				a = updateAnimations();
-				if (!a){
-					f = fall();
-					if (!f){
-						pushMatches();
-						doMatches();
+				if (mode == "mine" && !hasGroundTiles() && machineAnimation == -1){
+					machineAnimation = 0;
+				}
+				if ((gridUpdate == 0)&&(machineAnimation == -1)){
+					a = updateAnimations();
+					if (!a){
+						f = fall();
+						if (!f){
+							pushMatches();
+							doMatches();
+						}
+					}
+				}
+				if (machineAnimation == 81){
+					machineAnimation = -1;
+				}
+
+				gridUpdate += 1;
+				if (gridUpdate == 3){
+					gridUpdate = 0
+				}
+
+				if (machineAnimation >= 0){
+					machineAnimation += 1
+				}
+				if (machineAnimation >= 0){
+					up1 = 1-(Math.abs(machineAnimation-40)/40);
+					up2 = 3*up1*up1 - 2*up1*up1*up1;
+					document.getElementById("machine").transform.baseVal[0].matrix.f = (-250*up2)+251;
+					if (machineAnimation==41){
+						for (let x=0;x<12;x++){
+							for (let y=0;y<12;y++){
+								if (y >= 7){
+									grid[`${x}-${y}`] = getGroundTile();
+								} else {
+									grid[`${x}-${y}`] = Object.assign({},grid[`${x}-${y+5}`]);
+								}
+							}
+						}
+					}
+					if (machineAnimation>40){
+						document.getElementById("grid").transform.baseVal[0].matrix.f = 0;
+					} else {
+						document.getElementById("grid").transform.baseVal[0].matrix.f = (-250*up2);
+						depth += 0.5
 					}
 				}
 				render();
-				//requestAnimationFrame(main);
-				setTimeout(main, 100);
+				requestAnimationFrame(main);
+
 			}
 			main();
 		});
