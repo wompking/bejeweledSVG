@@ -160,6 +160,13 @@
 					<line x1="-17" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2px"/>
 				</g>
 			</symbol>
+			<symbol id="tile_darkstone" x="-25" y="-25" width="50" height="50">
+				<g transform="translate(25,25)">
+					<rect fill="rgb(40, 40, 40)" stroke="rgb(20, 20, 20)" stroke-width="4px" x="-25" y="-25" width="50" height="50"/>
+					<rect fill="rgb(245, 133, 0)" stroke="rgb(245, 88, 0)" stroke-width="2px" x="-20" y="-20" width="40" height="40"/>
+					<rect fill="rgb(40, 40, 40)" stroke="rgb(20, 20, 20)" stroke-width="2px" x="-16" y="-16" width="32" height="32"/>
+				</g>
+			</symbol>
 			<g id="overlay_fire">
 				<circle cx="0" cy="0" r="23" fill="url(#fire_gradient)" stroke="none" fill-opacity="0.5"/>
 			</g>
@@ -985,6 +992,8 @@
 							let rand = Math.floor(Math.random()*140);
 							if (rand == 0){
 								grid[`${x}-${y}`] = {tile:"hyperdirt",overlay:"none"};
+							} else if (rand <= 7){
+								grid[`${x}-${y}`] = {tile:"darkstone",overlay:"none"};
 							} else {
 								grid[`${x}-${y}`] = {tile:"dirt",overlay:"none",hardness:Math.floor(Math.random()*4)+1};
 							}
@@ -1212,21 +1221,15 @@
 							}
 						}
 						if (!groundTiles.includes(getGrid.tile)){
-							detonations = [];
+							let detonations = [];
 							if (detval == undefined || detval == "hypercube"){
-								console.log("undef",x,y)
-								if (grid[`${x+1}-${y}`] && (dirtLike.includes(grid[`${x+1}-${y}`].tile))){
-									detonations.push({x:x+1,y:y});
-								}
-								if (grid[`${x-1}-${y}`] && (dirtLike.includes(grid[`${x-1}-${y}`].tile))){
-									detonations.push({x:x-1,y:y});
-								}
-								if (grid[`${x}-${y+1}`] && (dirtLike.includes(grid[`${x}-${y+1}`].tile))){
-									detonations.push({x:x,y:y+1});
-								}
-								if (grid[`${x}-${y-1}`] && (dirtLike.includes(grid[`${x}-${y-1}`].tile))){
-									detonations.push({x:x,y:y-1});
-								}
+								let neighbors = [{x:x+1,y:y},{x:x-1,y:y},{x:x,y:y+1},{x:x,y:y-1}];
+								neighbors.forEach(n=>{
+									let gg = grid[`${n.x}-${n.y}`];
+									if (gg && ((gg.tile == "darkstone" && detval == "hypercube")||(dirtLike.includes(gg.tile)))){
+										detonations.push({x:n.x,y:n.y});
+									}
+								});
 							}
 							detonations.forEach(d=>{
 								detonate(d.x,d.y,undefined);
