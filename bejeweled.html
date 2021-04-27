@@ -957,6 +957,18 @@
 					<circle cx="15" cy="25" r="10" fill="none" stroke="green" stroke-width="5px"/>
 					<circle cx="35" cy="25" r="10" fill="none" stroke="green" stroke-width="5px"/>
 				</g>
+				<g id="diagSwitchOn" transform="translate(10,550)">
+					<rect fill="white" stroke="none" x="0" y="0" width="50" height="50"/>
+					<line x1="25" y1="5" x2="25" y2="45" stroke="black" stroke-width="5px"/>
+					<line x1="5" y1="25" x2="45" y2="25" stroke="black" stroke-width="5px"/>
+					<line x1="5" y1="5" x2="45" y2="45" stroke="black" stroke-width="5px"/>
+					<line x1="5" y1="45" x2="45" y2="5" stroke="black" stroke-width="5px"/>
+				</g>
+				<g id="diagSwitchOff" transform="translate(10,550)">
+					<rect fill="white" stroke="none" x="0" y="0" width="50" height="50"/>
+					<line x1="25" y1="5" x2="25" y2="45" stroke="black" stroke-width="5px"/>
+					<line x1="5" y1="25" x2="45" y2="25" stroke="black" stroke-width="5px"/>
+				</g>
 			</g>
 			<g id="text" transform="translate(0,100)">
 				<text fill="white" stroke="none" font-family="&quot;Times New Roman&quot;, Symbola, serif" font-size="40px" font-style="italic" font-weight="normal" text-decoration="normal" x="750" y="25" text-anchor="middle">
@@ -991,6 +1003,7 @@
 			let regMatchList = [];
 			let mode = "endless";
 			let depth = 0;
+			let diagSwitch = false;
 			const darkmatches = [
 			["0,0","1,0","2,0","3,0","4,0","5,0"],
 			["0,0","0,1","0,2","0,3","0,4","0,5"]];
@@ -1265,7 +1278,13 @@
 				let getGrid = grid[`${x}-${y}`]
 				if (getGrid && getGrid.overlay){
 					if (!getGrid.new){
-						getGrid.hardness -= 1;
+
+						if (detval && detval.overlay != "none" && dirtLike.includes(getGrid.tile)){
+							getGrid.hardness -= 2;
+						} else {
+							getGrid.hardness -= 1;
+						}
+						
 						getGrid.hardness = Math.max(getGrid.hardness,0)
 						if (getGrid.overlay != "none"){
 							if (getGrid.overlay == "fire"){
@@ -1532,8 +1551,9 @@
 						let y1 = parseInt(slicePrevious.split("-")[1]);
 						let x2 = parseInt(sliceCurrent.split("-")[0]);
 						let y2 = parseInt(sliceCurrent.split("-")[1]);
-						if ((Math.abs(x1-x2)<=1)&&(Math.abs(y1-y2)<=1)){
-
+						let cond = (!diagSwitch && (Math.abs(x1-x2) + Math.abs(y1-y2)<=1))
+								  ||(diagSwitch && (Math.abs(x1-x2) <=1 && Math.abs(y1-y2)<=1));
+						if (cond){
 							let special1 = (grid[slicePrevious].tile == "dark")||(grid[slicePrevious].tile == "hyper")
 							let special2 = (grid[sliceCurrent].tile == "dark")||(grid[sliceCurrent].tile == "hyper")
 							let over = (grid[slicePrevious].overlay != "none")&&(grid[sliceCurrent].overlay != "none")
@@ -1579,6 +1599,14 @@
 				document.getElementById("depth").attributes["font-size"].value = "0px";
 				mode = "endless";
 				resetBoard();
+			});
+			document.getElementById("diagSwitchOn").addEventListener('click', (e) => {
+				diagSwitch = true;
+				//console.log("on");
+			});
+			document.getElementById("diagSwitchOff").addEventListener('click', (e) => {
+				diagSwitch = false;
+				//console.log("off");
 			});
 			gridUpdate = 0;
 			machineAnimation = -1;
@@ -1633,6 +1661,13 @@
 						document.getElementById("grid").transform.baseVal[0].matrix.f = (-250*up2);
 						depth += 0.5
 					}
+				}
+				if (diagSwitch){
+					document.getElementById("diagSwitchOn").transform.baseVal[0].matrix.f = 1000;
+					document.getElementById("diagSwitchOff").transform.baseVal[0].matrix.f = 550;
+				} else {
+					document.getElementById("diagSwitchOff").transform.baseVal[0].matrix.f = 1000;
+					document.getElementById("diagSwitchOn").transform.baseVal[0].matrix.f = 550;
 				}
 				render();
 				requestAnimationFrame(main);
